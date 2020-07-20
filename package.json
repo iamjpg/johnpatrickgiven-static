@@ -1,0 +1,28 @@
+{
+  "name": "johnpatrickgiven-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/pro-duotone-svg-icons": "^5.14.0",
+    "@fortawesome/pro-light-svg-icons": "^5.14.0",
+    "@fortawesome/pro-regular-svg-icons": "^5.14.0",
+    "@fortawesome/pro-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "moment": "^2.27.0",
+    "next": "9.4.4",
+    "node-fetch": "^2.6.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.7"
+  }
+}
