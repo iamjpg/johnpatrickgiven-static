@@ -76,7 +76,7 @@ const LastFm = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    fetch('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=jpgiven&api_key=ca39ef3aa3ee3ccafb3ad86ccbe69931&format=json&limit=200')
+    fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=jpgiven&api_key=ca39ef3aa3ee3ccafb3ad86ccbe69931&format=json&limit=200')
     .then(res => res.json())
     .then(json => dispatch({ type: 'setPlayedTracks', payload: json.recenttracks }));
   }, []);
