@@ -27,10 +27,19 @@ const Comment = styled.div`
   font-size: 14px;
 `
 
+const IconWrapper = styled.div`
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin: auto;
+`
+
 const Header = () => {
   return (
     <Head>
-      <FontAwesomeIcon icon={faLaptopCode} />
+      <IconWrapper>
+        <FontAwesomeIcon icon={faLaptopCode} />
+      </IconWrapper>
       <Title>John Patrick Given</Title>
       <Comment>
         Is a software developer working for Zappos.com in Las Vegas, Nevada. Below you'll find a random smattering of my online activity.
