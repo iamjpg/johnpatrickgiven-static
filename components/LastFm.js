@@ -29,6 +29,13 @@ const Container = styled.div`
     grid-template-rows: repeat(1, auto);
   }
 `
+
+const Article = styled.article`
+  align-self: stretch;
+  color: #222;
+  background: #f5f5f5;
+`
+
 const Element = styled.div`
   position: relative;
   margin-right: 8px;
@@ -41,15 +48,9 @@ const Element = styled.div`
 `
 
 const Meta = styled.div`
-  /* position: absolute; */
-  color: #fff;
-  background: rgba(0, 0, 0, 0.8);
-  /* bottom: 0;
-  left: 0;
-  right: 0; */
   padding: 20px;
   font-size: 12px;
-  min-height: 100px;
+  line-height: 150%;
 `
 
 const initialState = {
@@ -150,7 +151,7 @@ const LastFm = () => {
   const returnPlayedTracks = () => {
     return state.playedTracks.map((track, i) => {
       return (
-        <article key={`article-${i}`}>
+        <Article key={`article-${i}`}>
           <Element
             className="llBgImage" 
             key={`element-${i}`} 
@@ -161,7 +162,7 @@ const LastFm = () => {
           <Meta key={`meta-${i}`}>
               Listened to <a href={track.url} target="_blank">{ track.name }</a> by { track.artist["#text"] } on the album { track.album["#text"] } { returnTimeAgo(track) }.
           </Meta>
-        </article>
+        </Article>
       );
     });
   }

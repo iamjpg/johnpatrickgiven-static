@@ -60,6 +60,7 @@ const Header = () => {
         .sep {
           margin: 0 10px;
           color: #222;
+          font-size: 50px;
         }
         header .font-wrapper svg {
           width: 50px !important;
