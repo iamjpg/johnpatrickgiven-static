@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { useEffect, useReducer } from 'react';
 import fetch from 'node-fetch';
 import styled from 'styled-components';
@@ -78,18 +77,87 @@ const LastFm = () => {
   useEffect(() => {
     fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=jpgiven&api_key=ca39ef3aa3ee3ccafb3ad86ccbe69931&format=json&limit=200')
     .then(res => res.json())
-    .then(json => dispatch({ type: 'setPlayedTracks', payload: json.recenttracks }));
+    .then(json => {
+      dispatch({ type: 'setPlayedTracks', payload: json.recenttracks });
+      setTimeout(BackgroundLazyLoader, 10);
+    });
   }, []);
 
   const returnTimeAgo = (track) => {
     return (track.date) ? moment(`${track.date['#text']}Z`).fromNow() : 'riiiiiight now';
   }
 
+  function BackgroundNode({node, loadedClassName}) {
+    let src = node.getAttribute('data-background-image-url');
+    let show = (onComplete) => {
+      requestAnimationFrame(() => {
+        node.style.backgroundImage = `url(${src})`
+        node.classList.add(loadedClassName);
+        onComplete();
+      })
+    }
+  
+    return {
+      node,
+  
+      // onComplete is called after the image is done loading.
+      load: (onComplete) => {
+        let img = new Image();
+        img.onload = show(onComplete);
+        img.src = src;
+      }
+    }
+  }
+  
+  let defaultOptions = {
+    selector: '[data-background-image-url]',
+    loadedClassName: 'loaded'
+  }
+  
+  function BackgroundLazyLoader({selector, loadedClassName} = defaultOptions) {
+    let nodes = [].slice.apply(document.querySelectorAll(selector))
+      .map(node => new BackgroundNode({node, loadedClassName}));
+  
+    let callback = (entries, observer) => {
+      entries.forEach(({target, isIntersecting}) => {
+        if (!isIntersecting) {
+          return;
+        }
+  
+        let obj = nodes.find(it => it.node.isSameNode(target));
+        
+        if (obj) {
+          obj.load(() => {
+            // Unobserve the node:
+            observer.unobserve(target);
+            // Remove this node from our list:
+            nodes = nodes.filter(n => !n.node.isSameNode(target));
+            
+            // If there are no remaining unloaded nodes,
+            // disconnect the observer since we don't need it anymore.
+            if (!nodes.length) {
+              observer.disconnect();
+            }
+          });
+        }
+      })
+    };
+    
+    let observer = new IntersectionObserver(callback);
+    nodes.forEach(node => observer.observe(node.node));
+  };
+
   const returnPlayedTracks = () => {
     return state.playedTracks.map((track, i) => {
       return (
         <article key={`article-${i}`}>
-          <Element key={`element-${i}`} style={{ backgroundImage: `url(${track.image[3]["#text"]})` }}></Element>
+          <Element
+            className="llBgImage" 
+            key={`element-${i}`} 
+            // style={{ backgroundImage: `url(${track.image[3]["#text"]})` }}
+            data-background-image-url={track.image[3]["#text"]}
+          >
+          </Element>
           <Meta key={`meta-${i}`}>
               Listened to <a href={track.url} target="_blank">{ track.name }</a> by { track.artist["#text"] } on the album { track.album["#text"] } { returnTimeAgo(track) }.
           </Meta>

@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <header>
         <div className="pic-fa-wrapper">
-          <div class="pic">
+          <div className="pic">
             <img src="https://en.gravatar.com/userimage/3248087/aa6918306878727b4448bf24b61dec37.jpg" width="50" />
           </div>
           <div className="sep">&#11012;</div>
