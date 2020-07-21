@@ -7,7 +7,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(5, auto);
-  grid-gap: 15px;
+  grid-gap: 25px;
 
   @media screen and (max-width: 1300px) {
     grid-template-columns: repeat(4, auto);
@@ -34,6 +34,7 @@ const Article = styled.article`
   align-self: stretch;
   color: #222;
   background: #f5f5f5;
+  box-shadow: 0 1px 2px 0 rgba(161, 161, 161, 0.5);
 `
 
 const Element = styled.div`
