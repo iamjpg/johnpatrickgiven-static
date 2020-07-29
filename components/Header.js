@@ -17,7 +17,8 @@ const Header = () => {
       </header>
       <style jsx global>{`
         header {
-          padding: 50px;
+          padding: 0 50px 0 50px;
+          max-width: 1440px;
           margin: auto;
         }
         h1 {
