@@ -61,6 +61,15 @@ const Header = () => {
           width: 50px !important;
           height: 50px !important;
         }
+        @media screen and (max-width: 470px) {
+          .pic-fa-wrapper {
+            display: block;
+          }
+          .pic {
+            margin: auto;
+            margin-bottom: 20px;
+          }
+        }
       `}</style>
     </>
   );
