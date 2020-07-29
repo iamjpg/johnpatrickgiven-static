@@ -87,6 +87,14 @@ const LastFm = () => {
     });
   }, []);
 
+  const makeExplinationString = (track) => {
+    if (track.date) {
+      return (<>Listened to <a href={track.url} target="_blank">{ track.name }</a> by { track.artist["#text"] } on the album { track.album["#text"] } { returnTimeAgo(track) }.</>)
+    } else {
+      return (<>Currently listening to <a href={track.url} target="_blank">{ track.name }</a> by { track.artist["#text"] } on the album { track.album["#text"] } { returnTimeAgo(track) }.</>)
+    }
+  }
+
   const returnTimeAgo = (track) => {
     return (track.date) ? moment(`${track.date['#text']}Z`).fromNow() : 'riiiiiight now';
   }
@@ -163,7 +171,7 @@ const LastFm = () => {
           >
           </Element>
           <Meta key={`meta-${i}`}>
-              Listened to <a href={track.url} target="_blank">{ track.name }</a> by { track.artist["#text"] } on the album { track.album["#text"] } { returnTimeAgo(track) }.
+              { makeExplinationString(track) }
           </Meta>
         </Article>
       );
