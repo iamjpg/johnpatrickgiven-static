@@ -16,9 +16,8 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Footer />
       <style jsx global>{`
-        html,
         body {
-          padding: 0;
+          padding: 50px;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,

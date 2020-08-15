@@ -12,7 +12,7 @@ const Header = () => {
       </header>
       <style jsx global>{`
         header {
-          padding: 50px;
+          padding: 0 0 100px 0;
           max-width: 1440px;
           margin: auto;
           border-bottom: 1px solid #dcdcdc;
@@ -20,12 +20,18 @@ const Header = () => {
         }
         header h1 {
           font-family: 'Hind Siliguri', sans-serif;
+          margin-top: 0;
           line-height: 110%;
+        }
+
+        header p {
+          margin-bottom: 0;
         }
 
         @media (max-width: 414px) {
           header {
             font-size: 18px;
+            padding: 0 0 50px 0;
           }
         }
       `}</style>
