@@ -7,7 +7,7 @@ const MainContainer = styled.div`
   margin: auto;
 
   @media screen and (max-width: 1440px) {
-    padding: 0 25px;
+    padding: 50px 25px 0;
   }
 `
 
