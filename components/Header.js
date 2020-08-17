@@ -1,13 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
+import emoji from 'node-emoji';
+
 const Header = () => {
   return (
     <>
       <header>
-        <h1>John Patrick Given</h1>
+        <h1>Hello, my name is JP.</h1>
         <p>
-          Hello, I'm a software engineer working in Las Vegas, Nevada. I love Javascript, Ruby, and currently learning to love Rust. I use my personal site to mess around with various Javascript frameworks and APIs. Right now, this site is a Next.JS application simply showing my random Spotify listening habits.
+          I'm a software engineer working in Las Vegas, Nevada. I love Javascript, Ruby, and currently learning to love Rust. I use my personal site to mess around with various Javascript frameworks and APIs. Right now, this site is a Next.JS application simply showing my random Spotify listening habits. Pretty boring, I know { emoji.emojify(':call_me_hand:') }
         </p>
       </header>
       <style jsx global>{`
