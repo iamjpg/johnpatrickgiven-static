@@ -29,13 +29,6 @@ const Header = () => {
         header p {
           margin-bottom: 0;
         }
-
-        @media (max-width: 414px) {
-          header {
-            font-size: 18px;
-            padding: 0 0 50px 0;
-          }
-        }
       `}</style>
     </>
   );
