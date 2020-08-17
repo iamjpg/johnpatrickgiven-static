@@ -26,7 +26,7 @@ const Header = () => {
             <div className="quoteTitle">Random Quote on Programming</div>
             <blockquote>
               { quote.en }<br /><br />
-              <cite>{ quote.author }</cite>
+              <cite><a href={`https://www.google.com/search?q="${quote.author.replace(/ /g, '+')}"`} target="_blank">{ quote.author }</a></cite>
             </blockquote>
           </>
         }
