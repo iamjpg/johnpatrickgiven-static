@@ -30,7 +30,11 @@ function MyApp({ Component, pageProps }) {
         }
 
         a {
-          color: #00a8ff;
+          color: #e84393;
+        }
+        a[target="_blank"]::after {
+          content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+          margin: 0px 3px 0px 5px;
         }
       `}</style>
     </>

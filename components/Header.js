@@ -9,7 +9,7 @@ const Header = () => {
       <header>
         <h1>Hello, my name is JP.</h1>
         <p>
-          I'm a software engineer working in Las Vegas, Nevada. I love Javascript, Ruby, and currently learning to love Rust. I use my personal site to mess around with various Javascript frameworks and APIs. Right now, this site is a Next.JS application simply showing my random Spotify listening habits. Pretty boring, I know { emoji.emojify(':call_me_hand:') }
+          I'm a software engineer working in Las Vegas, Nevada. I love <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>, <a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a>, and currently learning to love <a href="https://www.rust-lang.org/" target="_blank">Rust</a>. I use my personal site to mess around with various Javascript frameworks and APIs. Right now, this site is a Next.JS application simply showing my random Spotify listening habits. Pretty boring, I know { emoji.emojify(':call_me_hand:') }
         </p>
       </header>
       <style jsx global>{`
