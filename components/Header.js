@@ -1,9 +1,19 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { useEffect, useState } from 'react';
 
+import fetch from 'node-fetch';
 import emoji from 'node-emoji';
 
 const Header = () => {
+  const [quote, setQuote] = useState(null);
+
+  useEffect(() => {
+    fetch('https://programming-quotes-api.herokuapp.com/quotes/random')
+    .then(res => res.json())
+    .then(json => {
+      setQuote(json);
+    });
+  }, []);
+
   return (
     <>
       <header>
@@ -11,6 +21,15 @@ const Header = () => {
         <p>
           I'm a software engineer working in Las Vegas, Nevada. I love <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>, <a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a>, and currently learning to love <a href="https://www.rust-lang.org/" target="_blank">Rust</a>. I use my personal site to mess around with various Javascript frameworks and APIs. Right now, this site is a Next.JS application simply showing my random Spotify listening habits. Pretty boring, I know { emoji.emojify(':call_me_hand:') }
         </p>
+        {quote &&
+          <>
+            <div className="quoteTitle">Random Quote on Programming</div>
+            <blockquote>
+              { quote.en }<br /><br />
+              <cite>{ quote.author }</cite>
+            </blockquote>
+          </>
+        }
       </header>
       <style jsx global>{`
         header {
@@ -25,9 +44,22 @@ const Header = () => {
           margin-top: 0;
           line-height: 110%;
         }
-
         header p {
           margin-bottom: 0;
+        }
+        .quoteTitle {
+          margin: 50px 0 16px 40px;
+          font-weight: bold;
+          font-size: 14px;
+        }
+        blockquote {
+          border-left: 5px solid #e84393;
+          padding-left: 20px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        cite:before {
+          content: '~ '
         }
       `}</style>
     </>
