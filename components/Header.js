@@ -11,11 +11,13 @@ const Header = () => {
     getQuote();
   }, []);
 
+  const returnRandomArrayItem = items => items[Math.floor(Math.random()*items.length)];
+
   const getQuote = () => {
-    fetch('https://programming-quotes-api.herokuapp.com/quotes/random')
+    fetch('https://rawcdn.githack.com/iamjpg/programming-quotes-api/47c27e62513322a5c26b92212c0fc5ed0d4180ab/backup/quotes.json')
     .then(res => res.json())
     .then(json => {
-      setQuote(json);
+      setQuote(returnRandomArrayItem(json));
     });
   }
 
