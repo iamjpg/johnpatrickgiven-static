@@ -1,33 +1,9 @@
 import { useEffect, useReducer } from 'react';
+import { initialState, reducer } from '../reducers/quoteReducer';
 
 import About from './About';
 import fetch from 'node-fetch';
 import emoji from 'node-emoji';
-
-const returnRandomArrayItem = items => items[Math.floor(Math.random() * items.length)];
-
-const initialState = {
-  quotes: [],
-  quote: null
-}
-
-function reducer(state, action) {
-  const { type, payload } = action;
-  switch (type) {
-    case 'SET_QUOTES':
-      return {
-        ...state,
-        quotes: payload.quotes
-      }
-    case 'SET_QUOTE':
-      return {
-        ...state,
-        quote: returnRandomArrayItem(state.quotes)
-      }
-    default:
-      throw new Error();
-  }
-}
 
 const Header = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
