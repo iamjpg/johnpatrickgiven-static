@@ -2,7 +2,8 @@ import { returnRandomArrayItem } from '../helpers';
 
 export const initialState = {
   quotes: [],
-  quote: null
+  quote: null,
+  author: ''
 }
 
 export const reducer = (state, action) => {
@@ -14,9 +15,11 @@ export const reducer = (state, action) => {
         quotes: payload.quotes
       }
     case 'SET_QUOTE':
+      const { en: quote, author } = returnRandomArrayItem(state.quotes);
       return {
         ...state,
-        quote: returnRandomArrayItem(state.quotes)
+        quote,
+        author
       }
     default:
       throw new Error();

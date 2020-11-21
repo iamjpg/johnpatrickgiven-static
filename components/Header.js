@@ -30,6 +30,8 @@ const Header = () => {
     dispatch({ type: 'SET_QUOTE' });
   }
 
+  const { quote, author } = state;
+
   return (
     <>
       <header>
@@ -37,15 +39,15 @@ const Header = () => {
         <p>
           I'm a software engineer working in Las Vegas, Nevada. I love <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>, <a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a>, and currently learning to love <a href="https://www.rust-lang.org/" target="_blank">Rust</a>. I use my personal site to mess around with various <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks" target="_blank">Javascript frameworks</a> and APIs. Right now, this site is a <a href="https://nextjs.org/" target="_blank">Next.JS</a> application simply showing my random Spotify listening habits. Pretty boring, I know { emoji.emojify(':call_me_hand:') } { emoji.emojify(':smile:') }
         </p>
-        {state.quote &&
+        {quote &&
           <>
             <div className="quoteTitle">
               <div className="refreshQuote" onClick={getNewQuote}></div>
               Random Quote on Programming
             </div>
             <blockquote>
-              { state.quote.en }<br /><br />
-              <cite><a href={`https://www.google.com/search?q="${state.quote.author.replace(/ /g, '+')}"`} target="_blank">{ state.quote.author }</a></cite>
+              { quote }<br /><br />
+              <cite><a href={`https://www.google.com/search?q="${author.replace(/ /g, '+')}"`} target="_blank">{ author }</a></cite>
             </blockquote>
           </>
         }
