@@ -1,24 +1,57 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useReducer } from 'react';
 
 import About from './About';
 import fetch from 'node-fetch';
 import emoji from 'node-emoji';
 
+const returnRandomArrayItem = items => items[Math.floor(Math.random() * items.length)];
+
+const initialState = {
+  quotes: [],
+  quote: null
+}
+
+function reducer(state, action) {
+  const { type, payload } = action;
+  switch (type) {
+    case 'SET_QUOTES':
+      return {
+        ...state,
+        quotes: payload.quotes
+      }
+    case 'SET_QUOTE':
+      return {
+        ...state,
+        quote: returnRandomArrayItem(state.quotes)
+      }
+    default:
+      throw new Error();
+  }
+}
+
 const Header = () => {
-  const [quote, setQuote] = useState(null);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
     getQuote();
   }, []);
 
-  const returnRandomArrayItem = items => items[Math.floor(Math.random()*items.length)];
-
   const getQuote = () => {
     fetch('https://rawcdn.githack.com/iamjpg/programming-quotes-api/47c27e62513322a5c26b92212c0fc5ed0d4180ab/backup/quotes.json')
     .then(res => res.json())
     .then(json => {
-      setQuote(returnRandomArrayItem(json));
+      dispatch({
+        type: 'SET_QUOTES',
+        payload: {
+          quotes: json
+        }
+      });
+      dispatch({ type: 'SET_QUOTE' });
     });
+  }
+
+  const getNewQuote = () => {
+    dispatch({ type: 'SET_QUOTE' });
   }
 
   return (
@@ -28,15 +61,15 @@ const Header = () => {
         <p>
           I'm a software engineer working in Las Vegas, Nevada. I love <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>, <a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a>, and currently learning to love <a href="https://www.rust-lang.org/" target="_blank">Rust</a>. I use my personal site to mess around with various <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks" target="_blank">Javascript frameworks</a> and APIs. Right now, this site is a <a href="https://nextjs.org/" target="_blank">Next.JS</a> application simply showing my random Spotify listening habits. Pretty boring, I know { emoji.emojify(':call_me_hand:') } { emoji.emojify(':smile:') }
         </p>
-        {quote &&
+        {state.quote &&
           <>
             <div className="quoteTitle">
-              <div className="refreshQuote" onClick={getQuote}></div>
+              <div className="refreshQuote" onClick={getNewQuote}></div>
               Random Quote on Programming
             </div>
             <blockquote>
-              { quote.en }<br /><br />
-              <cite><a href={`https://www.google.com/search?q="${quote.author.replace(/ /g, '+')}"`} target="_blank">{ quote.author }</a></cite>
+              { state.quote.en }<br /><br />
+              <cite><a href={`https://www.google.com/search?q="${state.quote.author.replace(/ /g, '+')}"`} target="_blank">{ state.quote.author }</a></cite>
             </blockquote>
           </>
         }
