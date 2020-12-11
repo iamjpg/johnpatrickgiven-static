@@ -14,16 +14,16 @@ const Header = () => {
 
   const getQuote = () => {
     fetch('https://rawcdn.githack.com/iamjpg/programming-quotes-api/47c27e62513322a5c26b92212c0fc5ed0d4180ab/backup/quotes.json')
-    .then(res => res.json())
-    .then(json => {
-      dispatch({
-        type: 'SET_QUOTES',
-        payload: {
-          quotes: json
-        }
+      .then(res => res.json())
+      .then(json => {
+        dispatch({
+          type: 'SET_QUOTES',
+          payload: {
+            quotes: json
+          }
+        });
+        dispatch({ type: 'SET_QUOTE' });
       });
-      dispatch({ type: 'SET_QUOTE' });
-    });
   }
 
   const getNewQuote = () => {
@@ -37,7 +37,7 @@ const Header = () => {
       <header>
         <h1>Hello, my name is JP.</h1>
         <p>
-          I'm a software engineer working in Las Vegas, Nevada. I love <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>, <a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a>, and currently learning to love <a href="https://www.rust-lang.org/" target="_blank">Rust</a>. I use my personal site to mess around with various <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks" target="_blank">Javascript frameworks</a> and APIs. Right now, this site is a <a href="https://nextjs.org/" target="_blank">Next.JS</a> application simply showing my random Spotify listening habits. Pretty boring, I know { emoji.emojify(':call_me_hand:') } { emoji.emojify(':smile:') }
+          I'm a software engineer working in Las Vegas, Nevada. I love <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>, <a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a>, and currently learning to love <a href="https://www.rust-lang.org/" target="_blank">Rust</a>. I use my personal site to mess around with various <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks" target="_blank">Javascript frameworks</a> and APIs. Right now, this site is a <a href="https://nextjs.org/" target="_blank">Next.JS</a> application simply showing my random Spotify listening habits. Pretty boring, I know {emoji.emojify(':call_me_hand:')} {emoji.emojify(':smile:')}
         </p>
         {quote &&
           <>
@@ -46,14 +46,53 @@ const Header = () => {
               Random Quote on Programming
             </div>
             <blockquote>
-              { quote }<br /><br />
-              <cite><a href={`https://www.google.com/search?q="${author.replace(/ /g, '+')}"`} target="_blank">{ author }</a></cite>
+              {quote}<br /><br />
+              <cite><a href={`https://www.google.com/search?q="${author.replace(/ /g, '+')}"`} target="_blank">{author}</a></cite>
             </blockquote>
           </>
         }
         <About />
       </header>
       <style jsx global>{`
+        /* hind-siliguri-700 - latin */
+        @font-face {
+          font-family: 'Hind Siliguri';
+          font-style: normal;
+          font-weight: 700;
+          src: url('/fonts/hind-siliguri-v7-latin-700.eot'); /* IE9 Compat Modes */
+          src: local(''),
+              url('/fonts/hind-siliguri-v7-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+              url('/fonts/hind-siliguri-v7-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+              url('/fonts/hind-siliguri-v7-latin-700.woff') format('woff'), /* Modern Browsers */
+              url('/fonts/hind-siliguri-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+              url('/fonts/hind-siliguri-v7-latin-700.svg#HindSiliguri') format('svg'); /* Legacy iOS */
+        }
+        /* playfair-display-regular - latin */
+        @font-face {
+          font-family: 'Playfair Display';
+          font-style: normal;
+          font-weight: 400;
+          src: url('/fonts/playfair-display-v21-latin-regular.eot'); /* IE9 Compat Modes */
+          src: local(''),
+              url('/fonts/playfair-display-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+              url('/fonts/playfair-display-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+              url('/fonts/playfair-display-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+              url('/fonts/playfair-display-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+              url('/fonts/playfair-display-v21-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+        }
+        /* playfair-display-800 - latin */
+        @font-face {
+          font-family: 'Playfair Display';
+          font-style: normal;
+          font-weight: 800;
+          src: url('/fonts/playfair-display-v21-latin-800.eot'); /* IE9 Compat Modes */
+          src: local(''),
+              url('/fonts/playfair-display-v21-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+              url('/fonts/playfair-display-v21-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+              url('/fonts/playfair-display-v21-latin-800.woff') format('woff'), /* Modern Browsers */
+              url('/fonts/playfair-display-v21-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+              url('/fonts/playfair-display-v21-latin-800.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+        }
         header {
           padding: 0 0 0 0;
           max-width: 1440px;

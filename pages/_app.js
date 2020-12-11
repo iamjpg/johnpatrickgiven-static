@@ -5,11 +5,12 @@ import Footer from '../components/Footer';
 
 
 function MyApp({ Component, pageProps }) {
-  return(
+  return (
     <>
       <Head>
         <title>John Patrick Given is a Software Engineer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet"></link>
       </Head>
       <Header />
