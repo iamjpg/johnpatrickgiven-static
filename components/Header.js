@@ -54,45 +54,6 @@ const Header = () => {
         <About />
       </header>
       <style jsx global>{`
-        /* hind-siliguri-700 - latin */
-        @font-face {
-          font-family: 'Hind Siliguri';
-          font-style: normal;
-          font-weight: 700;
-          src: url('/fonts/hind-siliguri-v7-latin-700.eot'); /* IE9 Compat Modes */
-          src: local(''),
-              url('/fonts/hind-siliguri-v7-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-              url('/fonts/hind-siliguri-v7-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-              url('/fonts/hind-siliguri-v7-latin-700.woff') format('woff'), /* Modern Browsers */
-              url('/fonts/hind-siliguri-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-              url('/fonts/hind-siliguri-v7-latin-700.svg#HindSiliguri') format('svg'); /* Legacy iOS */
-        }
-        /* playfair-display-regular - latin */
-        @font-face {
-          font-family: 'Playfair Display';
-          font-style: normal;
-          font-weight: 400;
-          src: url('/fonts/playfair-display-v21-latin-regular.eot'); /* IE9 Compat Modes */
-          src: local(''),
-              url('/fonts/playfair-display-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-              url('/fonts/playfair-display-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-              url('/fonts/playfair-display-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-              url('/fonts/playfair-display-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-              url('/fonts/playfair-display-v21-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
-        }
-        /* playfair-display-800 - latin */
-        @font-face {
-          font-family: 'Playfair Display';
-          font-style: normal;
-          font-weight: 800;
-          src: url('/fonts/playfair-display-v21-latin-800.eot'); /* IE9 Compat Modes */
-          src: local(''),
-              url('/fonts/playfair-display-v21-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-              url('/fonts/playfair-display-v21-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-              url('/fonts/playfair-display-v21-latin-800.woff') format('woff'), /* Modern Browsers */
-              url('/fonts/playfair-display-v21-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
-              url('/fonts/playfair-display-v21-latin-800.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
-        }
         header {
           padding: 0 0 0 0;
           max-width: 1440px;
