@@ -2,13 +2,15 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
   padding: 100px;
+  margin: 0;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: 'Hind Siliguri', sans-serif;
 }
 
@@ -26,6 +28,56 @@ a[target='_blank']::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
   margin: 0px 3px 0px 5px;
 }
+
+.quoteTitle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 50px 0 16px 40px;
+  font-weight: bold;
+  // font-size: 18px;
+  h5,
+  h6 {
+    margin: 0;
+  }
+}
+
+.refreshQuote {
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M440.65 12.57l4 82.77A247.16 247.16 0 0 0 255.83 8C134.73 8 33.91 94.92 12.29 209.82A12 12 0 0 0 24.09 224h49.05a12 12 0 0 0 11.67-9.26 175.91 175.91 0 0 1 317-56.94l-101.46-4.86a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12H500a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12h-47.37a12 12 0 0 0-11.98 12.57zM255.83 432a175.61 175.61 0 0 1-146-77.8l101.8 4.87a12 12 0 0 0 12.57-12v-47.4a12 12 0 0 0-12-12H12a12 12 0 0 0-12 12V500a12 12 0 0 0 12 12h47.35a12 12 0 0 0 12-12.6l-4.15-82.57A247.17 247.17 0 0 0 255.83 504c121.11 0 221.93-86.92 243.55-201.82a12 12 0 0 0-11.8-14.18h-49.05a12 12 0 0 0-11.67 9.26A175.86 175.86 0 0 1 255.83 432z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+blockquote {
+  border-left: 5px solid #e84393;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+cite:before {
+  content: '~ ';
+}
+
+.refreshQuoteAnimate {
+  animation: rotation 0.5s linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 414px) {
   body {
     padding: 100px 25px;

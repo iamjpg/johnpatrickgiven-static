@@ -44,11 +44,14 @@ export default function Layout({ children }) {
           Javascript frameworks
         </a>{' '}
         and APIs. Right now, this site is a{' '}
-        <a href='https://nextjs.org/' target='_blank' rel='noreferrer'>
-          Next.JS
+        <a href='https://www.gatsbyjs.com/' target='_blank' rel='noreferrer'>
+          Gatsby (React)
         </a>{' '}
-        application simply showing my random Spotify listening habits. Pretty
-        boring, I know {emoji.emojify(':call_me_hand:')}{' '}
+        application using{' '}
+        <a href='https://graphcms.com/' target='_blank'>
+          GraphCMS
+        </a>
+        . Thanks for stopping by. {emoji.emojify(':call_me_hand:')}{' '}
         {emoji.emojify(':smile:')}
       </p>
       {children}
