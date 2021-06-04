@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "delete",
+    title: 'delete',
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: ['gatsby-plugin-sass', 'gatsby-plugin-react-helmet'],
 };
