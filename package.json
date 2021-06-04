@@ -1,24 +1,23 @@
 {
-  "name": "johnpatrickgiven-next",
-  "version": "0.1.0",
-  "private": true,
+  "name": "johnpatrickgiven",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "intersection-observer": "^0.11.0",
-    "moment": "^2.27.0",
-    "next": "9.4.4",
-    "node-emoji": "^1.10.0",
-    "node-fetch": "^2.6.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-lazyload": "^3.0.0",
-    "styled-components": "^5.1.1"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.7"
+    "gatsby": "^3.6.2",
+    "gatsby-plugin-sass": "^4.6.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.34.1"
   }
 }
