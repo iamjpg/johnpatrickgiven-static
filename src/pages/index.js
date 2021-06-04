@@ -43,7 +43,11 @@ const IndexPage = () => {
         <>
           <div className='quoteTitle'>
             <h6>Random Quote on Programming</h6>
-            <div className='refreshQuote' onClick={getNewQuote}></div>
+            <div
+              className='refreshQuote'
+              role='none'
+              onClick={getNewQuote}
+            ></div>
           </div>
           <blockquote>
             {quote}
@@ -56,6 +60,7 @@ const IndexPage = () => {
                   '+'
                 )}"`}
                 target='_blank'
+                rel='noreferrer'
               >
                 {author}
               </a>
@@ -63,7 +68,7 @@ const IndexPage = () => {
           </blockquote>
         </>
       )}
-      <h3>Writings</h3>
+      <h2>Journal</h2>
     </Layout>
   );
 };

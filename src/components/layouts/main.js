@@ -48,7 +48,7 @@ export default function Layout({ children }) {
           Gatsby (React)
         </a>{' '}
         application using{' '}
-        <a href='https://graphcms.com/' target='_blank'>
+        <a href='https://graphcms.com/' target='_blank' rel='noreferrer'>
           GraphCMS
         </a>
         . Thanks for stopping by. {emoji.emojify(':call_me_hand:')}{' '}
