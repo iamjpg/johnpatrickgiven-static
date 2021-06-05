@@ -3709,8 +3709,11 @@ const IndexPage = () => {
     key: post.slug
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "postDate"
-  }, formatDate(addDays(new Date(post.date), 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
-    className: "articleHeader"
+  }, formatDate(addDays(new Date(post.date), 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h5", {
+    style: {
+      marginTop: 0,
+      marginBottom: '10px'
+    }
   }, post.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "postExerpt"
   }, post.excerpt))))));

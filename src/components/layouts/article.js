@@ -20,13 +20,13 @@ export default function Layout({ children }) {
 
       {children}
 
-      <footer class='article-footer'>
+      <footer className='article-footer'>
         <div>
           <Link
             to='http://twitter.com/iamjpg'
             target='_blank'
             rel='noreferrer'
-            class='nomarker'
+            className='nomarker'
           >
             <Twitter width={16} fill='#e5e5e5' />
           </Link>
@@ -36,7 +36,7 @@ export default function Layout({ children }) {
             to='https://www.linkedin.com/in/given/'
             target='_blank'
             rel='noreferrer'
-            class='nomarker'
+            className='nomarker'
           >
             <Linkedin width={16} fill='#e5e5e5' />
           </Link>

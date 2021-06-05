@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: 'delete',
@@ -8,8 +10,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-graphcms',
       options: {
-        endpoint:
-          'https://api-us-west-2.graphcms.com/v2/ckpixja8ea36y01z6hs9b25zy/master',
+        endpoint: process.env.GRAPHCMS_URI,
       },
     },
     {
