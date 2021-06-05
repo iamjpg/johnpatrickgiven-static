@@ -3466,9 +3466,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
-/* harmony import */ var node_emoji__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! node-emoji */ "./node_modules/node-emoji/index.js");
-/* harmony import */ var node_emoji__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(node_emoji__WEBPACK_IMPORTED_MODULE_2__);
-
 
 
 function Layout({
@@ -3479,30 +3476,7 @@ function Layout({
     rel: "stylesheet"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     charSet: "utf-8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "John Patrick Given is a Javascript Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Hello, my name is JP."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I'm a software engineer working in Las Vegas, Nevada. I love", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    target: "_blank",
-    rel: "noreferrer"
-  }, "Javascript"), ",", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.ruby-lang.org/en/",
-    target: "_blank",
-    rel: "noreferrer"
-  }, "Ruby"), ", and currently learning to love", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.rust-lang.org/",
-    target: "_blank",
-    rel: "noreferrer"
-  }, "Rust"), ". I use my personal site to mess around with various", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks",
-    target: "_blank",
-    rel: "noreferrer"
-  }, "Javascript frameworks"), ' ', "and APIs. Right now, this site is a", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://www.gatsbyjs.com/",
-    target: "_blank",
-    rel: "noreferrer"
-  }, "Gatsby (React)"), ' ', "application using", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "https://graphcms.com/",
-    target: "_blank"
-  }, "GraphCMS"), ". Thanks for stopping by. ", node_emoji__WEBPACK_IMPORTED_MODULE_2___default().emojify(':call_me_hand:'), ' ', node_emoji__WEBPACK_IMPORTED_MODULE_2___default().emojify(':smile:')), children);
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "John Patrick Given is a Javascript Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Hello, my name is JP."), children);
 }
 
 /***/ }),
@@ -3592,11 +3566,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! node-fetch */ "./node_modules/node-fetch/lib/index.mjs");
-/* harmony import */ var _components_layouts_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layouts/main */ "./src/components/layouts/main.js");
-/* harmony import */ var _reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../reducers/quoteReducer */ "./src/reducers/quoteReducer.js");
+/* harmony import */ var _public_page_data_sq_d_717708846_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/717708846.json */ "./public/page-data/sq/d/717708846.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var node_emoji__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! node-emoji */ "./node_modules/node-emoji/index.js");
+/* harmony import */ var node_emoji__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(node_emoji__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! node-fetch */ "./node_modules/node-fetch/lib/index.mjs");
+/* harmony import */ var _components_layouts_main__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/layouts/main */ "./src/components/layouts/main.js");
+/* harmony import */ var _reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../reducers/quoteReducer */ "./src/reducers/quoteReducer.js");
+
+
+
 
 
 
@@ -3606,13 +3587,13 @@ const IndexPage = () => {
   const {
     0: state,
     1: dispatch
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(_reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_3__.reducer, _reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_3__.initialState);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useReducer)(_reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_6__.reducer, _reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_6__.initialState);
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
     getQuote();
   }, []);
 
   const getQuote = () => {
-    (0,node_fetch__WEBPACK_IMPORTED_MODULE_1__.default)('https://rawcdn.githack.com/iamjpg/programming-quotes-api/47c27e62513322a5c26b92212c0fc5ed0d4180ab/backup/quotes.json').then(res => res.json()).then(json => {
+    (0,node_fetch__WEBPACK_IMPORTED_MODULE_4__.default)('https://rawcdn.githack.com/iamjpg/programming-quotes-api/47c27e62513322a5c26b92212c0fc5ed0d4180ab/backup/quotes.json').then(res => res.json()).then(json => {
       dispatch({
         type: 'SET_QUOTES',
         payload: {
@@ -3625,25 +3606,90 @@ const IndexPage = () => {
     });
   };
 
-  const getNewQuote = () => {
+  const getNewQuote = e => {
+    e.target.classList.add('refreshQuoteAnimate');
+    setTimeout(() => {
+      e.target.classList.remove('refreshQuoteAnimate');
+    }, 500);
     dispatch({
       type: 'SET_QUOTE'
     });
+  };
+
+  const makeLink = slug => {
+    return `/post/${slug}`;
   };
 
   const {
     quote,
     author
   } = state;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layouts_main__WEBPACK_IMPORTED_MODULE_2__.default, null, quote && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+
+  const formatDate = function (timestamp) {
+    // Create a date object from the timestamp
+    var date = new Date(timestamp); // Create a list of names for the months
+
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; // return a formatted date
+
+    return months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+  };
+
+  const addDays = function (date, days) {
+    date.setDate(date.getDate() + days);
+    return date;
+  };
+
+  const {
+    posts: {
+      nodes: allPosts
+    }
+  } = _public_page_data_sq_d_717708846_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_layouts_main__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "I'm a software engineer working in Las Vegas, Nevada. I love", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Javascript"), ",", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    href: "https://www.ruby-lang.org/en/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Ruby"), ", and currently learning to love", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    href: "https://www.rust-lang.org/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Rust"), ". I use my personal site to mess around with various", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    href: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Javascript frameworks"), ' ', "and APIs. Right now, this site is a", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    href: "https://www.gatsbyjs.com/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Gatsby (React)"), ' ', "application using", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    href: "https://graphcms.com/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "GraphCMS"), ". Thanks for stopping by. ", node_emoji__WEBPACK_IMPORTED_MODULE_3___default().emojify(':call_me_hand:'), ' ', node_emoji__WEBPACK_IMPORTED_MODULE_3___default().emojify(':smile:')), quote && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "quoteTitle"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h6", null, "Random Quote on Programming"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h6", null, "Random Quote on Programming"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "refreshQuote",
+    role: "none",
     onClick: getNewQuote
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("blockquote", null, quote, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("cite", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("blockquote", null, quote, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("cite", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
     href: `https://www.google.com/search?q="${author.replace(/ /g, '+')}"`,
-    target: "_blank"
-  }, author)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Writings"));
+    target: "_blank",
+    rel: "noreferrer"
+  }, author)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h2", null, "Journal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("section", {
+    class: "articles"
+  }, allPosts.map(post => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: makeLink(post.slug),
+    key: post.slug
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    className: "postDate"
+  }, formatDate(addDays(new Date(post.date), 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    className: "articleHeader"
+  }, post.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+    className: "postExerpt"
+  }, post.excerpt))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
@@ -16177,6 +16223,17 @@ module.exports = (string, separator) => {
 
 module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16).toUpperCase()}`);
 
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/717708846.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/717708846.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"posts":{"nodes":[{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/q8mELPQGSESG7uLlHwQ9","size":68362}},"id":"Post:ckpixpehs2ahc0c71xg1iof5x:PUBLISHED","date":"2021-06-04","slug":"hello-world","tags":["hello world"],"title":"Hello World","coverImage":null,"excerpt":"Everyone has to start somewhere. For me, this is it."}]}}}');
 
 /***/ }),
 
