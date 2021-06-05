@@ -12,5 +12,13 @@ module.exports = {
           'https://api-us-west-2.graphcms.com/v2/ckpixja8ea36y01z6hs9b25zy/master',
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
   ],
 };

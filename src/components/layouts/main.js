@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import Twitter from '../../assets/svg/twitter.svg';
+import Linkedin from '../../assets/svg/linkedin.svg';
 
 export default function Layout({ children }) {
   return (
@@ -16,6 +19,29 @@ export default function Layout({ children }) {
       <h1>Hello, my name is JP.</h1>
 
       {children}
+
+      <footer>
+        <div>
+          <Link
+            to='http://twitter.com/iamjpg'
+            target='_blank'
+            rel='noreferrer'
+            class='nomarker'
+          >
+            <Twitter width={16} fill='#e5e5e5' />
+          </Link>
+        </div>
+        <div>
+          <Link
+            to='https://www.linkedin.com/in/given/'
+            target='_blank'
+            rel='noreferrer'
+            class='nomarker'
+          >
+            <Linkedin width={16} fill='#e5e5e5' />
+          </Link>
+        </div>
+      </footer>
     </>
   );
 }

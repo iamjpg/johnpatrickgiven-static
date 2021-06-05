@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/layouts/article';
 
 export default function BlogPost({
@@ -49,7 +50,10 @@ export default function BlogPost({
 
   return (
     <Layout>
-      <h2>{title}</h2>
+      <p className='backToHome'>
+        <Link to='/'>&larr; Back</Link>
+      </p>
+      <h2 className='articleHeader'>{title}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>
   );
