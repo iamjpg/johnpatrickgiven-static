@@ -3488,7 +3488,7 @@ function Layout({
     to: "http://twitter.com/iamjpg",
     target: "_blank",
     rel: "noreferrer",
-    class: "nomarker"
+    className: "nomarker"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((_assets_svg_twitter_svg__WEBPACK_IMPORTED_MODULE_3___default()), {
     width: 16,
     fill: "#e5e5e5"
@@ -3496,7 +3496,7 @@ function Layout({
     to: "https://www.linkedin.com/in/given/",
     target: "_blank",
     rel: "noreferrer",
-    class: "nomarker"
+    className: "nomarker"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((_assets_svg_linkedin_svg__WEBPACK_IMPORTED_MODULE_4___default()), {
     width: 16,
     fill: "#e5e5e5"
