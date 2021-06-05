@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import Twitter from '../../assets/svg/twitter.svg';
-import Linkedin from '../../assets/svg/linkedin.svg';
+import Footer from '../layouts/footer';
 
 export default function Layout({ children }) {
   return (
@@ -16,32 +14,13 @@ export default function Layout({ children }) {
         <title>John Patrick Given is a Javascript Developer</title>
       </Helmet>
 
-      <h1 className='faded'>Hello, my name is JP.</h1>
+      <section className='main'>
+        <h1 className='faded'>Hello, my name is JP.</h1>
 
-      {children}
+        {children}
 
-      <footer className='article-footer'>
-        <div>
-          <Link
-            to='http://twitter.com/iamjpg'
-            target='_blank'
-            rel='noreferrer'
-            className='nomarker'
-          >
-            <Twitter width={16} fill='#e5e5e5' />
-          </Link>
-        </div>
-        <div>
-          <Link
-            to='https://www.linkedin.com/in/given/'
-            target='_blank'
-            rel='noreferrer'
-            className='nomarker'
-          >
-            <Linkedin width={16} fill='#e5e5e5' />
-          </Link>
-        </div>
-      </footer>
+        <Footer klass='article-footer' />
+      </section>
     </>
   );
 }

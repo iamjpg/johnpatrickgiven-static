@@ -9,6 +9,11 @@ body {
   margin: 0;
 }
 
+.main {
+  max-width: 1024px;
+  margin: auto;
+}
+
 h1,
 h2,
 h3,
@@ -158,6 +163,12 @@ footer {
   margin-top: 50px;
   padding-top: 30px;
 }
+
+// @media (min-width: 1280px) {
+//   article {
+//     width: 50%;
+//   }
+// }
 
 @media (max-width: 414px) {
   body {
