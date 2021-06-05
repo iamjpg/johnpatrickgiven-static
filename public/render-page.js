@@ -15,8 +15,7 @@
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js")),
-  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
-  "component---src-templates-blog-post-js": preferDefault(__webpack_require__(/*! ./src/templates/blog-post.js */ "./src/templates/blog-post.js"))
+  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
   }
 
 
@@ -3453,43 +3452,6 @@ exports.onRenderBody = onRenderBody;
 
 /***/ }),
 
-/***/ "./src/components/layouts/article.js":
-/*!*******************************************!*\
-  !*** ./src/components/layouts/article.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Layout)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
-/* harmony import */ var _layouts_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layouts/footer */ "./src/components/layouts/footer.js");
-
-
-
-function Layout({
-  children
-}) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("link", {
-    href: "https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&family=Playfair+Display:ital@0;1&display=swap",
-    rel: "stylesheet"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
-    charSet: "utf-8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "John Patrick Given is a Javascript Developer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "faded"
-  }, "Hello, my name is JP."), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_layouts_footer__WEBPACK_IMPORTED_MODULE_2__.default, {
-    klass: "article-footer"
-  })));
-}
-
-/***/ }),
-
 /***/ "./src/components/layouts/footer.js":
 /*!******************************************!*\
   !*** ./src/components/layouts/footer.js ***!
@@ -3585,6 +3547,5074 @@ const returnRandomArrayItem = items => items[Math.floor(Math.random() * items.le
 
 /***/ }),
 
+/***/ "./src/helpers/quotes.js":
+/*!*******************************!*\
+  !*** ./src/helpers/quotes.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ initialQuotes)
+/* harmony export */ });
+function initialQuotes() {
+  return [{
+    _id: '5a6ce86e2af929789500e7e4',
+    sr: 'Računarska nauka se tiče računara koliko i astronomija teleskopa.',
+    en: 'Computer Science is no more about computers than astronomy is about telescopes.',
+    author: 'Edsger W. Dijkstra',
+    source: null,
+    numberOfVotes: 16,
+    rating: 4.2,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86e2af929789500e7e4'
+  }, {
+    _id: '5a6ce86e2af929789500e7d7',
+    sr: 'Jednostavnost je preduslov za pouzdanost.',
+    en: 'Simplicity is prerequisite for reliability.',
+    author: 'Edsger W. Dijkstra',
+    source: null,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86e2af929789500e7d7'
+  }, {
+    _id: '5a6ce86d2af929789500e7ca',
+    sr: 'Najveći izazov za programera je da se ne zbuni pred kompleksnošću sopstvene tvorevine.',
+    en: 'The computing scientist’s main challenge is not to get confused by the complexities of his own making.',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 8,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86d2af929789500e7ca'
+  }, {
+    _id: '5a6ce86f2af929789500e7f3',
+    sr: 'Ako je debagovanje proces uklanjanja bagova, onda programiranje mora biti proces njihovog umetanja.',
+    en: 'If debugging is the process of removing software bugs, then programming must be the process of putting them in.',
+    author: 'Edsger W. Dijkstra',
+    source: null,
+    numberOfVotes: 5,
+    rating: 4.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e7f3'
+  }, {
+    _id: '5a6ce86e2af929789500e7d9',
+    sr: 'Program je kao pesma: ne možete napisati pesmu bez pisanja. Ipak, ljudi govore o programiranju kao procesu proizvodnje i mere „programersku produktivnost“ u terminima „broja proizvedenih linija koda“. Na taj način oni su na pogrešnoj strani knjige: Mi uvek gledamo „broj ušteđenih linija koda“.',
+    en: 'A program is like a poem: you cannot write a poem without writing it. Yet people talk about programming as if it were a production process and measure „programmer productivity“ in terms of „number of lines of code produced“. In so doing they book that number on the wrong side of the ledger: We should always refer to „the number of lines of code spent“.',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86e2af929789500e7d9'
+  }, {
+    _id: '5a6ce86f2af929789500e7f8',
+    sr: 'Postoje dva načina izgradnje softvera: Jedan je napraviti ga toliko prostim da očigledno nema nedostaka, a drugi je napraviti ga toliko komplikovanim da nema očiglednih nedostataka. Prva metoda je puno teža.',
+    en: 'There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.',
+    author: 'Tony Hoare',
+    source: '',
+    numberOfVotes: 5,
+    rating: 4.1,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e7f8'
+  }, {
+    _id: '5a6ce86f2af929789500e807',
+    sr: 'Najbolji umovi moje generacije misle o tome kako naterati ljude da klikću reklame.',
+    en: 'The best minds of my generation are thinking about how to make people click ads.',
+    author: 'Jeff Hammerbacher',
+    source: null,
+    numberOfVotes: 6,
+    rating: 4.1,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e807'
+  }, {
+    _id: '5a6ce86f2af929789500e7f9',
+    sr: 'Alati koje koristimo imaju veliki uticaj na naše navike u razmišljanju, a samim tim i na našu sposobnost razmišljanja uopšte.',
+    en: 'The tools we use have a profound and devious influence on our thinking habits, and therefore on our thinking abilities.',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e7f9'
+  }, {
+    _id: '5a6ce86f2af929789500e7f5',
+    sr: 'Kako ubediti ljude da u programiranju jednostavnost i jasnoća — što matematičari zovu "elegancija" — nisu nepriuštiv luksuz, već ključna stvar koja odlučuje između uspeha i propasti? ',
+    en: 'How do we convince people that in programming simplicity and clarity — in short: what mathematicians call "elegance" — are not a dispensable luxury, but a crucial matter that decides between success and failure?',
+    author: 'Edsger W. Dijkstra',
+    source: null,
+    numberOfVotes: 4,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e7f5'
+  }, {
+    _id: '5a6ce86f2af929789500e80b',
+    sr: 'Dodavanje ljudstva na projekat koji kasni dovodi do još većeg kašnjenja.',
+    en: 'Adding manpower to a late software project makes it later.',
+    author: 'Fred Brooks',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e80b'
+  }, {
+    _id: '5a6ce86f2af929789500e809',
+    sr: 'Ponekad postoji srebrni metak softverske produktivnosti. Ali treba da upucate pravu osobu.',
+    en: 'Sometimes there is a silver bullet for boosting software engineering productivity. But you need to shoot the right person.',
+    author: 'Michael Stal',
+    source: null,
+    numberOfVotes: 3,
+    rating: 3.4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e809'
+  }, {
+    _id: '5a6ce86f2af929789500e815',
+    sr: 'Devet žena ne može roditi bebu za mesec dana.',
+    en: "Nine women can't make a baby in one month.",
+    author: 'Fred Brooks',
+    source: 'Frederick P. Brooks Jr., The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e815'
+  }, {
+    _id: '5a6ce86f2af929789500e81a',
+    sr: 'Izbrisan kod je debagovan kod.',
+    en: 'Deleted code is debugged code.',
+    author: 'Jeff Sickel',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e81a'
+  }, {
+    _id: '5a6ce86f2af929789500e826',
+    sr: 'Kada si u dvojbi, koristi brutalnu silu.',
+    en: 'When in doubt, use brute force.',
+    author: 'Ken Thompson',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.2,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e826'
+  }, {
+    _id: '5a6ce86f2af929789500e814',
+    sr: 'Kada zadatak ne može biti podeljen zbog sekvencijalnih ograničenja, primena većeg napora nema uticaja na rokove. Nošenje trudnoće traje devet meseci, bez obzira koliko žena dodali.',
+    en: 'When a task cannot be partitioned because of sequential constraints, the application of more effort has no effect on the schedule. The bearing of a child takes nine months, no matter how many women are assigned.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 4,
+    rating: 3.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e814'
+  }, {
+    _id: '5a6ce86f2af929789500e816',
+    sr: 'Ako svaki zadatak mora biti zasebno koordiniran sa svakim drugim, napor komunikacije raste n(n-1)/2. Tri radnika zahtevaju trostruko više međusobne komunikacije nego dva; četiri zahtevaju šestostruko više nego dva.',
+    en: 'If each part of the task must be separately coordinated with each other part, the effort increases as n(n-1)/2. Three workers require three times as much pairwise intercommunication as two; four require six times as much as two.',
+    author: 'Fred Brooks',
+    source: 'Frederick P. Brooks Jr., The Mythical Man-Month',
+    numberOfVotes: 3,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e816'
+  }, {
+    _id: '5a6ce86f2af929789500e818',
+    sr: 'Imati sistemskog arhitektu je najvažniji korak ka konceptualnom integritetu. Nakon držanja laboratorija softverskog inženjerstva više od 20 puta, počeo sam da insistiram da mali studentski timovi, već od četvoro ljudi, izaberu menadžera i arhitektu.',
+    en: 'Having a system architect is the most important single step toward conceptual integrity. After teaching a software engineering laboratory more than 20 times, I came to insist that student teams as small as four people choose a manager and a separate architect.',
+    author: 'Fred Brooks',
+    source: 'Frederick P. Brooks Jr., The Mythical Man-Month',
+    numberOfVotes: 3,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e818'
+  }, {
+    _id: '5a6ce86f2af929789500e80f',
+    sr: 'Programer, poput pesnika, radi tek neznatno udaljen od čiste misli. On gradi dvorce u vazduhu, od vazduha, stvarajući naporom mašte. Retki mediji stvaranja su tako gipki, tako jednostavni za poliranje i preradu, tako podesni za realizaciju veličanstvene konceptualne tvorevine.',
+    en: 'The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.',
+    author: 'Fred Brooks',
+    source: 'Frederick P. Brooks Jr., The Mythical Man-Month',
+    numberOfVotes: 3,
+    rating: 3.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e80f'
+  }, {
+    _id: '5a6ce86f2af929789500e821',
+    sr: 'Prva lažna pretpostavka koja podriva rokove razvoja softvera je da će sve proći dobro, tj. da će svaki zadatak trajati samo koliko "treba" da traje. Veliki programerski projekti se, pak, sastoje od mnogo zadataka, od kojih su neki ulančani od početka do kraja. Verovatnoća da će sve proći dobro postaje nestvarno mala.',
+    en: 'The first false assumption that underlies the scheduling of systems programming is that all will go well, i.e., that each task will hike only as long as it "ought" to take. A large programming effort, however, consists of many tasks, some chained end-to-end. The probability that each will go well becomes vanishingly small.',
+    author: 'Fred Brooks',
+    source: 'Frederick P. Brooks Jr., The Mythical Man-Month',
+    numberOfVotes: 3,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e821'
+  }, {
+    _id: '5a6ce86f2af929789500e81e',
+    sr: 'Treba da zaboravimo na male učinkovitosti, recimo u oko 97% slučajeva: prerana optimizacija je koren svih zala. Međutim, ne smemo propustiti priliku u tih kritičnih 3%.',
+    en: 'We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.',
+    author: 'Donald Knuth',
+    source: 'Donald Knuth, Structured Programming with go to Statements, JACM Computing Surveys, Vol 6, No. 4, Dec. 1974, p.268',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e81e'
+  }, {
+    _id: '5a6ce86f2af929789500e824',
+    sr: 'Jedan od mojih najproduktivnijih dana je bio kada sam bacio 1000 linija koda.',
+    en: 'One of my most productive days was throwing away 1,000 lines of code.',
+    author: 'Ken Thompson',
+    source: '',
+    numberOfVotes: 10,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e824'
+  }, {
+    _id: '5a6ce86f2af929789500e825',
+    sr: 'Jedno precizno merenje vredi više od hiljadu ekspertskih mišljenja.',
+    en: 'One accurate measurement is worth more than a thousand expert opinions.',
+    author: 'Grace Hopper',
+    source: null,
+    numberOfVotes: 1,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e825'
+  }, {
+    _id: '5a6ce86f2af929789500e80d',
+    sr: 'Ono što jedan programer može uraditi za mesec dana, dva programera mogu uraditi za dva meseca.',
+    en: 'What one programmer can do in one month, two programmers can do in two months.',
+    author: 'Fred Brooks',
+    source: null,
+    numberOfVotes: 3,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e80d'
+  }, {
+    _id: '5a6ce86f2af929789500e82e',
+    sr: 'Uvek kodiraj kao da će momak koji nasledi tvoj kod biti nasilni psihopata koji zna gde živiš.',
+    en: 'Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.',
+    author: 'Rick Osborne',
+    source: null,
+    numberOfVotes: 6,
+    rating: 2.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e82e'
+  }, {
+    _id: '5a6ce86f2af929789500e830',
+    sr: 'Program koji dvostruko brže daje netačan rezultat je beskonačno sporiji.',
+    en: 'A program that produces incorrect results twice as fast is infinitely slower.',
+    author: 'John Ousterhout',
+    source: '',
+    numberOfVotes: 4,
+    rating: 3.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e830'
+  }, {
+    _id: '5a6ce86f2af929789500e828',
+    sr: 'Još nisam video problem, ma kako zamršen, koji kad se osmotri na pravi način, ne postoje još zamršeniji.',
+    en: 'I have yet to see any problem, however complicated, which when looked at in the right way, did not become more complicated.',
+    author: 'Poul Anderson',
+    source: null,
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e828'
+  }, {
+    _id: '5a6ce86f2af929789500e82a',
+    sr: 'Čišćenje koda ne uzima vreme. Ne čišćenje koda uzima vreme.',
+    en: 'Cleaning code does NOT take time. NOT cleaning code does take time.',
+    author: 'Robert C. Martin',
+    source: null,
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e82a'
+  }, {
+    _id: '5a6ce86f2af929789500e837',
+    sr: 'Lepota je važnija u računarstvu nego igde drugde u tehnologiji, zato što je softver tako složen. Lepota je ultimativna odbrana od složenosti.',
+    en: 'Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defense against complexity.',
+    author: 'David Gelernter',
+    source: '',
+    numberOfVotes: 5,
+    rating: 3.4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e837'
+  }, {
+    _id: '5a6ce86f2af929789500e833',
+    sr: 'Hodanje po vodi i razvijanje softvera po specifikaciji su lakši kad je zaleđena.',
+    en: 'Walking on water and developing software from a specification are easy if both are frozen.',
+    author: 'Edward V. Berard',
+    source: null,
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e833'
+  }, {
+    _id: '5a6ce86f2af929789500e836',
+    sr: 'Debagovanje je dvostruko teže od pisanja koda. Ako si napisao kod najpametnije što možeš, onda, po definiciji, nisi dovoljno pametan da ga debaguješ.',
+    en: 'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.',
+    author: 'Brian Kernighan',
+    source: 'Brian Kernighan and P.J. Plauger, The Elements of Programming Style',
+    numberOfVotes: 3,
+    rating: 4.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e836'
+  }, {
+    _id: '5a6ce86f2af929789500e838',
+    sr: 'Kontrola kompleksnosti je suština kompjuterskog programiranja.',
+    en: 'Controlling complexity is the essence of computer programming.',
+    author: 'Brian Kernighan',
+    source: '',
+    numberOfVotes: 4,
+    rating: 3.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e838'
+  }, {
+    _id: '5a6ce86f2af929789500e83f',
+    sr: 'Vreme debagovanje se povećava kvadratno u odnosu na veličinu programa.',
+    en: 'Debugging time increases as a square of the program’s size.',
+    author: 'Chris Wenham',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e83f'
+  }, {
+    _id: '5a6ce86f2af929789500e82c',
+    sr: 'Nevolja sa programerima je što nikad ne možeš znati šta rade dok ne bude prekasno.',
+    en: 'The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.',
+    author: 'Seymour Cray',
+    source: null,
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e82c'
+  }, {
+    _id: '5a6ce86f2af929789500e843',
+    sr: 'Kod nikada ne laže, komentari nekad lažu.',
+    en: 'Code never lies, comments sometimes do.',
+    author: 'Ron Jeffries',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e843'
+  }, {
+    _id: '5a6ce86f2af929789500e845',
+    sr: 'Neki problemi su toliko kompleksni da morate biti visoko inteligentni i dobro informisani samo da biste bili neodlučni oko njih.',
+    en: 'Some problems are so complex that you have to be highly intelligent and well informed just to be undecided about them.',
+    author: 'Laurence J. Peter',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e845'
+  }, {
+    _id: '5a6ce86f2af929789500e841',
+    sr: 'Napravi procenu, udvostruči broj, a onda pređi na narednu jedinicu vremena. Ovo pravilo skalira zadatke na veoma interesantan način: jednominutni zadatak eksplodira stepenom od 120 da uzme dva časa. Jednočasovni zadatak eksplodira "samo" stepenom 48 na dva dana, dok jednodnevni posao poraste stepenom od 14 na dve sedmice.',
+    en: 'Make a guess, double the number, and then move to the next larger unit of time. This rule scales tasks in a very interesting way: a one-minute task explodes by a factor of 120 to take two hours. A one-hour job explodes by "only" a factor 48 to take two days, while a one-day job grows by a factor of 14 to take two weeks.',
+    author: 'Poul-Henning Kamp',
+    source: 'Poul-Henning Kamp, The hyperdimensional tar pit',
+    numberOfVotes: 4,
+    rating: 3.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e841'
+  }, {
+    _id: '5a6ce86f2af929789500e847',
+    sr: 'Ja nemam neke posebne talente. Samo sam jako radoznao.',
+    en: 'I have no special talent. I am only passionately curious.',
+    author: 'Albert Einstein',
+    source: 'Pismo Carlu Seeligu (11. ožujka 1952.), zabilježeno u Einstein Archives 39-013',
+    numberOfVotes: 7,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e847'
+  }, {
+    _id: '5a6ce86f2af929789500e849',
+    sr: 'Odgovarajuća upotreba komentara je kompenzacija za naš neuspeh da se izrazimo u kodu.',
+    en: 'The proper use of comments is to compensate for our failure to express ourself in code.',
+    author: 'Robert C. Martin',
+    source: '',
+    numberOfVotes: 8,
+    rating: 3.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e849'
+  }, {
+    _id: '5a6ce86f2af929789500e852',
+    sr: 'Kada ne postoji hijerarhija tipova ne morate da upravljate hijerarhijom tipova.',
+    en: 'When there is no type hierarchy you don’t have to manage the type hierarchy.',
+    author: 'Rob Pike',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e852'
+  }, {
+    _id: '5a6ce86f2af929789500e856',
+    sr: 'Svako bi trebalo da nauči da programira, jer to te uči kako da misliš.',
+    en: 'Everybody should learn to program a computer, because it teaches you how to think.',
+    author: 'Steve Jobs',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e856'
+  }, {
+    _id: '5a6ce86f2af929789500e84f',
+    sr: 'Jednostavnost je teško izgraditi, lako koristiti, i teško naplatiti. Složenost je lako izgraditi, teško koristiti, i lako naplatiti.',
+    en: 'Simplicity is hard to build, easy to use, and hard to charge for. Complexity is easy to build, hard to use, and easy to charge for.',
+    author: 'Chris Sacca',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e84f'
+  }, {
+    _id: '5a6ce8702af929789500e85a',
+    sr: 'Meriti napredak programa po broju linija koda je kao meriti napredak gradnje aviona po težini.',
+    en: 'Measuring programming progress by lines of code is like measuring aircraft building progress by weight.',
+    author: 'Bill Gates',
+    source: null,
+    numberOfVotes: 3,
+    rating: 4.2,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e85a'
+  }, {
+    _id: '5a6ce8702af929789500e85e',
+    sr: 'Više je računarskih grehova počinjeno u ime efikasnosti (bez da je nužno dostignuta) nego iz bilo kog drugog razloga, uključujući čistu glupost.',
+    en: 'More computing sins are committed in the name of efficiency (without necessarily achieving it) than for any other single reason - including blind stupidity.',
+    author: 'William Wulf',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e85e'
+  }, {
+    _id: '5a6ce8702af929789500e860',
+    sr: 'Testiranje može biti veoma efektivan način da pokaže prisustvo bagova, ali beznadežno neadekvatan da pokaže njihovo odsustvo.',
+    en: 'Testing can be a very effective way to show the presence of bugs, but it is hopelessly inadequate for showing their absence.',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e860'
+  }, {
+    _id: '5a6ce8702af929789500e864',
+    sr: 'Mašta je važnija od znanja.',
+    en: 'Imagination is more important than knowledge.',
+    author: 'Albert Einstein',
+    source: 'U razgovoru s Georgeom Sylvesterom Viereckom What Life Means to Einstein (u novinama The Saturday Evening Post, 26. listopada 1929.)',
+    numberOfVotes: 7,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e864'
+  }, {
+    _id: '5a6ce8702af929789500e862',
+    sr: 'Kada radim na problemu nikada ne razmišljam o lepoti. Razmišljam jedino kako da rešim problem. Ali kada završim, ako rešenje nije lepo, znam da je pogrešno.',
+    en: 'When I am working on a problem I never think about beauty. I think only how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong.',
+    author: 'Buckminster Fuller',
+    source: '',
+    numberOfVotes: 7,
+    rating: 3.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e862'
+  }, {
+    _id: '5a6ce86f2af929789500e84b',
+    sr: 'Dobar kod je kratak, jednostavan i simetričan – izazov je da otkriješ kako stići dotle.',
+    en: 'Good code is short, simple, and symmetrical - the challenge is figuring out how to get there.',
+    author: 'Sean Parent',
+    source: '',
+    numberOfVotes: 7,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e84b'
+  }, {
+    _id: '5a6ce8702af929789500e868',
+    sr: 'Ako misliš da su tvoji korisnici idioti, samo će idioti to koristiti.',
+    en: 'If you think your users are idiots, only idiots will use it.',
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 10,
+    rating: 3.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e868'
+  }, {
+    _id: '5a6ce8702af929789500e872',
+    sr: 'Jednom kad prestanete da učite, počinjete da umirete.',
+    en: 'Once you stop learning you start dying.',
+    author: 'Albert Einstein',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e872'
+  }, {
+    _id: '5a6ce8702af929789500e884',
+    sr: 'Ni jedan kod nije brži od koda kog nema.',
+    en: 'No code is faster than no code.',
+    author: 'Kevlin Henney',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e884'
+  }, {
+    _id: '5a6ce8702af929789500e86c',
+    sr: 'Preko pola vremena koje provedeš radeći na projektu je razmišljanje, i nema alatke, ma koliko bila napredna, koja može razmišljati umesto tebe.',
+    en: 'Over half of the time you spend working on a project is spent thinking, and no tool, no matter how advanced, can think for you.',
+    author: 'Richard P. Gabriel',
+    source: '',
+    numberOfVotes: 3,
+    rating: 2.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e86c'
+  }, {
+    _id: '5a6ce8702af929789500e86e',
+    sr: 'Mnogo je poštenije reći greška nego buba (bag), jer nedvosmisleno stavlja krivicu tamo gde treba, na programera koji ju je napravio.',
+    en: 'We could, for instance, begin with cleaning up our language by no longer calling a bug a bug but by calling it an error. It is much more honest because it squarely puts the blame where it belongs, viz. with the programmer who made the error. The animistic metaphor of the bug that maliciously sneaked in while the programmer was not looking is intellectually dishonest as it disguises that the error is the programmer\'s own creation. The nice thing of this simple change of vocabulary is that it has such a profound effect: while, before, a program with only one bug used to be "almost correct", afterwards a program with an error is just "wrong".',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e86e'
+  }, {
+    _id: '5a6ce8702af929789500e88b',
+    sr: 'Jednom kada nova tehnologija počne da se valja, ako nisi deo valjka, onda si deo druma.',
+    en: 'Once a new technology starts rolling, if you’re not part of the steamroller, you’re part of the road.',
+    author: 'Stewart Brand',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e88b'
+  }, {
+    _id: '5a6ce8702af929789500e887',
+    sr: 'Složen sistem koji radi je bez izuzetka evoluirao od jednostavnog sistema koja je radio. Obrnuta tvrdnja takođe izgleda istinita: složen sistem projektovan od nule nikad ne radi i ne može biti napravljen da radi.',
+    en: 'A complex system that works is invariably found to have evolved from a simple system that worked. The inverse proposition also appears to be true: A complex system designed from scratch never works and cannot be made to work.',
+    author: 'John Gall (author)',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e887'
+  }, {
+    _id: '5a6ce8702af929789500e889',
+    sr: 'Najneverovatnije dostignuće računarske softverske industrije je kontinuirano poništavanje stalnih i neverovatnih doprinosa računarske hardverske industrije.',
+    en: 'The most amazing achievement of the computer software industry is its continuing cancellation of the steady and staggering gains made by the computer hardware industry.',
+    author: 'Henry Petroski',
+    source: '',
+    numberOfVotes: 1,
+    rating: 2.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e889'
+  }, {
+    _id: '5a6ce8702af929789500e88e',
+    sr: 'Nikad nisam zadovoljan dok ne kažem najviše moguće sa najmanje reči, a sažeto pisanje uzima mnogo više vremena nego pisanje nadugačko.',
+    en: 'I am never satisfied until I have said as much as possible in a few words, and writing briefly takes far more time than writing at length.',
+    author: 'Carl Friedrich Gauss',
+    source: null,
+    numberOfVotes: 4,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e88e'
+  }, {
+    _id: '5a6ce8702af929789500e890',
+    sr: 'Postoji samo dve vrste jezika: oni na koje se ljudi žale i oni koje niko ne koristi.',
+    en: 'There are only two kinds of languages: the ones people complain about and the ones nobody uses.',
+    author: 'Bjarne Stroustrup',
+    source: null,
+    numberOfVotes: 5,
+    rating: 4.4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e890'
+  }, {
+    _id: '5a6ce8702af929789500e892',
+    sr: 'Svrha softverskog razvoja je da kontroliše složenost, ne da je stvara.',
+    en: 'The purpose of software engineering is to control complexity, not to create it.',
+    author: 'Pamela Zave',
+    source: '',
+    numberOfVotes: 4,
+    rating: 3.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e892'
+  }, {
+    _id: '5a6ce8702af929789500e89a',
+    sr: 'Unix je jednostavan. Samo je potreban genij da razume njegovu jednostavnost.',
+    en: 'Unix is simple. It just takes a genius to understand its simplicity.',
+    author: 'Dennis Ritchie',
+    source: '',
+    numberOfVotes: 9,
+    rating: 3.2,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e89a'
+  }, {
+    _id: '5a6ce8702af929789500e89c',
+    sr: 'Jezik koji nema sve je zapravo lakši za programiranje u tome što ima.',
+    en: 'A language that doesn’t have everything is actually easier to program in than some that do.',
+    author: 'Dennis Ritchie',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e89c'
+  }, {
+    _id: '5a6ce8702af929789500e8a2',
+    sr: 'Ono što ne mogu napraviti, ne razumem.',
+    en: 'What I cannot build, I do not understand.',
+    author: 'Richard Feynman',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8a2'
+  }, {
+    _id: '5a6ce8702af929789500e8a6',
+    sr: 'Inteligentna budala može napraviti da stvari budu veće, složenije i više nasilne. Potreban je dodir genija, i mnogo hrabrosti, za pokret u suprotnom pravcu.',
+    en: 'Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius – and a lot of courage – to move in the opposite direction.',
+    author: 'Albert Einstein',
+    source: '',
+    numberOfVotes: 5,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8a6'
+  }, {
+    _id: '5a6ce8702af929789500e898',
+    sr: 'Ne postoji programski jezik, bez obzira koliko struktuiran, koji će sprečiti programere da prave loše programe.',
+    en: 'There is no programming language, no matter how structured, that will prevent programmers from making bad programs.',
+    author: 'Lawrence Flon',
+    source: 'Larry Flon (1975) "On research in structured programming". SIGPLAN Not., 10(10), pp.16–17',
+    numberOfVotes: 3,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e898'
+  }, {
+    _id: '5a6ce8702af929789500e8a8',
+    sr: 'Svaka budala može napisati kod koji računar razume. Dobri programeri pišu kod koji ljudi razumeju.',
+    en: 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
+    author: 'Martin Fowler',
+    source: 'Martin Fowler, Refactoring',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8a8'
+  }, {
+    _id: '5a6ce8702af929789500e894',
+    sr: 'Problem sa objektno orjentisanim jezicima je što oni imaju svo to implicitno okruženje koje nose sa sobom. Vi hoćete bananu ali ono što dobijate je gorila koji drži bananu sa sve džunglom.',
+    en: 'The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.',
+    author: 'Joe Armstrong (programmer)',
+    source: '',
+    numberOfVotes: 6,
+    rating: 2.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e894'
+  }, {
+    _id: '5a6ce8702af929789500e86a',
+    sr: 'Ne možeš verovati kodu koji nisi u potpunosti sam napisao.',
+    en: 'You can’t trust code that you did not totally create yourself.',
+    author: 'Ken Thompson',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e86a'
+  }, {
+    _id: '5a6ce8702af929789500e8a4',
+    sr: 'Pametni ljudi rešavaju probleme. Mudri ih izbegavaju.',
+    en: 'A clever person solves a problem. A wise person avoids it.',
+    author: 'Albert Einstein',
+    source: null,
+    numberOfVotes: 3,
+    rating: 4.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8a4'
+  }, {
+    _id: '5a6ce8702af929789500e8ac',
+    sr: 'Najvažniji pojedini aspekt razvoja softvera je biti načisto oko toga šta pokušavaš da napraviš.',
+    en: 'The most important single aspect of software development is to be clear about what you are trying to build.',
+    author: 'Bjarne Stroustrup',
+    source: '',
+    numberOfVotes: 2,
+    rating: 2.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8ac'
+  }, {
+    _id: '5a6ce8702af929789500e8aa',
+    sr: 'Jedini greh je napraviti izbor neznajući da si ga napravio.',
+    en: 'The only sin is to make a choice without knowing you are making one.',
+    author: 'Jonathan Shewchuk',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8aa'
+  }, {
+    _id: '5a6ce8702af929789500e8b0',
+    sr: 'Toliko složenosti u softveru dolazi iz pokušavanja da se napravi da jedna stvar radi dve stvari.',
+    en: 'So much complexity in software comes from trying to make one thing do two things.',
+    author: 'Ryan Singer',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8b0'
+  }, {
+    _id: '5a6ce8702af929789500e8b2',
+    sr: 'Hofštadter zakon: Uvek vam treba duže nego što ste očekivali, čak i kada se uzme u obzir Hofštadter zakon.',
+    en: "Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.",
+    author: 'P. J. Plauger',
+    source: '',
+    numberOfVotes: 3,
+    rating: 2.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8b2'
+  }, {
+    _id: '5a6ce8702af929789500e8b6',
+    sr: 'Prvo, reši problem. Onda, piši kod.',
+    en: 'First, solve the problem. Then, write the code.',
+    author: 'John Johnson',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8b6'
+  }, {
+    _id: '5a6ce8702af929789500e8b4',
+    sr: 'Dobar programer je neko ko uvek gleda levo-desno kada prelazi jednosmernu ulicu.',
+    en: 'A good programmer is someone who looks both ways before crossing a one-way street.',
+    author: 'Doug Linder',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8b4'
+  }, {
+    _id: '5a6ce8702af929789500e8b8',
+    sr: 'Kompatibilnost znači namerno ponavljati tuđe greške.',
+    en: 'Compatibility means deliberately repeating other people’s mistakes.',
+    author: 'David Wheeler (computer scientist)',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8b8'
+  }, {
+    _id: '5a6ce8702af929789500e8ba',
+    sr: 'Dva glavna proizvoda izašla iz Berklija su: LSD i UNIX. Ne verujemo da je to koincidencija.',
+    en: "There are two major products that come out of Berkeley: LSD and UNIX. We don't believe this to be a coincidence.",
+    author: 'Jeremy S. Anderson',
+    source: null,
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8ba'
+  }, {
+    _id: '5a6ce8702af929789500e8bc',
+    sr: 'Kompetentan programer je potpuno svestan strogo ograničene veličine svoje lobanje. On stoga prilazi svojim zadacima sa potpunom skromnošću, i izbegava lukave trikove kao kugu.',
+    en: 'The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague',
+    author: 'Edsger W. Dijkstra',
+    source: 'The Humble Programmer (1972)',
+    numberOfVotes: 3,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8bc'
+  }, {
+    _id: '5a6ce8702af929789500e8ae',
+    sr: 'Kada si u dvojbi, ostavi to.',
+    en: 'When in doubt, leave it out.',
+    author: 'Joshua Bloch',
+    source: '',
+    numberOfVotes: 5,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8ae'
+  }, {
+    _id: '5a6ce8702af929789500e8be',
+    sr: 'Ja, u stvari, tvrdim da je razlika između lošeg i dobrog programera u tome da li on smatra njegov kod ili strukture podataka važnijim. Loši programeri brinu o kodu. Dobri programeri brinu o strukturama podataka i njihovim odnosima.',
+    en: 'I will, in fact, claim that the difference between a bad programmer and a good one is whether he considers his code or his data structures more important. Bad programmers worry about the code. Good programmers worry about data structures and their relationships.',
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 6,
+    rating: 3.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8be'
+  }, {
+    _id: '5a6ce8702af929789500e8ce',
+    sr: 'Nikada ne pamti nešto što možeš pogledati.',
+    en: 'Never memorize something that you can look up.',
+    author: 'Albert Einstein',
+    source: '',
+    numberOfVotes: 10,
+    rating: 4.4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8ce'
+  }, {
+    _id: '5a6ce8702af929789500e8cc',
+    sr: 'Matematičari stoje jedni drugima na ramenima, a kompjuterski naučnici stoje jedni drugima na prstima.',
+    en: "Mathematicians stand on each others' shoulders and computer scientists stand on each others' toes.",
+    author: 'Richard Hamming',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8cc'
+  }, {
+    _id: '5a72399510263e0c45cb6cfa',
+    sr: 'LISP je pomogao brojnim najnadarenijim ljudima da misle prethodno nezamislive misli.',
+    en: 'LISP has assisted a number of our most gifted fellow humans in thinking previously impossible thoughts.',
+    author: 'Edsger W. Dijkstra',
+    source: 'The Humble Programmer (1972)',
+    numberOfVotes: 5,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a72399510263e0c45cb6cfa'
+  }, {
+    _id: '5a6ce8702af929789500e8c6',
+    sr: 'Organizacija koja tretira svoje programere kao morone će uskoro imati programere koji su voljni i kadri da se ponašaju jedino kao moroni.',
+    en: 'An organisation that treats its programmers as morons will soon have programmers that are willing and able to act like morons only.',
+    author: 'Bjarne Stroustrup',
+    source: '',
+    numberOfVotes: 1,
+    rating: 2.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8c6'
+  }, {
+    _id: '5a82224c89919d0004b357ce',
+    sr: 'Dugme radi, samo se ne vidi.',
+    en: 'The button is working, only, it cannot be seen.',
+    author: 'Anonymous',
+    source: null,
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a82224c89919d0004b357ce'
+  }, {
+    _id: '5a8225ee89919d0004b357d0',
+    sr: '',
+    en: "Don't worry about anything. Just do what you can and be the best you can be.",
+    author: 'Douglas Crockford',
+    source: null,
+    numberOfVotes: 3,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a8225ee89919d0004b357d0'
+  }, {
+    _id: '5a82b607fc716e0004373f53',
+    sr: '',
+    en: "The business of software building isn't really high-tech at all. It's most of all a business of talking to each other and writing things down.",
+    author: 'Tom DeMarco',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a82b607fc716e0004373f53'
+  }, {
+    _id: '5a6ce8702af929789500e8ca',
+    sr: 'U programiranju težak deo nije rešavanje problema, već odluka koje probleme rešiti.',
+    en: 'In programming the hard part isn’t solving problems, but deciding what problems to solve.',
+    author: 'Paul Graham (programmer)',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8ca'
+  }, {
+    _id: '5a82cd0efc716e0004373f56',
+    sr: '',
+    en: "The manager's function is not to make people work, but to make it possible for people to work.",
+    author: 'Tom DeMarco',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a82cd0efc716e0004373f56'
+  }, {
+    _id: '5a82c90cfc716e0004373f55',
+    sr: '',
+    en: 'People under pressure don’t work better; they just work faster.',
+    author: 'Tom DeMarco',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a82c90cfc716e0004373f55'
+  }, {
+    _id: '5a8946eda578110004299a3b',
+    sr: '',
+    en: 'My main conclusion after spending ten years of my life working on the TEX project is that software is hard. It’s harder than anything else I’ve ever had to do.',
+    author: 'Donald Knuth',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a8946eda578110004299a3b'
+  }, {
+    _id: '5a82cd5ffc716e0004373f57',
+    sr: '',
+    en: 'Science is what we understand well enough to explain to a computer. Art is everything else we do.',
+    author: 'Donald Knuth',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a82cd5ffc716e0004373f57'
+  }, {
+    _id: '5a896544a12a0e0004c76124',
+    sr: '',
+    en: 'We have seen that computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty.',
+    author: 'Donald Knuth',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a896544a12a0e0004c76124'
+  }, {
+    _id: '5a82cd91fc716e0004373f58',
+    sr: '',
+    en: 'Email is a wonderful thing for people whose role in life is to be on top of things. But not for me; my role is to be on the bottom of things. What I do takes long hours of studying and uninterruptible concentration.',
+    author: 'Donald Knuth',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a82cd91fc716e0004373f58'
+  }, {
+    _id: '5a8e9b5884a8f2000482568b',
+    sr: 'Manje koda jednako manje bagova.',
+    en: 'Less code equals less bugs.',
+    author: 'Kevlin Henney',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a8e9b5884a8f2000482568b'
+  }, {
+    _id: '5a91370b2141d30004b42e58',
+    sr: '',
+    en: 'As soon as an Analytical Engine exists, it will necessarily guide the future course of science.',
+    author: 'Charles Babbage',
+    source: 'Passages from the Life of a Philosopher',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91370b2141d30004b42e58'
+  }, {
+    _id: '5a9137d72141d30004b42e59',
+    sr: '',
+    en: 'The errors which arise from the absence of facts are far more numerous and more durable than those which result from unsound reasoning respecting true data.',
+    author: 'Charles Babbage',
+    source: 'On the Economy of Machinery and Manufactures, 1832/1841',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9137d72141d30004b42e59'
+  }, {
+    _id: '5a9138442141d30004b42e5a',
+    sr: '',
+    en: 'We have already mentioned what may, perhaps, appear paradoxical to some of our readers, — that the division of labour can be applied with equal success to mental as to mechanical operations, and that it ensures in both the same economy of time.',
+    author: 'Charles Babbage',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9138442141d30004b42e5a'
+  }, {
+    _id: '5a9139472141d30004b42e5b',
+    sr: '',
+    en: 'On two occasions I have been asked [by members of Parliament]: "Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?" I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.',
+    author: 'Charles Babbage',
+    source: 'Passages from the Life of a Philosopher (1864)',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9139472141d30004b42e5b'
+  }, {
+    _id: '5a91be60346ab3000418a760',
+    sr: 'Dok nije bilo mašina, programiranje uopšte nije bilo problem; kada smo imali par slabih računara, programiranje je postalo blag problem, a sada kada imamo gigantske računare, programiranje je postalo jednako gigantski problem.',
+    en: 'As long as there were no machines, programming was no problem at all; when we had a few weak computers, programming became a mild problem, and now we have gigantic computers, programming has become an equally gigantic problem.',
+    author: 'Edsger W. Dijkstra',
+    source: 'The Humble Programmer (1972)',
+    numberOfVotes: 2,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91be60346ab3000418a760'
+  }, {
+    _id: '5a91e12fc4240c0004265950',
+    sr: '',
+    en: 'The use of COBOL cripples the mind; its teaching should, therefore, be regarded as a criminal offense.',
+    author: 'Edsger W. Dijkstra',
+    source: 'How do we tell truths that might hurt? (1975)',
+    numberOfVotes: 1,
+    rating: 1,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e12fc4240c0004265950'
+  }, {
+    _id: '5a91d1c1c4240c000426594f',
+    sr: 'Ako želite učinkovitije programere, oni ne bi trebali traćiti svoje vreme na debagovanje, oni ne bi trebali uvoditi bagove za početak.',
+    en: 'If you want more effective programmers, you will discover that they should not waste their time debugging, they should not introduce the bugs to start with.',
+    author: 'Edsger W. Dijkstra',
+    source: 'The Humble Programmer (1972)',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91d1c1c4240c000426594f'
+  }, {
+    _id: '5a91e150c4240c0004265951',
+    sr: '',
+    en: 'It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration.',
+    author: 'Edsger W. Dijkstra',
+    source: 'How do we tell truths that might hurt? (1975)',
+    numberOfVotes: 1,
+    rating: 2,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e150c4240c0004265951'
+  }, {
+    _id: '5a91e27ec4240c0004265953',
+    sr: 'Slika možda vredi hiljadu reči, formula vredi hiljadu slika.',
+    en: 'A picture may be worth a thousand words, a formula is worth a thousand pictures.',
+    author: 'Edsger W. Dijkstra',
+    source: 'Dijkstra (EWD1239: A first exploration of effective reasoning)',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e27ec4240c0004265953'
+  }, {
+    _id: '5a91e224c4240c0004265952',
+    sr: 'Ako za 10 godina, kada budete radili nešto brzo i prljavo, odjednom zamislite da vas gledam preko ramena i kažete sebi "Dajkstri se ovo ne bi svidelo", biće to dovoljno besmrtnosti za mene.',
+    en: 'I mean, if 10 years from now, when you are doing something quick and dirty, you suddenly visualize that I am looking over your shoulders and say to yourself "Dijkstra would not have liked this", well, that would be enough immortality for me.',
+    author: 'Edsger W. Dijkstra',
+    source: 'Dijkstra (1995) "Introducing a course on calculi"',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e224c4240c0004265952'
+  }, {
+    _id: '5a91bc8f346ab3000418a75f',
+    sr: 'Ne krivite mene za činjenicu da će kompetentno programiranje biti preteško za "prosečnog programera" - ne smete pasti u zamku odbacivanja hirurške tehnike zato što prevazilazi mogućnosti berberina iza ugla.',
+    en: 'Don\'t blame me for the fact that competent programming will be too difficult for "the average programmer" — you must not fall into the trap of rejecting a surgical technique because it is beyond the capabilities of the barber in his shop around the corner.',
+    author: 'Edsger W. Dijkstra',
+    source: 'Dijkstra (1975) Comments at a Symposium (EWD 512)',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91bc8f346ab3000418a75f'
+  }, {
+    _id: '5a91e37bc4240c0004265955',
+    sr: 'Mladiću, u matematici ti ne razumeš stvari. Prosto se navikneš na njih.',
+    en: "Young man, in mathematics you don't understand things. You just get used to them.",
+    author: 'John von Neumann',
+    source: '',
+    numberOfVotes: 5,
+    rating: 2.4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e37bc4240c0004265955'
+  }, {
+    _id: '5a91e40ec4240c0004265957',
+    sr: 'C je čudan, manjkav i ogromno uspešan.',
+    en: 'C is quirky, flawed, and an enormous success.',
+    author: 'Dennis Ritchie',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e40ec4240c0004265957'
+  }, {
+    _id: '5a91e2d0c4240c0004265954',
+    sr: 'Nije zadatak Univerziteta da pruža ono što društvo traži, već da daje ono što društvu treba.',
+    en: 'It is not the task of the University to offer what society asks for, but to give what society needs.',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e2d0c4240c0004265954'
+  }, {
+    _id: '5a895d1ba5f8bf3df4485d1d',
+    sr: 'Razumevajući mašinski-orjentisan jezik, programer će težiti da koristi mnogo efikasnije metode; to je mnogo bliže realnosti.',
+    en: 'By understanding a machine-oriented language, the programmer will tend to use a much more efficient method; it is much closer to reality.',
+    author: 'Donald Knuth',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a895d1ba5f8bf3df4485d1d'
+  }, {
+    _id: '5a91e459c4240c0004265958',
+    sr: '',
+    en: 'Another danger is that commercial pressures of one sort or another will divert the attention of the best thinkers from real innovation to exploitation of the current fad, from prospecting to mining a known lode.',
+    author: 'Dennis Ritchie',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e459c4240c0004265958'
+  }, {
+    _id: '5a91e51dc4240c0004265959',
+    sr: '',
+    en: 'Within C++, there is a much smaller and cleaner language struggling to get out.',
+    author: 'Bjarne Stroustrup',
+    source: '',
+    numberOfVotes: 0,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e51dc4240c0004265959'
+  }, {
+    _id: '5a91e560c4240c000426595a',
+    sr: 'Ko god vam kaže da ima savršen jezik ili je naivan ili prodavac.',
+    en: 'Anybody who comes to you and says he has a perfect language is either naïve or a salesman.',
+    author: 'Bjarne Stroustrup',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e560c4240c000426595a'
+  }, {
+    _id: '5a91e60dc4240c000426595b',
+    sr: 'Čovek snabdeven papirom, olovkom i gumicom, i podvrgnut strogoj disciplini, u stvari je univerzalna mašina.',
+    en: 'A man provided with paper, pencil, and rubber, and subject to strict discipline, is in effect a universal machine.',
+    author: 'Alan Turing',
+    source: '',
+    numberOfVotes: 5,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e60dc4240c000426595b'
+  }, {
+    _id: '5a91e6a3c4240c000426595c',
+    sr: '',
+    en: 'The idea behind digital computers may be explained by saying that these machines are intended to carry out any operations which could be done by a human computer.',
+    author: 'Alan Turing',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e6a3c4240c000426595c'
+  }, {
+    _id: '5a91e779c4240c000426595d',
+    sr: 'Mašine me iznenađuju veoma učestalo.',
+    en: 'Machines take me by surprise with great frequency.',
+    author: 'Alan Turing',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e779c4240c000426595d'
+  }, {
+    _id: '5a933b4c8e7b510004cba4be',
+    sr: 'Možda "samo jedna mala globalna varijabla" i nije toliko neprihvatljiva, ali taj stil vodi kodu koji je beskoristan svima osim svom izvornom programeru.',
+    en: 'Maybe "just one little global variable" isn\'t too unmanageable, but that style leads to code that is useless except to its original programmer.',
+    author: 'Bjarne Stroustrup',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a933b4c8e7b510004cba4be'
+  }, {
+    _id: '5a933c3d8e7b510004cba4bf',
+    sr: 'Pravim slobodan operativni sistem (samo hobi, neće biti velik i profesionalan kao GNU).',
+    en: "I'm doing a free operating system (just a hobby, won't be big and professional like GNU).",
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a933c3d8e7b510004cba4bf'
+  }, {
+    _id: '5a933cac8e7b510004cba4c0',
+    sr: 'Ako ti treba više od 3 nivoa uvlačenja, zeznuo si svakako, treba da popraviš program.',
+    en: "If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program.",
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a933cac8e7b510004cba4c0'
+  }, {
+    _id: '5a933f078e7b510004cba4c1',
+    sr: 'Neograničen broj majmuna kucajući na GNU Emacs-u neće nikad napraviti dobar program.',
+    en: 'An infinite number of monkeys typing into GNU Emacs would never make a good program.',
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a933f078e7b510004cba4c1'
+  }, {
+    _id: '5a9340258e7b510004cba4c3',
+    sr: 'Ako Microsoft ikad napravi aplikaciju za Linuks to znači da sam pobedio.',
+    en: "If Microsoft ever does applications for Linux it means I've won.",
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9340258e7b510004cba4c3'
+  }, {
+    _id: '5a933f6f8e7b510004cba4c2',
+    sr: 'Vidi, ne trebaš biti samo dobar koder da bi napravio sistem kao Linux, trebaš biti lukavo kopile takođe ;-)',
+    en: 'See, you not only have to be a good coder to create a system like Linux, you have to be a sneaky bastard too ;-)',
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a933f6f8e7b510004cba4c2'
+  }, {
+    _id: '5a9342048e7b510004cba4c6',
+    sr: 'Zaista, ja ne idem za tim da uništim Majkrosoft. To će biti potpuno nenameran sporedni efekat.',
+    en: "Really, I'm not out to destroy Microsoft. That will just be a completely unintentional side effect.",
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9342048e7b510004cba4c6'
+  }, {
+    _id: '5a9341788e7b510004cba4c5',
+    sr: 'Pričanje je jeftino. Pokaži mi kod.',
+    en: 'Talk is cheap. Show me the code.',
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9341788e7b510004cba4c5'
+  }, {
+    _id: '5a9340e08e7b510004cba4c4',
+    sr: 'Prvih 90 posto koda računa se za prvih 90 posto vremena razvoja. Preostalih 10 posto koda računa se za drugih 90 posto vremena razvoja.',
+    en: 'The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.',
+    author: 'Tom Cargill',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9340e08e7b510004cba4c4'
+  }, {
+    _id: '5a93467e8e7b510004cba4c8',
+    sr: 'Ja nisam odličan programer; ja sam samo dobar programer sa odličnim navikama.',
+    en: "I'm not a great programmer; I'm just a good programmer with great habits.",
+    author: 'Kent Beck',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93467e8e7b510004cba4c8'
+  }, {
+    _id: '5a9348828e7b510004cba4c9',
+    sr: 'Ima samo jedan trik u softveru, a to je koristiti deo softvera koji je već napisan.',
+    en: "There's only one trick in software, and that is using a piece of software that's already been written.",
+    author: 'Bill Gates',
+    source: '',
+    numberOfVotes: 1,
+    rating: 2.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9348828e7b510004cba4c9'
+  }, {
+    _id: '5a93d5a36a584e0004a4a612',
+    sr: '',
+    en: "You can't just ask customers what they want and then try to give that to them. By the time you get it built, they'll want something new.",
+    author: 'Steve Jobs',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93d5a36a584e0004a4a612'
+  }, {
+    _id: '5a93d6b26a584e0004a4a614',
+    sr: '',
+    en: "What a computer is to me is it's the most remarkable tool that we have ever come up with. It's the equivalent of a bicycle for our minds.",
+    author: 'Steve Jobs',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93d6b26a584e0004a4a614'
+  }, {
+    _id: '5a93eb796a584e0004a4a617',
+    sr: '',
+    en: 'Programming, it turns out, is hard. The fundamental rules are typically simple and clear. But programs built on top of these rules tend to become complex enough to introduce their own rules and complexity. You’re building your own maze, in a way, and you might just get lost in it.',
+    author: 'Marijn Haverbeke',
+    source: 'Eloquent JavaScript',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93eb796a584e0004a4a617'
+  }, {
+    _id: '5a93d8036a584e0004a4a615',
+    sr: '',
+    en: "I'm convinced that about half of what separates the successful entrepreneurs from the non-successful ones is pure perseverance. It is so hard.",
+    author: 'Steve Jobs',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93d8036a584e0004a4a615'
+  }, {
+    _id: '5a93da0d6a584e0004a4a616',
+    sr: '',
+    en: 'A lot of companies hire people to tell them what to do. We hire people to tell us what to do.',
+    author: 'Steve Jobs',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93da0d6a584e0004a4a616'
+  }, {
+    _id: '5a93ebdc6a584e0004a4a618',
+    sr: '',
+    en: 'Computers themselves can do only stupidly straightforward things. The reason they are so useful is that they do these things at an incredibly high speed.',
+    author: 'Marijn Haverbeke',
+    source: 'Eloquent JavaScript',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93ebdc6a584e0004a4a618'
+  }, {
+    _id: '5a93ed3d6a584e0004a4a619',
+    sr: '',
+    en: 'A program is a building of thought. It is costless to build, it is weightless, and it grows easily under our typing hands. But without care, a program’s size and complexity will grow out of control, confusing even the person who created it.',
+    author: 'Marijn Haverbeke',
+    source: 'Eloquent JavaScript',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93ed3d6a584e0004a4a619'
+  }, {
+    _id: '5a93edc56a584e0004a4a61a',
+    sr: '',
+    en: 'There are many terrible mistakes to make in program design, so go ahead and make them so that you understand them better.',
+    author: 'Marijn Haverbeke',
+    source: 'Eloquent JavaScript',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93edc56a584e0004a4a61a'
+  }, {
+    _id: '5a93fd14e49ad10004edb860',
+    sr: '',
+    en: 'People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones.',
+    author: 'Donald Knuth',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93fd14e49ad10004edb860'
+  }, {
+    _id: '5a94040fe49ad10004edb862',
+    sr: '',
+    en: "Professionalism has no place in art, and hacking is art. Software Engineering might be science; but that's not what I do. I'm a hacker, not an engineer.",
+    author: 'Jamie Zawinski',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a94040fe49ad10004edb862'
+  }, {
+    _id: '5a940c14e49ad10004edb864',
+    sr: '',
+    en: 'We who cut mere stones must always be envisioning cathedrals.',
+    author: "Quarry worker's creed",
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a940c14e49ad10004edb864'
+  }, {
+    _id: '5a9405d7e49ad10004edb863',
+    sr: '',
+    en: 'Communication must be stateless in nature, such that each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any stored context on the server.',
+    author: 'Roy Fielding',
+    source: 'Architectural Styles and the Design of Network-based Software Architectures',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9405d7e49ad10004edb863'
+  }, {
+    _id: '5a942ea0ee7ed5000496b16f',
+    sr: 'Kada osetiš potrebu da dodaš komentar, prvo pokušaj refaktorisati kod da dodavanje komentara postane suvišno.',
+    en: 'When you feel the need to write a comment, first try to refactor the code so that any comment becomes superfluous.',
+    author: 'Kent Beck',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a942ea0ee7ed5000496b16f'
+  }, {
+    _id: '5a942dc4ee7ed5000496b16e',
+    sr: 'Kada treba da dodaš mogućnost programu, a kod nije struktuiran tako da na pogodan način dodaš mogućnost, prvo refaktoriši program da učiniš dodavanje mogućnosti lakšim, zatim dodaj mogućnost.',
+    en: "When you find you have to add a feature to a program, and the program's code is not structured in a convenient way to add the feature, first refactor the program to make it easy to add the feature, then add the feature.",
+    author: 'Kent Beck',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a942dc4ee7ed5000496b16e'
+  }, {
+    _id: '5a942fc3ee7ed5000496b171',
+    sr: '',
+    en: "There are few things more frustrating or time wasting than debugging. Wouldn't it be a hell of a lot quicker if we just didn't create the bugs in the first place?",
+    author: 'Martin Fowler',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a942fc3ee7ed5000496b171'
+  }, {
+    _id: '5a942fa3ee7ed5000496b170',
+    sr: 'Sa testovima, odmah znam kada sam dodao bag. To mi dopušta da odmah popravim bag, pre nego što otpuže i sakrije se.',
+    en: 'With testing, I know straight away when I added a bug. That lets me fix the bug immediately, before it can crawl off and hide.',
+    author: 'Martin Fowler',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a942fa3ee7ed5000496b170'
+  }, {
+    _id: '5a942fd8ee7ed5000496b172',
+    sr: '',
+    en: 'I think one of the most valuable rules is avoid duplication.',
+    author: 'Martin Fowler',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a942fd8ee7ed5000496b172'
+  }, {
+    _id: '5a942ffbee7ed5000496b173',
+    sr: '',
+    en: 'Often designers do complicated things that improve the capacity on a particular hardware platform when it might actually be cheaper to buy more hardware.',
+    author: 'Martin Fowler',
+    source: '',
+    numberOfVotes: 2,
+    rating: 2.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a942ffbee7ed5000496b173'
+  }, {
+    _id: '5a9430a4ee7ed5000496b175',
+    sr: '',
+    en: 'The situation is so much better for programmers today - a cheap used PC, a linux CD, and an internet account, and you have all the tools necessary to work your way to any level of programming skill you want to shoot for.',
+    author: 'John Carmack',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9430a4ee7ed5000496b175'
+  }, {
+    _id: '5a94303bee7ed5000496b174',
+    sr: '',
+    en: "If you want to set off and go develop some grand new thing, you don't need millions of dollars of capitalization. You need enough pizza and Diet Coke to stick in your refrigerator, a cheap PC to work on, and the dedication to go through with it.",
+    author: 'John Carmack',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a94303bee7ed5000496b174'
+  }, {
+    _id: '5a9430ceee7ed5000496b176',
+    sr: '',
+    en: "Story in a game is like a story in a porn movie. It's expected to be there, but it's not that important.",
+    author: 'John Carmack',
+    source: '',
+    numberOfVotes: 6,
+    rating: 3.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9430ceee7ed5000496b176'
+  }, {
+    _id: '5a9430fbee7ed5000496b177',
+    sr: '',
+    en: "The best thing software can be is easy, but the way to do this is to get the defaults right, not to limit users' choices.",
+    author: 'Paul Graham (programmer)',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9430fbee7ed5000496b177'
+  }, {
+    _id: '5a943207ee7ed5000496b178',
+    sr: '',
+    en: 'The most important thing is to be able to think what you want, not to say what you want.',
+    author: 'Paul Graham (programmer)',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943207ee7ed5000496b178'
+  }, {
+    _id: '5a943233ee7ed5000496b17a',
+    sr: '',
+    en: "It's not so important what you work on, so long as you're not wasting your time.",
+    author: 'Paul Graham (programmer)',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943233ee7ed5000496b17a'
+  }, {
+    _id: '5a943216ee7ed5000496b179',
+    sr: '',
+    en: 'The top 5% of programmers probably write 99% of the good software.',
+    author: 'Paul Graham (programmer)',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943216ee7ed5000496b179'
+  }, {
+    _id: '5a943244ee7ed5000496b17b',
+    sr: '',
+    en: 'There are few sources of energy so powerful as a procrastinating grad student.',
+    author: 'Paul Graham (programmer)',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943244ee7ed5000496b17b'
+  }, {
+    _id: '5a943267ee7ed5000496b17d',
+    sr: '',
+    en: 'Your most unhappy customers are your greatest source of learning.',
+    author: 'Bill Gates',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943267ee7ed5000496b17d'
+  }, {
+    _id: '5a9432a9ee7ed5000496b17e',
+    sr: '',
+    en: "We're no longer in the days where everything is super well crafted. But at the heart of the programs that make it to the top, you'll find that the key internal code was done by a few people who really know what they were doing.",
+    author: 'Bill Gates',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.2,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9432a9ee7ed5000496b17e'
+  }, {
+    _id: '5a943301ee7ed5000496b181',
+    sr: '',
+    en: 'What is simplicity? Simplicity is the shortest path to a solution.',
+    author: 'Ward Cunningham',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943301ee7ed5000496b181'
+  }, {
+    _id: '5a943316ee7ed5000496b182',
+    sr: '',
+    en: 'Putting a new feature into a program is important, but refactoring so new features can be added in the future is equally important.',
+    author: 'Ward Cunningham',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943316ee7ed5000496b182'
+  }, {
+    _id: '5a94333dee7ed5000496b183',
+    sr: '',
+    en: 'A new idea comes suddenly and in a rather intuitive way. But intuition is nothing but the outcome of earlier intellectual experience.',
+    author: 'Albert Einstein',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a94333dee7ed5000496b183'
+  }, {
+    _id: '5a9433d2ee7ed5000496b184',
+    sr: 'Granice mog jezika znače granice moga sveta.',
+    en: 'The limits of my language mean the limits of my world.',
+    author: 'Ludwig Wittgenstein',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9433d2ee7ed5000496b184'
+  }, {
+    _id: '5a9434dcee7ed5000496b187',
+    sr: 'Ako imate proceduru sa 10 parametara, verovatno ste propustili neke.',
+    en: 'If you have a procedure with 10 parameters, you probably missed some.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9434dcee7ed5000496b187'
+  }, {
+    _id: '5a943438ee7ed5000496b185',
+    sr: '',
+    en: 'That language is an instrument of human reason, and not merely a medium for the expression of thought, is a truth generally admitted.',
+    author: 'George Boole',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943438ee7ed5000496b185'
+  }, {
+    _id: '5a9434edee7ed5000496b188',
+    sr: '',
+    en: "A language that doesn't affect the way you think about programming, is not worth knowing.",
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9434edee7ed5000496b188'
+  }, {
+    _id: '5a943501ee7ed5000496b189',
+    sr: '',
+    en: 'Simplicity does not precede complexity, but follows it.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 4,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943501ee7ed5000496b189'
+  }, {
+    _id: '5a943514ee7ed5000496b18a',
+    sr: '',
+    en: 'A year spent in artificial intelligence is enough to make one believe in God.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 3,
+    rating: 2.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943514ee7ed5000496b18a'
+  }, {
+    _id: '5a943538ee7ed5000496b18c',
+    sr: '',
+    en: "The best book on programming for the layman is Alice in Wonderland, but that's because it's the best book on anything for the layman.",
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943538ee7ed5000496b18c'
+  }, {
+    _id: '5a94351fee7ed5000496b18b',
+    sr: '',
+    en: 'Dealing with failure is easy: Work hard to improve.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a94351fee7ed5000496b18b'
+  }, {
+    _id: '5a943485ee7ed5000496b186',
+    sr: 'Programski jezik je niskog nivoa kada njegovi programi zahtevaju pažnju za irelevantno.',
+    en: 'A programming language is low level when its programs require attention to the irrelevant.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943485ee7ed5000496b186'
+  }, {
+    _id: '5a9435d7ee7ed5000496b190',
+    sr: '',
+    en: 'Computer programs are the most intricate, delicately balanced and finely interwoven of all the products of human industry to date.',
+    author: 'James Gleick',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9435d7ee7ed5000496b190'
+  }, {
+    _id: '5a9435fbee7ed5000496b191',
+    sr: '',
+    en: 'The effective exploitation of his powers of abstraction must be regarded as one of the most vital activities of a competent programmer.',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9435fbee7ed5000496b191'
+  }, {
+    _id: '5a943579ee7ed5000496b18e',
+    sr: 'Budale ignorišu složenost. Pragmatičari je trpe. Neki je mogu izbeći. Geniji je uklanjaju.',
+    en: 'Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943579ee7ed5000496b18e'
+  }, {
+    _id: '5a943675ee7ed5000496b193',
+    sr: '',
+    en: 'Programs must be written for people to read, and only incidentally for machines to execute.',
+    author: 'Hal Abelson',
+    source: 'Abelson & Sussman, "Structure and Interpretation of Computer Programs"',
+    numberOfVotes: 3,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943675ee7ed5000496b193'
+  }, {
+    _id: '5a943612ee7ed5000496b192',
+    sr: '',
+    en: 'No matter how slick the demo is in rehearsal, when you do it in front of a live audience, the probability of a flawless presentation is inversely proportional to the number of people watching, raised to the power of the amount of money involved.',
+    author: 'Mark Gibbs',
+    source: 'https://www.networkworld.com/article/2317159/computers/the-myth-of-the-digital-lifestyle.html',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943612ee7ed5000496b192'
+  }, {
+    _id: '5a956c50e648470004c69e0d',
+    sr: '',
+    en: 'It should be noted that no ethically-trained software engineer would ever consent to write a DestroyBaghdad procedure. Basic professional ethics would instead require him to write a DestroyCity procedure, to which Baghdad could be given as a parameter.',
+    author: 'Nathaniel Borenstein',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a956c50e648470004c69e0d'
+  }, {
+    _id: '5a956e55e648470004c69e10',
+    sr: '',
+    en: 'When we don’t understand a process, we fall into magical thinking about results.',
+    author: 'Jef Raskin',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a956e55e648470004c69e10'
+  }, {
+    _id: '5a956de5e648470004c69e0f',
+    sr: '',
+    en: 'Low-level programming is good for the programmer’s soul.',
+    author: 'John Carmack',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a956de5e648470004c69e0f'
+  }, {
+    _id: '5a956edfe648470004c69e11',
+    sr: '',
+    en: 'Simplicity and elegance are unpopular because they require hard work and discipline to achieve and education to be appreciated.',
+    author: 'Edsger W. Dijkstra',
+    source: 'https://www.cs.utexas.edu/users/EWD/transcriptions/EWD12xx/EWD1243a.html',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a956edfe648470004c69e11'
+  }, {
+    _id: '5a956f87e648470004c69e12',
+    sr: '',
+    en: 'A user interface should be so simple that a beginner in an emergency can understand it within 10 seconds.',
+    author: 'Ted Nelson',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a956f87e648470004c69e12'
+  }, {
+    _id: '5a956dcce648470004c69e0e',
+    sr: '',
+    en: 'Learning to program has no more to do with designing interactive software than learning to touch type has to do with writing poetry.',
+    author: 'Ted Nelson',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a956dcce648470004c69e0e'
+  }, {
+    _id: '5a95a672cb1a4d0004b2987f',
+    sr: '',
+    en: "Every program has (at least) two purposes: the one for which it was written and another for which it wasn't.",
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95a672cb1a4d0004b2987f'
+  }, {
+    _id: '5a95a6a3cb1a4d0004b29881',
+    sr: '',
+    en: "In man-machine symbiosis, it is man who must adjust: The machines can't.",
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95a6a3cb1a4d0004b29881'
+  }, {
+    _id: '5a95a686cb1a4d0004b29880',
+    sr: '',
+    en: "One man's constant is another man's variable.",
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95a686cb1a4d0004b29880'
+  }, {
+    _id: '5a9432bcee7ed5000496b17f',
+    sr: '',
+    en: "Success is a lousy teacher. It seduces smart people into thinking they can't lose.",
+    author: 'Bill Gates',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9432bcee7ed5000496b17f'
+  }, {
+    _id: '5a95a760cb1a4d0004b29883',
+    sr: '',
+    en: 'It is easier to change the specification to fit the program than vice versa.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95a760cb1a4d0004b29883'
+  }, {
+    _id: '5a95a6f3cb1a4d0004b29882',
+    sr: '',
+    en: 'I think it is inevitable that people program poorly. Training will not substantially help matters. We have to learn to live with it.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.1,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95a6f3cb1a4d0004b29882'
+  }, {
+    _id: '5a95d22e7700780004d51dbb',
+    sr: '',
+    en: 'If we’d asked the customers what they wanted, they would have said “faster horses”.',
+    author: 'Henry Ford',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d22e7700780004d51dbb'
+  }, {
+    _id: '5a95d2487700780004d51dbc',
+    sr: '',
+    en: 'I have found that the reason a lot of people are interested in artificial intelligence is the same reason a lot of people are interested in artificial limbs: they are missing one.',
+    author: 'David Parnas',
+    source: '',
+    numberOfVotes: 1,
+    rating: 2.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d2487700780004d51dbc'
+  }, {
+    _id: '5a95d2a57700780004d51dbd',
+    sr: '',
+    en: 'A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable.',
+    author: 'Leslie Lamport',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d2a57700780004d51dbd'
+  }, {
+    _id: '5a95d3a37700780004d51dbe',
+    sr: '',
+    en: 'It’s all talk until the code runs.',
+    author: 'Ward Cunningham',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d3a37700780004d51dbe'
+  }, {
+    _id: '5a95d4127700780004d51dbf',
+    sr: '',
+    en: 'In theory, there is no difference between theory and practice. But, in practice, there is.',
+    author: 'Jan L. A. van de Snepscheut',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d4127700780004d51dbf'
+  }, {
+    _id: '5a95d4977700780004d51dc2',
+    sr: 'Gradimo naše računarske sisteme kao što gradimo naše gradove: tokom vremena, bez plana, na vrhu ruševina.',
+    en: 'We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.',
+    author: 'Ellen Ullman',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d4977700780004d51dc2'
+  }, {
+    _id: '5a95d55e7700780004d51dc3',
+    sr: '',
+    en: 'The next best thing to having good ideas is recognizing good ideas from your users.',
+    author: 'Eric S. Raymond',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d55e7700780004d51dc3'
+  }, {
+    _id: '5a95d43e7700780004d51dc0',
+    sr: '',
+    en: 'Good software, like good wine, takes time.',
+    author: 'Joel Spolsky',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d43e7700780004d51dc0'
+  }, {
+    _id: '5a95d5bf7700780004d51dc4',
+    sr: '',
+    en: 'Lisp is worth learning for the profound enlightenment experience you will have when you finally get it; that experience will make you a better programmer for the rest of your days, even if you never actually use Lisp itself a lot.',
+    author: 'Eric S. Raymond',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d5bf7700780004d51dc4'
+  }, {
+    _id: '5a95d4577700780004d51dc1',
+    sr: '',
+    en: 'Debugging is like being the detective in a crime movie where you are also the murderer.',
+    author: 'Filipe Fortes',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d4577700780004d51dc1'
+  }, {
+    _id: '5a95d8a87700780004d51dc7',
+    sr: '',
+    en: 'What we wanted to preserve was not just a good environment in which to do programming, but a system around which fellowship could form.',
+    author: 'Dennis Ritchie',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d8a87700780004d51dc7'
+  }, {
+    _id: '5a95d7b47700780004d51dc6',
+    sr: '',
+    en: 'Once the computers got control, we might never get it back.',
+    author: 'Marvin Minsky',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d7b47700780004d51dc6'
+  }, {
+    _id: '5a95e89f7700780004d51dc9',
+    sr: '',
+    en: 'A computer shall not waste your time or require you to do more work than is strictly necessary.',
+    author: 'Jef Raskin',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95e89f7700780004d51dc9'
+  }, {
+    _id: '5a95fcd17700780004d51dcb',
+    sr: '',
+    en: 'Of the many forms of false culture, a premature converse with abstractions is perhaps the most likely to prove fatal to the growth of a masculine vigour of intellect.',
+    author: 'George Boole',
+    source: '',
+    numberOfVotes: 8,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95fcd17700780004d51dcb'
+  }, {
+    _id: '5a95dae97700780004d51dc8',
+    sr: '',
+    en: "C++ certainly has its good points. But by and large I think it's a bad language. It does a lot of things half well and it’s just a garbage heap of ideas that are mutually exclusive. It’s way too big, way too complex. And it’s obviously built by a committee.",
+    author: 'Ken Thompson',
+    source: 'Ken Thompson; cited in Seibel, Peter (2009). Coders At Work. p. 475.',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95dae97700780004d51dc8'
+  }, {
+    _id: '5a95fce07700780004d51dcc',
+    sr: '',
+    en: 'No matter how correct a mathematical theorem may appear to be, one ought never to be satisfied that there was not something imperfect about it until it also gives the impression of being beautiful.',
+    author: 'George Boole',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95fce07700780004d51dcc'
+  }, {
+    _id: '5a96009b7700780004d51dcf',
+    sr: '',
+    en: "The Analytical Engine does not occupy common ground with mere 'calculating machines.' It holds a position wholly its own, and the considerations it suggests are more interesting in their nature.",
+    author: 'Ada Lovelace',
+    source: '',
+    numberOfVotes: 5,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96009b7700780004d51dcf'
+  }, {
+    _id: '5a96001a7700780004d51dce',
+    sr: 'Nauka o operacijama, koja je nastala iz matematike, je nauka za sebe, i ima svoju apstraktnu istinu i vrednost.',
+    en: 'The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.',
+    author: 'Ada Lovelace',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4.6,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96001a7700780004d51dce'
+  }, {
+    _id: '5a9601017700780004d51dd1',
+    sr: '',
+    en: 'In the case of the Analytical Engine, we have undoubtedly to lay out a certain capital of analytical labour in one particular line, but this is in order that the engine may bring us in a much larger return in another line.',
+    author: 'Ada Lovelace',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9601017700780004d51dd1'
+  }, {
+    _id: '5a9600ae7700780004d51dd0',
+    sr: 'Možemo najprikladnije reći da analitička mašina tka algebarske obrasce isto kao što Žakardov razboj tka cveće i lišće.',
+    en: 'We may say most aptly that the Analytical Engine weaves algebraical patterns just as the Jacquard loom weaves flowers and leaves.',
+    author: 'Ada Lovelace',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9600ae7700780004d51dd0'
+  }, {
+    _id: '5a9602227700780004d51dd2',
+    sr: '',
+    en: 'The design of the following treatise is to investigate the fundamental laws of those operations of the mind by which reasoning is performed; to give expression to them in the symbolical language of a Calculus, and upon this foundation to establish the science of Logic and construct its method.',
+    author: 'George Boole',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9602227700780004d51dd2'
+  }, {
+    _id: '5a967d572ba98a0004b6294f',
+    sr: '',
+    en: 'Any one who considers arithmetical methods of producing random digits is, of course, in a state of sin. For, as has been pointed out several times, there is no such thing as a random number.',
+    author: 'John von Neumann',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a967d572ba98a0004b6294f'
+  }, {
+    _id: '5a9602757700780004d51dd3',
+    sr: '',
+    en: 'There is not only a close analogy between the operations of the mind in general reasoning and its operations in the particular science of Algebra, but there is to a considerable extent an exact agreement in the laws by which the two classes of operations are conducted.',
+    author: 'George Boole',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9602757700780004d51dd3'
+  }, {
+    _id: '5a967e9c2ba98a0004b62950',
+    sr: '',
+    en: 'A large part of mathematics which becomes useful developed with absolutely no desire to be useful, and in a situation where nobody could possibly know in what area it would become useful.',
+    author: 'John von Neumann',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a967e9c2ba98a0004b62950'
+  }, {
+    _id: '5a96b8e2d6959500047aecae',
+    sr: '',
+    en: 'Software engineering is the part of computer science which is too difficult for the computer scientist.',
+    author: 'Friedrich Bauer',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96b8e2d6959500047aecae'
+  }, {
+    _id: '5a96b909d6959500047aecaf',
+    sr: '',
+    en: 'The amateur software engineer is always in search of magic, some sensational method or tool whose application promises to render software development trivial. It is the mark of the professional software engineer to know that no such panacea exist.',
+    author: 'Grady Booch',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96b909d6959500047aecaf'
+  }, {
+    _id: '5a96b980d6959500047aecb0',
+    sr: '',
+    en: 'Good people with a good process will outperform good people with no process every time.',
+    author: 'Grady Booch',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96b980d6959500047aecb0'
+  }, {
+    _id: '5a96b998d6959500047aecb1',
+    sr: '',
+    en: 'The entire history of software engineering is that of the rise in levels of abstraction.',
+    author: 'Grady Booch',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96b998d6959500047aecb1'
+  }, {
+    _id: '5a96b9ead6959500047aecb2',
+    sr: '',
+    en: "The reason that we think computer science is about computers is pretty much the same reason that the Egyptians thought geometry was about surveying instruments: when some field is just getting started and you don't really understand it very well, it's very easy to confuse the essence of what you're doing with the tools that you use.",
+    author: 'Hal Abelson',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96b9ead6959500047aecb2'
+  }, {
+    _id: '5a96b7abd6959500047aecad',
+    sr: '',
+    en: 'Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves.',
+    author: 'Alan Kay',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96b7abd6959500047aecad'
+  }, {
+    _id: '5a96ba01d6959500047aecb3',
+    sr: '',
+    en: 'Is studying computer science the best way to prepare to be a programmer? No. the best way to prepare is to write programs, and to study great programs that other people have written.',
+    author: 'Bill Gates',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96ba01d6959500047aecb3'
+  }, {
+    _id: '5a96ba30d6959500047aecb4',
+    sr: '',
+    en: 'Computer science differs from physics in that it is not actually a science. It does not study natural objects. Rather, computer science is like engineering; it is all about getting something to do something.',
+    author: 'Richard Feynman',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96ba30d6959500047aecb4'
+  }, {
+    _id: '5a96ba45d6959500047aecb5',
+    sr: '',
+    en: 'The purpose of computing is insight, not numbers.',
+    author: 'Richard Hamming',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96ba45d6959500047aecb5'
+  }, {
+    _id: '5a96bb2dd6959500047aecb7',
+    sr: '',
+    en: 'All of our exalted technological progress, civilization for that matter, is comparable to an axe in the hand of a pathological criminal.',
+    author: 'Albert Einstein',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bb2dd6959500047aecb7'
+  }, {
+    _id: '5a96bbaed6959500047aecb8',
+    sr: '',
+    en: 'When a distinguished but elderly scientist states that something is possible, they are almost certainly right. When they state that something is impossible, they are very probably wrong.',
+    author: 'Arthur C. Clarke',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bbaed6959500047aecb8'
+  }, {
+    _id: '5a96ba93d6959500047aecb6',
+    sr: '',
+    en: 'Computer science research is different from these more traditional disciplines. Philosophically it differs from the physical sciences because it seeks not to discover, explain, or exploit the natural world, but instead to study the properties of machines of human creation.',
+    author: 'Dennis Ritchie',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96ba93d6959500047aecb6'
+  }, {
+    _id: '5a96bbc3d6959500047aecb9',
+    sr: '',
+    en: 'Any sufficiently advanced technology is indistinguishable from magic.',
+    author: 'Arthur C. Clarke',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bbc3d6959500047aecb9'
+  }, {
+    _id: '5a96bd31d6959500047aecba',
+    sr: '',
+    en: 'While much attention has been focused on high-level software architectural patterns, what is, in effect, the de-facto standard software architecture is seldom discussed: the Big Ball of Mud.',
+    author: 'Joseph Yoder (computer scientist)',
+    source: 'Brian Foote and Joseph Yoder, Big Ball of Mud',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bd31d6959500047aecba'
+  }, {
+    _id: '5a96bd7ed6959500047aecbb',
+    sr: '',
+    en: 'All too many of our software systems are, architecturally, little more than shantytowns.',
+    author: 'Joseph Yoder (computer scientist)',
+    source: 'Brian Foote and Joseph Yoder, Big Ball of Mud',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bd7ed6959500047aecbb'
+  }, {
+    _id: '5a96be8ed6959500047aecbe',
+    sr: '',
+    en: 'Managing a large project is a qualitatively different problem from managing a small one, just as leading a division of infantry into battle is different from commanding a small special forces team.',
+    author: 'Joseph Yoder (computer scientist)',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96be8ed6959500047aecbe'
+  }, {
+    _id: '5a96bf70d6959500047aecc2',
+    sr: '',
+    en: 'When you build a prototype, there is always the risk that someone will say "that\'s good enough, ship it". One way to minimize the risk of a prototype being put into production is to write the prototype in using a language or tool that you couldn\'t possibly use for a production version.',
+    author: 'Joseph Yoder (computer scientist)',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bf70d6959500047aecc2'
+  }, {
+    _id: '5a96bec9d6959500047aecbf',
+    sr: '',
+    en: 'Sadly, architecture has been undervalued for so long that many engineers regard life with a Big Ball of Mud as normal.',
+    author: 'Joseph Yoder (computer scientist)',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bec9d6959500047aecbf'
+  }, {
+    _id: '5a96bf99d6959500047aecc3',
+    sr: '',
+    en: "The real problem with throwaway code comes when it isn't thrown away.",
+    author: 'Joseph Yoder (computer scientist)',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bf99d6959500047aecc3'
+  }, {
+    _id: '5a96c01dd6959500047aecc4',
+    sr: '',
+    en: 'Sometimes it’s just easier to throw a system away, and start over.',
+    author: 'Joseph Yoder (computer scientist)',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96c01dd6959500047aecc4'
+  }, {
+    _id: '5a96c299d6959500047aecc5',
+    sr: '',
+    en: 'Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.',
+    author: 'Eric S. Raymond',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96c299d6959500047aecc5'
+  }, {
+    _id: '5a96c3b6d6959500047aecc7',
+    sr: '',
+    en: 'The best programmers are not marginally better than merely good ones. They are an order-of-magnitude better, measured by whatever standard: conceptual creativity, speed, ingenuity of design, or problem-solving ability.',
+    author: 'Randall E. Stross',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96c3b6d6959500047aecc7'
+  }, {
+    _id: '5a96c380d6959500047aecc6',
+    sr: "Ja sam izumeo termin 'objektno-orjentisan', i mogu vam reći da nisam imao C++ na umu.",
+    en: "I invented the term 'Object-Oriented', and I can tell you I did not have C++ in mind.",
+    author: 'Alan Kay',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96c380d6959500047aecc6'
+  }, {
+    _id: '5a96c44cd6959500047aecc9',
+    sr: '',
+    en: 'Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.',
+    author: 'Linus Torvalds',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96c44cd6959500047aecc9'
+  }, {
+    _id: '5a97def55f624c00046e2103',
+    sr: '',
+    en: 'Educators, generals, dieticians, psychologists, and parents program. Armies, students, and some societies are programmed.',
+    author: 'Alan Perlis',
+    source: 'Structure and Interpretation of Computer Programs',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97def55f624c00046e2103'
+  }, {
+    _id: '5a96c431d6959500047aecc8',
+    sr: '',
+    en: 'To iterate is human, to recurse divine.',
+    author: 'L. Peter Deutsch',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96c431d6959500047aecc8'
+  }, {
+    _id: '5a97dee55f624c00046e2102',
+    sr: '',
+    en: 'For all its power, the computer is a harsh taskmaster. Its programs must be correct, and what we wish to say must be said accurately in every detail.',
+    author: 'Alan Perlis',
+    source: 'Structure and Interpretation of Computer Programs',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97dee55f624c00046e2102'
+  }, {
+    _id: '5a97e0755f624c00046e2104',
+    sr: '',
+    en: 'The acts of the mind, wherein it exerts its power over simple ideas, are chiefly these three: 1. Combining several simple ideas into one compound one, and thus all complex ideas are made. 2. The second is bringing two ideas, whether simple or complex, together, and setting them by one another so as to take a view of them at once, without uniting them into one, by which it gets all its ideas of relations. 3. The third is separating them from all other ideas that accompany them in their real existence: this is called abstraction, and thus all its general ideas are made.',
+    author: 'John Locke',
+    source: 'John Locke, An Essay Concerning Human Understanding (1690)',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97e0755f624c00046e2104'
+  }, {
+    _id: '5a97efdaccdfe50004febf35',
+    sr: '',
+    en: 'When program developers are not territorial about their code and encourage others to look for bugs and potential improvements, progress speeds up dramatically.',
+    author: 'Gerald Weinberg',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97efdaccdfe50004febf35'
+  }, {
+    _id: '5a97f196ccdfe50004febf37',
+    sr: '',
+    en: 'The best thing about a boolean is even if you are wrong, you are only off by a bit.',
+    author: 'Anonymous',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f196ccdfe50004febf37'
+  }, {
+    _id: '5a97f307ccdfe50004febf39',
+    sr: '',
+    en: 'When debugging, novices insert corrective code; experts remove defective code.',
+    author: 'Richard E. Pattis',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f307ccdfe50004febf39'
+  }, {
+    _id: '5a97f324ccdfe50004febf3a',
+    sr: '',
+    en: 'It turns out that style matters in programming for the same reason that it matters in writing. It makes for better reading.',
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f324ccdfe50004febf3a'
+  }, {
+    _id: '5a97f363ccdfe50004febf3b',
+    sr: '',
+    en: 'Computer programs are the most complex things that humans make.',
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f363ccdfe50004febf3b'
+  }, {
+    _id: '5a97f4e1ccdfe50004febf3d',
+    sr: '',
+    en: 'Most programming languages contain good parts and bad parts. I discovered that I could be better programmer by using only the good parts and avoiding the bad parts.',
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f4e1ccdfe50004febf3d'
+  }, {
+    _id: '5a97f510ccdfe50004febf3e',
+    sr: '',
+    en: 'Good architecture is necessary to give programs enough structure to be able to grow large without collapsing into a puddle of confusion.',
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f510ccdfe50004febf3e'
+  }, {
+    _id: '5a97f539ccdfe50004febf3f',
+    sr: '',
+    en: "JavaScript is the world's most misunderstood programming language.",
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f539ccdfe50004febf3f'
+  }, {
+    _id: '5a97f5f2ccdfe50004febf41',
+    sr: '',
+    en: 'In JavaScript, there is a beautiful, elegant, highly expressive language that is buried under a steaming pile of good intentions and blunders.',
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f5f2ccdfe50004febf41'
+  }, {
+    _id: '5a97f552ccdfe50004febf40',
+    sr: '',
+    en: 'Software is usually expected to be modified over the course of its productive life. The process of converting one correct program into a different correct program is extremely challenging.',
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f552ccdfe50004febf40'
+  }, {
+    _id: '5a97f8c1ccdfe50004febf42',
+    sr: '',
+    en: 'Every good work of software starts by scratching a developer’s personal itch.',
+    author: 'Eric S. Raymond',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f8c1ccdfe50004febf42'
+  }, {
+    _id: '5a9801011878b40004879f55',
+    sr: '',
+    en: 'You can have the project: Done On Time. Done On Budget. Done Properly - Pick two.',
+    author: 'Anonymous',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9801011878b40004879f55'
+  }, {
+    _id: '5a9801871878b40004879f56',
+    sr: '',
+    en: "No one in the brief history of computing has ever written a piece of perfect software. It's unlikely that you'll be the first.",
+    author: 'Andy Hunt (author)',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9801871878b40004879f56'
+  }, {
+    _id: '5a9801f61878b40004879f57',
+    sr: '',
+    en: 'Never trust a computer you can’t throw out a window.',
+    author: 'Steve Wozniak',
+    source: '',
+    numberOfVotes: 2,
+    rating: 2.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9801f61878b40004879f57'
+  }, {
+    _id: '5a9800cd1878b40004879f54',
+    sr: '',
+    en: 'The best way to predict the future is to invent it.',
+    author: 'Alan Kay',
+    source: '',
+    numberOfVotes: 5,
+    rating: 2.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9800cd1878b40004879f54'
+  }, {
+    _id: '5a9802611878b40004879f58',
+    sr: '',
+    en: 'If you can get today’s work done today, but you do it in such a way that you can’t possibly get tomorrow’s work done tomorrow, then you lose.',
+    author: 'Martin Fowler',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9802611878b40004879f58'
+  }, {
+    _id: '5a9803171878b40004879f5a',
+    sr: '',
+    en: 'Codes are a puzzle. A game, just like any other game.',
+    author: 'Alan Turing',
+    source: '',
+    numberOfVotes: 4,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9803171878b40004879f5a'
+  }, {
+    _id: '5a9802cb1878b40004879f59',
+    sr: '',
+    en: 'Documentation is a love letter that you write to your future self.',
+    author: 'Damian Conway',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9802cb1878b40004879f59'
+  }, {
+    _id: '5a95d17b7700780004d51dba',
+    sr: '',
+    en: 'Life is too short to run proprietary software.',
+    author: 'Bdale Garbee',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d17b7700780004d51dba'
+  }, {
+    _id: '5a98075b1878b40004879f5d',
+    sr: '',
+    en: 'W​henever I have to think to understand what the code is doing, I ask myself if I can refactor the code to make that understanding more immediately apparent.',
+    author: 'Martin Fowler',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a98075b1878b40004879f5d'
+  }, {
+    _id: '5a9803931878b40004879f5b',
+    sr: '',
+    en: 'If you give someone a program, you will frustrate them for a day; if you teach them how to program, you will frustrate them for a lifetime.',
+    author: 'David Leinweber',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9803931878b40004879f5b'
+  }, {
+    _id: '5a9803be1878b40004879f5c',
+    sr: '',
+    en: "The code you write makes you a programmer. The code you delete makes you a good one. The code you don't have to write makes you a great one.",
+    author: 'Mario Fusco',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9803be1878b40004879f5c'
+  }, {
+    _id: '5a98080e1878b40004879f5f',
+    sr: '',
+    en: 'First do it, then do it right, then do it better.',
+    author: 'Addy Osmani',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a98080e1878b40004879f5f'
+  }, {
+    _id: '5a9808401878b40004879f60',
+    sr: '',
+    en: 'The cost of adding a feature isn’t just the time it takes to code it. The cost also includes the addition of an obstacle to future expansion. The trick is to pick the features that don’t fight each other.',
+    author: 'John Carmack',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9808401878b40004879f60'
+  }, {
+    _id: '5a9808b71878b40004879f62',
+    sr: 'Prvo nauči računarsku nauku i svu teoriju. Zatim razvij stil programiranja. Onda zaboravi sve to i samo hakuj.',
+    en: 'First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack.',
+    author: 'George Carrette',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9808b71878b40004879f62'
+  }, {
+    _id: '5a98090a1878b40004879f64',
+    sr: '',
+    en: "Just because people tell you it can't be done, that doesn't necessarily mean that it can't be done. It just means that they can't do it.",
+    author: 'Anders Hejlsberg',
+    source: '',
+    numberOfVotes: 8,
+    rating: 4.4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a98090a1878b40004879f64'
+  }, {
+    _id: '5a98096c1878b40004879f65',
+    sr: '',
+    en: 'The only way to learn a new programming language is by writing programs in it.',
+    author: 'Dennis Ritchie',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a98096c1878b40004879f65'
+  }, {
+    _id: '5a980ec71878b40004879f66',
+    sr: '',
+    en: 'An evolving system increases its complexity unless work is done to reduce it.',
+    author: 'Manny Lehman (computer scientist)',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a980ec71878b40004879f66'
+  }, {
+    _id: '5a985b7ae93441000489b948',
+    sr: '',
+    en: 'No matter how slow you are writing clean code, you will always be slower if you make a mess.',
+    author: 'Robert C. Martin',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a985b7ae93441000489b948'
+  }, {
+    _id: '5a985bc7e93441000489b949',
+    sr: '',
+    en: 'Fancy algorithms are slow when n is small, and n is usually small.',
+    author: 'Rob Pike',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a985bc7e93441000489b949'
+  }, {
+    _id: '5a985c91e93441000489b94a',
+    sr: '',
+    en: 'The only difference between a FA [finite automata] and a TM [Turing machine] is that the TM, unlike the FA, has paper and pencil. Think about it. It tells you something about the power of writing.',
+    author: 'Manuel Blum',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a985c91e93441000489b94a'
+  }, {
+    _id: '5a985e7ae93441000489b94c',
+    sr: '',
+    en: 'Within a computer, natural language is unnatural.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a985e7ae93441000489b94c'
+  }, {
+    _id: '5a985db5e93441000489b94b',
+    sr: '',
+    en: "Just because you've implemented something doesn't mean you understand it.",
+    author: 'Brian Cantwell Smith',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a985db5e93441000489b94b'
+  }, {
+    _id: '5a9807b41878b40004879f5e',
+    sr: '',
+    en: "That hardly ever happens is another way of saying 'it happens'.",
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9807b41878b40004879f5e'
+  }, {
+    _id: '5a9860abe93441000489b94f',
+    sr: '',
+    en: 'Beware of bugs in the above code; I have only proved it correct, not tried it.',
+    author: 'Donald Knuth',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9860abe93441000489b94f'
+  }, {
+    _id: '5a986366e93441000489b951',
+    sr: '',
+    en: 'A display connected to a digital computer gives us a chance to gain familiarity with concepts not realizable in the physical world. It is a looking glass into a mathematical wonderland.',
+    author: 'Ivan Sutherland',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a986366e93441000489b951'
+  }, {
+    _id: '5a9911bb8cdbad0004955d02',
+    sr: '',
+    en: 'Before software can be reusable it first has to be usable.',
+    author: 'Ralph Johnson (computer scientist)',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9911bb8cdbad0004955d02'
+  }, {
+    _id: '5a9912938cdbad0004955d04',
+    sr: 'Najjeftinije, najbrže i najpouzdanije komponente su one koje nisu tu.',
+    en: 'The cheapest, fastest, and most reliable components are those that aren’t there.',
+    author: 'Gordon Bell',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9912938cdbad0004955d04'
+  }, {
+    _id: '5a9912248cdbad0004955d03',
+    sr: '',
+    en: 'In order to understand recursion, one must first understand recursion.',
+    author: 'Anonymous',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9912248cdbad0004955d03'
+  }, {
+    _id: '5a9995789128a800040c7dfa',
+    sr: 'Najteži deo dizajna je držati mogućnosti van.',
+    en: 'The hardest part of design is keeping features out.',
+    author: 'Don Norman',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9995789128a800040c7dfa'
+  }, {
+    _id: '5a986021e93441000489b94e',
+    sr: '',
+    en: 'Premature abstraction is as bad as premature optimization.',
+    author: 'Luciano Ramalho',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a986021e93441000489b94e'
+  }, {
+    _id: '5a9995d29128a800040c7dfc',
+    sr: '',
+    en: 'Much of the essence of building a program is in fact the debugging of the specification.',
+    author: 'Fred Brooks',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9995d29128a800040c7dfc'
+  }, {
+    _id: '5a9997389128a800040c7dfd',
+    sr: '',
+    en: 'Any product that needs a manual to work is broken.',
+    author: 'Elon Musk',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9997389128a800040c7dfd'
+  }, {
+    _id: '5a9995b89128a800040c7dfb',
+    sr: '',
+    en: 'The act of describing a program in unambiguous detail and the act of programming are one and the same.',
+    author: 'Kevlin Henney',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9995b89128a800040c7dfb'
+  }, {
+    _id: '5a9997929128a800040c7dfe',
+    sr: 'Mislim da uvek treba imati na umu da entropija nije na tvojoj strani.',
+    en: 'I think you should always bear in mind that entropy is not on your side.',
+    author: 'Elon Musk',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9997929128a800040c7dfe'
+  }, {
+    _id: '5a9997d79128a800040c7dff',
+    sr: '',
+    en: "The path to the CEO's office should not be through the CFO's office, and it should not be through the marketing department. It needs to be through engineering and design.",
+    author: 'Elon Musk',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9997d79128a800040c7dff'
+  }, {
+    _id: '5a9999f39128a800040c7e00',
+    sr: '',
+    en: 'People are mistaken when they think that technology just automatically improves. It does not automatically improve. It only improves if a lot of people work very hard to make it better, and actually it will, I think, by itself degrade, actually.',
+    author: 'Elon Musk',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9999f39128a800040c7e00'
+  }, {
+    _id: '5a9a9c372bad9600044b6fb4',
+    sr: '',
+    en: 'With artificial intelligence we are summoning the demon.',
+    author: 'Elon Musk',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9a9c372bad9600044b6fb4'
+  }, {
+    _id: '5a9a9f7e2bad9600044b6fb6',
+    sr: '',
+    en: 'AI is a fundamental risk to the existence of human civilization.',
+    author: 'Elon Musk',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9a9f7e2bad9600044b6fb6'
+  }, {
+    _id: '5a9aa21b2bad9600044b6fba',
+    sr: '',
+    en: 'The main activity of programming is not the origination of new independent programs, but in the integration, modification, and explanation of existing ones.',
+    author: 'Terry Winograd',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9aa21b2bad9600044b6fba'
+  }, {
+    _id: '5a9aaff32bad9600044b6fbd',
+    sr: '',
+    en: "Cool URIs don't change.",
+    author: 'Tim Berners-Lee',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9aaff32bad9600044b6fbd'
+  }, {
+    _id: '5a9aaf8e2bad9600044b6fbc',
+    sr: '',
+    en: "I don't believe in the sort of eureka moment idea. I think it's a myth. I'm very suspicious that actually Archimedes had been thinking about that problem for a long time.",
+    author: 'Tim Berners-Lee',
+    source: '',
+    numberOfVotes: 4,
+    rating: 3.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9aaf8e2bad9600044b6fbc'
+  }, {
+    _id: '5a9ab0372bad9600044b6fbf',
+    sr: '',
+    en: "When I invented the web, I didn't have to ask anyone's permission.",
+    author: 'Tim Berners-Lee',
+    source: '',
+    numberOfVotes: 2,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ab0372bad9600044b6fbf'
+  }, {
+    _id: '5a9aa01d2bad9600044b6fb7',
+    sr: '',
+    en: 'We need to be super careful with AI. Potentially more dangerous than nukes.',
+    author: 'Elon Musk',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9aa01d2bad9600044b6fb7'
+  }, {
+    _id: '5a9ab1802bad9600044b6fc1',
+    sr: '',
+    en: "I invented the Web just because I needed it, really, because it was so frustrating that it didn't exit.",
+    author: 'Tim Berners-Lee',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ab1802bad9600044b6fc1'
+  }, {
+    _id: '5a9ab1ac2bad9600044b6fc2',
+    sr: '',
+    en: 'To be a hacker - when I use the term - is somebody who is creative and does wonderful things.',
+    author: 'Tim Berners-Lee',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ab1ac2bad9600044b6fc2'
+  }, {
+    _id: '5a9ab1fa2bad9600044b6fc3',
+    sr: '',
+    en: 'The Domain Name Server (DNS) is the Achilles heel of the Web.',
+    author: 'Tim Berners-Lee',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ab1fa2bad9600044b6fc3'
+  }, {
+    _id: '5a9ab3f52bad9600044b6fc4',
+    sr: '',
+    en: 'Two centuries ago Leibnitz invented a calculating machine which embodied most of the essential features of recent keyboard devices, but it could not then come into use. The economics of the situation were against it.',
+    author: 'Vannevar Bush',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ab3f52bad9600044b6fc4'
+  }, {
+    _id: '5a9ab4a82bad9600044b6fc5',
+    sr: '',
+    en: 'Whenever logical processes of thought are employed, there is an opportunity for the machine.',
+    author: 'Vannevar Bush',
+    source: '',
+    numberOfVotes: 2,
+    rating: 2.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ab4a82bad9600044b6fc5'
+  }, {
+    _id: '5a9ab8f42bad9600044b6fc6',
+    sr: '',
+    en: 'If scientific reasoning were limited to the logical processes of arithmetic, we should not get very far in our understanding of the physical world. One might as well attempt to grasp the game of poker entirely by the use of the mathematics of probability.',
+    author: 'Vannevar Bush',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ab8f42bad9600044b6fc6'
+  }, {
+    _id: '5a9ac42b2bad9600044b6fc7',
+    sr: '',
+    en: 'Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite. The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the technical debt load.',
+    author: 'Ward Cunningham',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ac42b2bad9600044b6fc7'
+  }, {
+    _id: '5a9ac4852bad9600044b6fc8',
+    sr: '',
+    en: 'Like a financial debt, the technical debt incurs interest payments, which come in the form of the extra effort that we have to do in future development because of the quick and dirty design choice.',
+    author: 'Martin Fowler',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ac4852bad9600044b6fc8'
+  }, {
+    _id: '5a9ac5942bad9600044b6fc9',
+    sr: '',
+    en: 'One of the important implications of technical debt is that it must be serviced. If the debt grows large enough, eventually the company will spend more on servicing its debt than it invests in increasing the value of its other assets.',
+    author: 'Steve McConnell',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ac5942bad9600044b6fc9'
+  }, {
+    _id: '5a9ab0622bad9600044b6fc0',
+    sr: '',
+    en: "What's very important from my point of view is that there is one web. Anyone that tries to chop it into two will find that their piece looks very boring.",
+    author: 'Tim Berners-Lee',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9ab0622bad9600044b6fc0'
+  }, {
+    _id: '5a9b0b112bad9600044b6fca',
+    sr: '',
+    en: 'Thus it is observable that the buildings which a single architect has planned and executed, are generally more elegant and commodious than those which several have attempted to improve.',
+    author: 'René Descartes',
+    source: "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0b112bad9600044b6fca'
+  }, {
+    _id: '5a9b0b752bad9600044b6fcb',
+    sr: '',
+    en: 'Computers are the most complex objects we human beings have ever created, but in a fundamental sense they are remarkably simple.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0b752bad9600044b6fcb'
+  }, {
+    _id: '5a9b0bb22bad9600044b6fcd',
+    sr: '',
+    en: 'The magic of a computer lies in its ability to become almost anything you can imagine, as long as you can explain exactly what that is.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0bb22bad9600044b6fcd'
+  }, {
+    _id: '5a9b0b9a2bad9600044b6fcc',
+    sr: '',
+    en: 'The computer is not just an advanced calculator or camera or paintbrush; rather, it is a device that accelerates and extends our processes of thought.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0b9a2bad9600044b6fcc'
+  }, {
+    _id: '5a9b0bce2bad9600044b6fce',
+    sr: '',
+    en: 'With the right programming, a computer can become a theater, a musical instrument, a reference book, a chess opponent. No other entity in the world except a human being has such an adaptable, universal nature.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0bce2bad9600044b6fce'
+  }, {
+    _id: '5a9b0c2f2bad9600044b6fcf',
+    sr: '',
+    en: 'Anyone who has ever written a program knows that telling a computer what you want it to do is not as easy as it sounds. Every detail of the computer’s desired operation must be precisely described. For instance, if you tell an accounting program to bill your clients for the amount that each owes, then the computer will send out a weekly bill for $0.00 to clients who owe nothing.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0c2f2bad9600044b6fcf'
+  }, {
+    _id: '5a9b0c4b2bad9600044b6fd0',
+    sr: 'Vešt programer je kao pesnik koji može pretočiti u reči one ideje koje drugi ne mogu izraziti.',
+    en: 'A skilled programmer is like a poet who can put into words those ideas that others find inexpressible.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0c4b2bad9600044b6fd0'
+  }, {
+    _id: '5a9b0c6b2bad9600044b6fd1',
+    sr: '',
+    en: 'Every computer language has its Shakespeares, and it is a joy to read their code. A well-written computer program possesses style, finesse, even humor—and a clarity that rivals the best prose.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0c6b2bad9600044b6fd1'
+  }, {
+    _id: '5a9b0c932bad9600044b6fd2',
+    sr: '',
+    en: 'It turns out that there is no algorithm for examining a program and determining whether or not it is fatally infected with an endless loop. Moreover, it’s not that no one has yet discovered such an algorithm; rather, no such algorithm is possible.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0c932bad9600044b6fd2'
+  }, {
+    _id: '5a9b0cc62bad9600044b6fd3',
+    sr: '',
+    en: 'The class of problems that are computable by a digital computer apparently includes every problem that is computable by any kind of device.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0cc62bad9600044b6fd3'
+  }, {
+    _id: '5a9b0d662bad9600044b6fd5',
+    sr: '',
+    en: "The programs we use to conjure processes are like a sorcerer's spells. They are carefully composed from symbolic expressions in arcane and esoteric programming languages that prescribe the tasks we want our processes to perform.",
+    author: 'Hal Abelson',
+    source: 'Structure and Interpretation of Computer Programs',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0d662bad9600044b6fd5'
+  }, {
+    _id: '5a9b10db2bad9600044b6fd7',
+    sr: '',
+    en: 'Human beings are not accustomed to being perfect, and few areas of human activity demand it. Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b10db2bad9600044b6fd7'
+  }, {
+    _id: '5a9b131f2bad9600044b6fd9',
+    sr: '',
+    en: 'Because of optimism, we usually expect the number of bugs to be smaller than it turns out to be. Therefore testing is usually the most mis-scheduled part of programming.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b131f2bad9600044b6fd9'
+  }, {
+    _id: '5a9b0d9c2bad9600044b6fd6',
+    sr: '',
+    en: 'One of the greatest joys in computer programming is discovering a new, faster, more efficient algorithm for doing something — particularly if a lot of well-respected people have come up with worse solutions.',
+    author: 'Danny Hillis',
+    source: 'The Pattern On The Stone: The Simple Ideas That Make Computers Work',
+    numberOfVotes: 3,
+    rating: 4.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0d9c2bad9600044b6fd6'
+  }, {
+    _id: '5a9b13442bad9600044b6fda',
+    sr: '',
+    en: "False scheduling to match the patron's desired date is much more common in our discipline than elsewhere in engineering.",
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b13442bad9600044b6fda'
+  }, {
+    _id: '5a9b14c12bad9600044b6fdb',
+    sr: '',
+    en: 'The best programmers are up to 28 times better than the worst programmers, according to “individual differences” research. Given that their pay is never commensurate, they are the biggest bargains in the software field.',
+    author: 'Robert L. Glass',
+    source: 'Facts and Fallacies of Software Engineering',
+    numberOfVotes: 1,
+    rating: 2.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b14c12bad9600044b6fdb'
+  }, {
+    _id: '5a9b154e2bad9600044b6fdc',
+    sr: '',
+    en: 'Sackman, Erickson, and Grant were measuring performance of a group of experienced programmers. Within just this group the ratios between the best and worst performances averaged about 10:1 on productivity measurements and an amazing 5:1 on program speed and space measurements!',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b154e2bad9600044b6fdc'
+  }, {
+    _id: '5a9b15cb2bad9600044b6fdd',
+    sr: '',
+    en: 'Conceptual integrity is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b15cb2bad9600044b6fdd'
+  }, {
+    _id: '5a9b15e52bad9600044b6fde',
+    sr: '',
+    en: 'The separation of architectural effort from implementation is a very powerful way of getting conceptual integrity on very large projects.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b15e52bad9600044b6fde'
+  }, {
+    _id: '5a9b16122bad9600044b6fdf',
+    sr: '',
+    en: 'The general tendency is to over-design the second system, using all the ideas and frills that were cautiously sidetracked on the first one.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b16122bad9600044b6fdf'
+  }, {
+    _id: '5a9b16922bad9600044b6fe2',
+    sr: '',
+    en: 'The management question, therefore, is not whether to build a pilot system and throw it away. You will do that. The only question is whether to plan in advance to build a throwaway, or to promise to deliver the throwaway to customers.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b16922bad9600044b6fe2'
+  }, {
+    _id: '5a9b17542bad9600044b6fe4',
+    sr: '',
+    en: 'Program building is an entropy-decreasing process, hence inherently metastable. Program maintenance is an entropy-increasing process, and even its most skillful execution only delays the subsidence of the system into unfixable obsolescence.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b17542bad9600044b6fe4'
+  }, {
+    _id: '5a9b16792bad9600044b6fe1',
+    sr: '',
+    en: 'Chemical engineers learned long ago that a process that works in the laboratory cannot be implemented in a factory in only one step.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b16792bad9600044b6fe1'
+  }, {
+    _id: '5a9b17f92bad9600044b6fe7',
+    sr: '',
+    en: 'First, we must observe that the anomaly is not that software progress is so slow but that computer hardware progress is so fast. No other technology since civilization began has seen six orders of magnitude price-performance gain in 30 years.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b17f92bad9600044b6fe7'
+  }, {
+    _id: '5a9b17a22bad9600044b6fe6',
+    sr: 'Kodiranje je "90 posto završeno" polovinu ukupnog vremena kodiranja. Debagovanje je "99 posto završeno" većinu vremena.',
+    en: 'Coding is "90 percent finished" for half of the total coding time. Debugging is "99 percent complete" most of the time.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b17a22bad9600044b6fe6'
+  }, {
+    _id: '5a9b18102bad9600044b6fe8',
+    sr: '',
+    en: 'The complexity of software is an essential property, not an accidental one. Hence descriptions of a software entity that abstract away its complexity often abstract away its essence.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b18102bad9600044b6fe8'
+  }, {
+    _id: '5a9b189c2bad9600044b6fea',
+    sr: '',
+    en: 'Study after study shows that the very best designers produce structures that are faster, smaller, simpler, cleaner, and produced with less effort. The differences between the great and the average approach an order of magnitude.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b189c2bad9600044b6fea'
+  }, {
+    _id: '5a9b18d52bad9600044b6fec',
+    sr: '',
+    en: 'A programming systems product takes about nine times as much effort as the component programs written separately for private use.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b18d52bad9600044b6fec'
+  }, {
+    _id: '5a9b190a2bad9600044b6fed',
+    sr: '',
+    en: 'My rule of thumb is 1/3 of the schedule for design, 1/6 for coding, 1/4 for component testing, and 1/4 for system testing.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b190a2bad9600044b6fed'
+  }, {
+    _id: '5a9b18bf2bad9600044b6feb',
+    sr: '',
+    en: 'First, my wife, my colleagues, and my editors find me to err far more often in optimism than in pessimism. I am, after all, a programmer by background, and optimism is an occupational disease of our craft.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b18bf2bad9600044b6feb'
+  }, {
+    _id: '5a9b19232bad9600044b6fee',
+    sr: 'Pošto smo nesigurni oko naših procena rokova, često nam nedostaje hrabrosti da ih uporno branimo od pritiska menadžmenta i klijenata.',
+    en: 'Because we are uncertain about our scheduling estimates, we often lack the courage to defend them stubbornly against management and customer pressure.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b19232bad9600044b6fee'
+  }, {
+    _id: '5a9b19422bad9600044b6fef',
+    sr: '',
+    en: 'Adding people to a software project increases the total effort necessary in three ways: the work and disruption of repartitioning itself, training the new people, and added intercommunication.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b19422bad9600044b6fef'
+  }, {
+    _id: '5a9b195a2bad9600044b6ff0',
+    sr: '',
+    en: 'Very good professional programmers are ten times as productive as poor ones, at same training and two-year experience level.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b195a2bad9600044b6ff0'
+  }, {
+    _id: '5a9b198a2bad9600044b6ff2',
+    sr: '',
+    en: 'Programming increases goes as a power of program size.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b198a2bad9600044b6ff2'
+  }, {
+    _id: '5a9b1abf2bad9600044b6ff7',
+    sr: '',
+    en: 'Various studies indicate that the optimal team size is between 2 and 5, with 3 being the mode. With more than 5 team members, team management begins to dominate the work.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1abf2bad9600044b6ff7'
+  }, {
+    _id: '5a9b1ce02bad9600044b6ff8',
+    sr: '',
+    en: 'A stupid error is an algorithmically avoidable error. Mainly, you are stupid if you let an error that a program can detect go undetected.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1ce02bad9600044b6ff8'
+  }, {
+    _id: '5a9b19dd2bad9600044b6ff4',
+    sr: 'Sve popravke teže da unište strukturu, da uvećaju entropiju i nered u sistemu.',
+    en: 'All repairs tend to destroy structure, to increase the entropy and disorder of a system.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b19dd2bad9600044b6ff4'
+  }, {
+    _id: '5a9b1d7d2bad9600044b6ffa',
+    sr: '',
+    en: 'I think there is a world market for maybe five\ncomputers.',
+    author: 'Thomas J. Watson',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1d7d2bad9600044b6ffa'
+  }, {
+    _id: '5a9b1e082bad9600044b6ffb',
+    sr: '',
+    en: 'There is no reason anyone would want a computer in their home.',
+    author: 'Ken Olsen',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1e082bad9600044b6ffb'
+  }, {
+    _id: '5a9b1eb02bad9600044b6ffc',
+    sr: '',
+    en: 'The beginning of wisdom for a programmer is to recognize the difference between getting his program to work and getting it right.',
+    author: 'Michael A. Jackson',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1eb02bad9600044b6ffc'
+  }, {
+    _id: '5a9b1ece2bad9600044b6ffd',
+    sr: '',
+    en: 'Two things are known about requirements:\n1. They will change!\n2. They will be misunderstood!',
+    author: 'Michael A. Jackson',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1ece2bad9600044b6ffd'
+  }, {
+    _id: '5a9b1f362bad9600044b6fff',
+    sr: '',
+    en: 'Every time you improve process, work becomes harder.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1f362bad9600044b6fff'
+  }, {
+    _id: '5a9b1f592bad9600044b7000',
+    sr: '',
+    en: 'There is never enough time to do it right, but there is always enough time to fix it or to do it over.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1f592bad9600044b7000'
+  }, {
+    _id: '5a8e9be284a8f2000482568c',
+    sr: '',
+    en: 'The more code you have, the more places there are for bugs to hide.',
+    author: 'Rich Skrenta',
+    source: 'http://www.skrenta.com/2007/05/code_is_our_enemy.html',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a8e9be284a8f2000482568c'
+  }, {
+    _id: '5a97f062ccdfe50004febf36',
+    sr: '',
+    en: 'If builders built houses the way programmers built programs, the first woodpecker to come along would destroy civilization.',
+    author: 'Gerald Weinberg',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f062ccdfe50004febf36'
+  }, {
+    _id: '5a9aa1db2bad9600044b6fb9',
+    sr: '',
+    en: 'The techniques of artificial intelligence are to the mind what bureaucracy is to human social interaction.',
+    author: 'Terry Winograd',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9aa1db2bad9600044b6fb9'
+  }, {
+    _id: '5a9b1f692bad9600044b7001',
+    sr: '',
+    en: 'Code is expensive to change, but design is cheaper to change, and requirements are even cheaper to change.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1f692bad9600044b7001'
+  }, {
+    _id: '5a9b1f822bad9600044b7002',
+    sr: '',
+    en: 'The cost to repair an error goes up dramatically as project moves towards completion and beyond.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1f822bad9600044b7002'
+  }, {
+    _id: '5a9b1f252bad9600044b6ffe',
+    sr: '',
+    en: 'A team of highly competent programmers who are also highly territorial, egotistical politicians will fail while a team of equally competent programmers, who are also egoless, cooperative, team players will succeed.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 3,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1f252bad9600044b6ffe'
+  }, {
+    _id: '5a9b203c2bad9600044b7004',
+    sr: '',
+    en: 'For most software, efficiency just does not matter.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 3,
+    rating: 3.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b203c2bad9600044b7004'
+  }, {
+    _id: '5a9b214b2bad9600044b7005',
+    sr: '',
+    en: 'The best way to know that you have found the last bug is never to find the first bug.',
+    author: 'Harlan Mills',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b214b2bad9600044b7005'
+  }, {
+    _id: '5a9b21cb2bad9600044b7008',
+    sr: '',
+    en: 'An interactive debugger is an outstanding example of what is not needed - it encourages trial-and-error hacking rather than systematic design, and also hides marginal people barely qualified for precision programming.',
+    author: 'Harlan Mills',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b21cb2bad9600044b7008'
+  }, {
+    _id: '5a9b22a02bad9600044b7009',
+    sr: '',
+    en: 'Thoroughly testing a program is impossible (requires unbounded number of test cases); so try to choose test cases that will expose all errors. That’s very difficult, especially since we do not know what all the errors are, and if we did, we would not need the test cases!',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b22a02bad9600044b7009'
+  }, {
+    _id: '5a9b21a12bad9600044b7007',
+    sr: 'Jedini način da se greške pojave u programu je da ih tamo stavi autor. Ni jedan drugi mehanizam nije poznat.',
+    en: 'The only way for errors to occur in a program is by being put there by the author. No other mechanisms are known.',
+    author: 'Harlan Mills',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b21a12bad9600044b7007'
+  }, {
+    _id: '5a9b22c72bad9600044b700b',
+    sr: '',
+    en: 'Reliable computations are obtainable from buggy programs, which after all, are the only kind of programs there are.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b22c72bad9600044b700b'
+  }, {
+    _id: '5a9b22ed2bad9600044b700c',
+    sr: 'Mogu napraviti pouzdan sistem sa hiljadama bagova, ako me pustite da izaberem bagove pažljivo.',
+    en: 'I can build a reliable system with thousands of bugs, if you let me choose my bugs carefully.',
+    author: 'David Parnas',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b22ed2bad9600044b700c'
+  }, {
+    _id: '5a9b231d2bad9600044b700d',
+    sr: '',
+    en: 'Ed Adams of IBM found that 80% of the reliability problems are caused by only 2% of the defects.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b231d2bad9600044b700d'
+  }, {
+    _id: '5a9b23502bad9600044b700e',
+    sr: '',
+    en: 'Hardware is the part you can replace. Software is the part you have to keep, because it’s so expensive and nobody understands it any more.',
+    author: 'Jim Horning',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b23502bad9600044b700e'
+  }, {
+    _id: '5a9b23dc2bad9600044b7011',
+    sr: '',
+    en: 'Any technological or managerial scheme to force documentation can be subverted by unwilling programmers.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b23dc2bad9600044b7011'
+  }, {
+    _id: '5a9b23b02bad9600044b700f',
+    sr: '',
+    en: 'Good judgement comes from experience. Experience comes from bad judgement.',
+    author: 'Jim Horning',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b23b02bad9600044b700f'
+  }, {
+    _id: '5a9c649eff6af300049e6b59',
+    sr: '',
+    en: 'Machines as simple as thermostats can be said to have beliefs.',
+    author: 'John McCarthy (computer scientist)',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9c649eff6af300049e6b59'
+  }, {
+    _id: '5a9b253f2bad9600044b7016',
+    sr: 'Radni okvir može obezbediti 90% funkcija koje nam trebaju brzo - dajući nam lažan osećaj samopouzdanja u ranoj fazi razvoja - a zatim biti frustrirajuće težak kada se radi o implementaciji poslednjih 10%.',
+    en: 'A framework can provide 90% of the features we need quickly — giving us a false sense of confidence early in the development cycle — and then be frustratingly hard when it comes to implementing the last 10%.',
+    author: 'Tony Parisi (software developer)',
+    source: 'Programming 3D Applications with HTML5 and WebGL',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b253f2bad9600044b7016'
+  }, {
+    _id: '5a9c6502ff6af300049e6b5a',
+    sr: '',
+    en: 'Mental qualities peculiar to human-like motivational structures, such as love and hate, will not be required for intelligent behavior, but we could probably program computers to exhibit them if we wanted to.',
+    author: 'John McCarthy (computer scientist)',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9c6502ff6af300049e6b5a'
+  }, {
+    _id: '5a9d2f8c607c5100044dff77',
+    sr: '',
+    en: "I have met bright students in computer science who have never seen the source code of a large program. They may be good at writing small programs, but they can't begin to learn the different skills of writing large ones if they can't see how others have done it.",
+    author: 'Richard Stallman',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d2f8c607c5100044dff77'
+  }, {
+    _id: '5a9c65d6ff6af300049e6b5b',
+    sr: '',
+    en: 'Program designers have a tendency to think of the users as idiots who need to be controlled. They should rather think of their program as a servant, whose master, the user, should be able to control it.',
+    author: 'John McCarthy (computer scientist)',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9c65d6ff6af300049e6b5b'
+  }, {
+    _id: '5a9d3007607c5100044dff79',
+    sr: '',
+    en: 'In fact, in the 1980s I often came across newly graduated computer science majors who had never seen a real program in their lives. They had only seen toy exercises, school exercises, because every real program was a trade secret.',
+    author: 'Richard Stallman',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d3007607c5100044dff79'
+  }, {
+    _id: '5a9d31fa607c5100044dff7c',
+    sr: '',
+    en: 'I figure that since proprietary software developers use copyright to stop us from sharing, we cooperators can use copyright to give other cooperators an advantage of their own: they can use our code.',
+    author: 'Richard Stallman',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d31fa607c5100044dff7c'
+  }, {
+    _id: '5a9d2eb2607c5100044dff75',
+    sr: '',
+    en: 'I consider that the golden rule requires that if I like a program I must share it with other people who like it. Software sellers want to divide the users and conquer them, making each user agree not to share with others. I refuse to break solidarity with other users in this way.',
+    author: 'Richard Stallman',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d2eb2607c5100044dff75'
+  }, {
+    _id: '5a9d33ae607c5100044dff7d',
+    sr: '',
+    en: 'The free software community rejects the “priesthood of technology”, which keeps the general public in ignorance of how technology works; we encourage students of any age and situation to read the source code and learn as much as they want to know.',
+    author: 'Richard Stallman',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d33ae607c5100044dff7d'
+  }, {
+    _id: '5a9d3532607c5100044dff7e',
+    sr: '',
+    en: "The most powerful programming language is Lisp. If you don't know Lisp (or its variant, Scheme), you don't know what it means for a programming language to be powerful and elegant. Once you learn Lisp, you will understand what is lacking in most other languages.",
+    author: 'Richard Stallman',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d3532607c5100044dff7e'
+  }, {
+    _id: '5a9d36a4607c5100044dff7f',
+    sr: '',
+    en: "Programming is programming. If you get good at programming, it doesn't matter which language you learned it in, because you'll be able to do programming in any language.",
+    author: 'Richard Stallman',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d36a4607c5100044dff7f'
+  }, {
+    _id: '5a9dc5de6744730004f6a1e6',
+    sr: '',
+    en: 'It was on one of my journeys between the EDSAC room and the punching equipment the realization came over me with full force that a good part of the remainder of my life was going to be spent in finding errors in my own programs.',
+    author: 'Maurice Wilkes',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9dc5de6744730004f6a1e6'
+  }, {
+    _id: '5a9dc65d6744730004f6a1e8',
+    sr: '',
+    en: 'Since 1954, the raw speed of computers, as measured by the time it takes to do an addition, increased by a factor of 10,000. That means an algorithm that once took 10 minutes to perform can now be done 15 times a second.',
+    author: 'Maurice Wilkes',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9dc65d6744730004f6a1e8'
+  }, {
+    _id: '5a9dc8e76744730004f6a1e9',
+    sr: '',
+    en: 'Typing is no substitute for thinking.',
+    author: 'Richard Hamming',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9dc8e76744730004f6a1e9'
+  }, {
+    _id: '5a9d530a1a29250004e946df',
+    sr: '',
+    en: 'A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better.',
+    author: 'Donald Knuth',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d530a1a29250004e946df'
+  }, {
+    _id: '5a9dc9c26744730004f6a1ea',
+    sr: '',
+    en: 'Perhaps the central problem we face in all of computer science is how we are to get to the situation where we build on top of the work of others rather than redoing so much of it in a trivially different way.',
+    author: 'Richard Hamming',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9dc9c26744730004f6a1ea'
+  }, {
+    _id: '5a9dcace6744730004f6a1eb',
+    sr: '',
+    en: 'Any unwillingness to learn mathematics today can greatly restrict your possibilities tomorrow.',
+    author: 'Richard Hamming',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9dcace6744730004f6a1eb'
+  }, {
+    _id: '5aa28cf31dcf530004c4bf64',
+    sr: 'Istinski dobri programi žive večno.',
+    en: 'Really good programs live forever.',
+    author: 'Charles Simonyi',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa28cf31dcf530004c4bf64'
+  }, {
+    _id: '5a9dccdd6744730004f6a1ec',
+    sr: '',
+    en: 'In science if you know what you are doing you should not be doing it. In engineering if you do not know what you are doing you should not be doing it.',
+    author: 'Richard Hamming',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.9,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9dccdd6744730004f6a1ec'
+  }, {
+    _id: '5aa28d721dcf530004c4bf65',
+    sr: '',
+    en: 'In handling resources, strive to avoid disaster rather than to attain an optimum.',
+    author: 'Butler Lampson',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa28d721dcf530004c4bf65'
+  }, {
+    _id: '5aa28ea11dcf530004c4bf67',
+    sr: '',
+    en: 'As with most projects, the last two percent takes fifty percent of the time.',
+    author: 'John Warnock',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa28ea11dcf530004c4bf67'
+  }, {
+    _id: '5aa299fbe7e86700048f0279',
+    sr: '',
+    en: "It's fun to sit at a terminal and let the code flow. It sounds strange, but it just comes out my brain; once I'm started, I don't have to think about it.",
+    author: 'Gary Kildall',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa299fbe7e86700048f0279'
+  }, {
+    _id: '5aa29b16e7e86700048f027a',
+    sr: '',
+    en: 'I think programming is very much a religious experience for a lot of people.',
+    author: 'Gary Kildall',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa29b16e7e86700048f027a'
+  }, {
+    _id: '5aa28c251dcf530004c4bf63',
+    sr: '',
+    en: 'What is programming? Some people call it a science, some people call it an art, some people call it a skill. I think it has aspects of all three.',
+    author: 'Charles Simonyi',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa28c251dcf530004c4bf63'
+  }, {
+    _id: '5aa29bfee7e86700048f027b',
+    sr: 'Ako ste ikada razgovarali sa velikim programerom, otkrićete da on zna svoje alate kao što umetnik zna svoje četkice.',
+    en: "If you ever talk to a great programmer, you'll find he knows his tools like an artist knows his paintbrushes.",
+    author: 'Bill Gates',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa29bfee7e86700048f027b'
+  }, {
+    _id: '5aa29c76e7e86700048f027c',
+    sr: '',
+    en: "Our goals are very simple. We're going to create the software that puts a computer on every desk and in every home.",
+    author: 'Bill Gates',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa29c76e7e86700048f027c'
+  }, {
+    _id: '5aa2a019e7e86700048f027f',
+    sr: 'Najvažniji deo pisanja programa je dizajniranje struktura podataka.',
+    en: 'The most important part of writing a program is designing the data structures.',
+    author: 'Dan Bricklin',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a019e7e86700048f027f'
+  }, {
+    _id: '5aa2a0ace7e86700048f0280',
+    sr: '',
+    en: "Ideas don't disappear. They change form, they merge with other ideas.",
+    author: 'Bob Frankston',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a0ace7e86700048f0280'
+  }, {
+    _id: '5aa2a355e7e86700048f0284',
+    sr: '',
+    en: 'I care not only what the code says but how it looks.',
+    author: 'Peter Roizen',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a355e7e86700048f0284'
+  }, {
+    _id: '5aa2a2f1e7e86700048f0283',
+    sr: '',
+    en: 'Programming is the ultimate field for someone who likes to tinker.',
+    author: 'Ray Ozzie',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a2f1e7e86700048f0283'
+  }, {
+    _id: '5aa2a3fde7e86700048f0286',
+    sr: 'Programiranje može biti zavisnost.',
+    en: 'Programming can be addictive.',
+    author: 'Bob Carr',
+    source: 'Programmers at Work',
+    numberOfVotes: 2,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a3fde7e86700048f0286'
+  }, {
+    _id: '5aa2a3b3e7e86700048f0285',
+    sr: '',
+    en: 'From an artistic standpoint, the best software comes from the realm of intuition.',
+    author: 'Bob Carr',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a3b3e7e86700048f0285'
+  }, {
+    _id: '5aa2a602e7e86700048f0287',
+    sr: '',
+    en: 'Then Apple went public toward the end of 1980. All of a sudden, all these people I was working with were millionaires.',
+    author: 'Andy Hertzfeld',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a602e7e86700048f0287'
+  }, {
+    _id: '5aa2a68ce7e86700048f0288',
+    sr: '',
+    en: "I'm interested in creating images that communicate with people.",
+    author: 'Toru Iwatani',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a68ce7e86700048f0288'
+  }, {
+    _id: '5aa31172bb93c00004d9a6f6',
+    sr: '',
+    en: 'I think the best way to supervise is by personal example and by frequent code reviews.',
+    author: 'Charles Simonyi',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa31172bb93c00004d9a6f6'
+  }, {
+    _id: '5aa3181fbb93c00004d9a6f8',
+    sr: '',
+    en: 'There are some basic techniques to control complexity. Fundamentally, I divide and conquer, break things down, and try to write reasonably precise descriptions of what each piece is supposed to do.',
+    author: 'Butler Lampson',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa3181fbb93c00004d9a6f8'
+  }, {
+    _id: '5aa311f9bb93c00004d9a6f7',
+    sr: '',
+    en: 'The efficiency of the code decreases with an increase in the number of people working on the program. The most efficient programs are written by a single person.',
+    author: 'Charles Simonyi',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa311f9bb93c00004d9a6f7'
+  }, {
+    _id: '5aa30d4abb93c00004d9a6f5',
+    sr: '',
+    en: "I'll bet you that from ten feet away I can tell if a program is bad. I might not guarantee that it is good, but if it looks bad from ten feet, I can guarantee you that it wasn't written with care.",
+    author: 'Charles Simonyi',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa30d4abb93c00004d9a6f5'
+  }, {
+    _id: '5aa44e197832df00040ac9b7',
+    sr: '',
+    en: 'Nobody knows how to build really complicated hardware systems, so designing hardware tends to be simpler. Software is much more complicated.',
+    author: 'Butler Lampson',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa44e197832df00040ac9b7'
+  }, {
+    _id: '5aa4511b7832df00040ac9b8',
+    sr: '',
+    en: 'A beautiful program is like a beautiful theorem: It does the job elegantly.',
+    author: 'Butler Lampson',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa4511b7832df00040ac9b8'
+  }, {
+    _id: '5aa456667832df00040ac9b9',
+    sr: '',
+    en: 'To be successful, you want to surround yourself with very talented folks whose skills blend very well. That’s the secret of success.',
+    author: 'John Warnock',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa456667832df00040ac9b9'
+  }, {
+    _id: '5aa459d77832df00040ac9bc',
+    sr: '',
+    en: 'I start with drawing the data structures, and I spend a lot of time thinking about them. I also think about what the program has to go through before I start writing code.',
+    author: 'Gary Kildall',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa459d77832df00040ac9bc'
+  }, {
+    _id: '5aa456d87832df00040ac9ba',
+    sr: '',
+    en: 'Don’t go into a two-year development with nothing coming out in the middle. Have something come out every two months, so you can evaluate, regroup, and restart.',
+    author: 'John Warnock',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa456d87832df00040ac9ba'
+  }, {
+    _id: '5aa459767832df00040ac9bb',
+    sr: '',
+    en: 'If you learn how to solve problems, you can go through life and do pretty well.',
+    author: 'Gary Kildall',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa459767832df00040ac9bb'
+  }, {
+    _id: '5aa45f317832df00040ac9c0',
+    sr: '',
+    en: 'A great programmer thinks about the program on a constant basis, whether driving or eating. That method takes an incredible amount of mental energy.',
+    author: 'Bill Gates',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa45f317832df00040ac9c0'
+  }, {
+    _id: '5aa4601c7832df00040ac9c1',
+    sr: '',
+    en: "The really great programs I've written have all been ones that I have thought about for a huge amount of time before I ever wrote them.",
+    author: 'Bill Gates',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa4601c7832df00040ac9c1'
+  }, {
+    _id: '5aa461667832df00040ac9c2',
+    sr: '',
+    en: 'There is an amazing commonality in the types of difficulties you run into. In design reviews, I really enjoy being able to provide advice, based on programs that I have done.',
+    author: 'Bill Gates',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa461667832df00040ac9c2'
+  }, {
+    _id: '5a9b16b92bad9600044b6fe3',
+    sr: '',
+    en: 'The fundamental problem with program maintenance is that fixing a defect has a substantial (20-50 percent) chance of introducing another. So the whole process is two steps forward and one step back.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b16b92bad9600044b6fe3'
+  }, {
+    _id: '5aa5c874d1481c4acc43aa71',
+    en: 'Really care about the tools you use because they are what make you your best.',
+    sr: 'Stvarno brinite o alatima koje koristite jer to je ono što vas čini najboljim.',
+    author: 'Addy Osmani',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa5c874d1481c4acc43aa71'
+  }, {
+    _id: '5aa63f3a42fbc6000481ca0d',
+    en: 'What I like about programming is that it really helps you think about how we communicate, how we think, how logic works, how creative arts work.',
+    sr: '',
+    author: 'Michael Hawley',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa63f3a42fbc6000481ca0d'
+  }, {
+    _id: '5aa6de2101c2c400048eb9a8',
+    en: 'One of the things I’ve been pushing is code reading. I think that is the most useful thing that a community of programmers can do for each other—spend time on a regular basis reading each other’s code.',
+    sr: '',
+    author: 'Douglas Crockford',
+    source: 'Coders at Work',
+    numberOfVotes: 3,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa6de2101c2c400048eb9a8'
+  }, {
+    _id: '5aa6dd2101c2c400048eb9a7',
+    en: 'I think the best way to make JavaScript better would be to\nmake it smaller. If we could just get it down to what it does really well and remove the features that add little or no value, it’s actually a better language.',
+    sr: '',
+    author: 'Douglas Crockford',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa6dd2101c2c400048eb9a7'
+  }, {
+    _id: '5aa6e0d101c2c400048eb9a9',
+    en: 'Readability of code is now my first priority. It’s more important than being fast, almost as important as being correct, but I think being readable is actually the most likely way of making it correct.',
+    sr: '',
+    author: 'Douglas Crockford',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa6e0d101c2c400048eb9a9'
+  }, {
+    _id: '5aa6e37801c2c400048eb9aa',
+    en: 'Part of what makes programming difficult is most of the time we’re doing stuff we’ve never done before.',
+    sr: '',
+    author: 'Douglas Crockford',
+    source: 'Coders at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa6e37801c2c400048eb9aa'
+  }, {
+    _id: '5aa6e8ac01c2c400048eb9ab',
+    en: 'I think of myself as a writer. Sometimes I write in English and sometimes I write in JavaScript.',
+    sr: 'Ja mislim o sebi kao piscu. Ponekad pišem na engleskom, a ponekad pišem u JavaScriptu.',
+    author: 'Douglas Crockford',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa6e8ac01c2c400048eb9ab'
+  }, {
+    _id: '5aa63e0642fbc6000481ca0c',
+    en: 'People should be able to speak and breathe programs just like they talk now.',
+    sr: '',
+    author: 'Jaron Lanier',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa63e0642fbc6000481ca0c'
+  }, {
+    _id: '5aa9a89904c8cd0004d472c4',
+    en: 'If you start removing things, if you get to the point where if you were to remove anything more it would not work any more — at this point it is beautiful.',
+    sr: '',
+    author: 'Joe Armstrong (programmer)',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa9a89904c8cd0004d472c4'
+  }, {
+    _id: '5aa8307a94bd610da89b3340',
+    en: 'Humanity is acquiring all the right technology for all the wrong reasons.',
+    sr: '',
+    author: 'Buckminster Fuller',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa8307a94bd610da89b3340'
+  }, {
+    _id: '5aa9aa9f04c8cd0004d472c5',
+    en: 'I characterize functional programming as a radical and elegant attack on the whole enterprise of writing programs.',
+    sr: '',
+    author: 'Simon Peyton Jones',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 3.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa9aa9f04c8cd0004d472c5'
+  }, {
+    _id: '5aab9d9617c21b0004913edc',
+    en: 'Size almost always involves complexity, and complexity confuses programmers. Confused programmers, in turn, introduce mistakes (bugs) into programs.',
+    sr: '',
+    author: 'Marijn Haverbeke',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aab9d9617c21b0004913edc'
+  }, {
+    _id: '5aab9ade17c21b0004913edb',
+    en: 'Flaws in computer programs are usually called bugs. It makes programmers feel good to imagine them as little things that just happen to crawl into our work. In reality, of course, we put them there ourselves.',
+    sr: '',
+    author: 'Marijn Haverbeke',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aab9ade17c21b0004913edb'
+  }, {
+    _id: '5aac2850c2138a00046e9183',
+    en: 'When I was at what I would consider the peak of my abilities, I had extremely trustworthy intuition. I would do things and they would just turn out right.',
+    sr: '',
+    author: 'L. Peter Deutsch',
+    source: 'Coders at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac2850c2138a00046e9183'
+  }, {
+    _id: '5aac2af1c2138a00046e9185',
+    en: 'Every now and then I feel a temptation to design a programming language but then I just lie down until it goes away.',
+    sr: '',
+    author: 'L. Peter Deutsch',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac2af1c2138a00046e9185'
+  }, {
+    _id: '5aac2cf9c2138a00046e9186',
+    en: 'Language systems stand on a tripod. There’s the language, there’s the libraries, and there are the tools. And how successful a language is depends on a complex interaction between those three things.',
+    sr: '',
+    author: 'L. Peter Deutsch',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac2cf9c2138a00046e9186'
+  }, {
+    _id: '5aac29e1c2138a00046e9184',
+    en: 'I would make a strong case that programming languages have not improved qualitatively in the last 40 years. There is no programming language in use today that is qualitatively better than Simula-67.',
+    sr: '',
+    author: 'L. Peter Deutsch',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 3.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac29e1c2138a00046e9184'
+  }, {
+    _id: '5aac303cc2138a00046e9188',
+    en: 'Instead of the progression of tens, I have for many years used the simplest progression of all, which proceeds by twos, having found that it is useful for the perfection of the science of numbers.',
+    sr: '',
+    author: 'Gottfried Wilhelm Leibniz',
+    source: 'EXPLANATION OF BINARY ARITHMETIC',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac303cc2138a00046e9188'
+  }, {
+    _id: '5aac2e8fc2138a00046e9187',
+    en: 'I never in my wildest dreams would have predicted the evolution of the Internet. And I never would’ve predicted the degree to which corporate influence over the Internet has changed its character over time.',
+    sr: '',
+    author: 'L. Peter Deutsch',
+    source: 'Coders at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac2e8fc2138a00046e9187'
+  }, {
+    _id: '5aac3a57610d7d0004066303',
+    en: 'I’ve never been a lover of existing code. Code by itself almost rots and it’s gotta be rewritten. Even when nothing has changed, for some reason it rots.',
+    sr: 'Nikada nisam bio ljubitelj postojećeg koda. Kod po sebi  truli i treba ga ponovo pisati. Čak i kad se ništa ne promeni, on iz nekog razloga truli.',
+    author: 'Ken Thompson',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac3a57610d7d0004066303'
+  }, {
+    _id: '5aac39b1610d7d0004066302',
+    en: 'Modern programming scares me in many respects. It confuses me to read a program which you must read top-down. It says “do something.” And you go find “something.” And you read it and it says, “do something else” and you go find something and it says, “do something else” and it goes back to the top maybe. And nothing gets done. It’s just relegating the problem to a deeper and deeper level.',
+    sr: '',
+    author: 'Ken Thompson',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac39b1610d7d0004066302'
+  }, {
+    _id: '5aa9a7b304c8cd0004d472c3',
+    en: 'I always spend a day a week learning new stuff. That means I spend 20% more of my time than my colleagues learning new stuff. Now 20% at compound interest means that after four and a half years I will know twice as much as them.',
+    sr: '',
+    author: 'Richard Hamming',
+    source: 'Coders at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa9a7b304c8cd0004d472c3'
+  }, {
+    _id: '5aad68d17632ba0004ec84ae',
+    en: 'I’ll use dirty tricks for two reasons. One is, if it’s really going to give me a performance improvement. Or sometimes just for pure pleasure. In any case, I document it; I don’t just put it in there.',
+    sr: '',
+    author: 'Donald Knuth',
+    source: 'Coders at Work',
+    numberOfVotes: 2,
+    rating: 4.8,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aad68d17632ba0004ec84ae'
+  }, {
+    _id: '5aac3aa3610d7d0004066304',
+    en: 'I’ll throw away code as soon I want to add something to it and I get the feeling that what I have to do to add it is too hard.',
+    sr: '',
+    author: 'Ken Thompson',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac3aa3610d7d0004066304'
+  }, {
+    _id: '5aad69767632ba0004ec84af',
+    en: 'The problem is that coding isn’t fun if all you can do is call things out of a library, if you can’t write the library yourself.',
+    sr: '',
+    author: 'Donald Knuth',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aad69767632ba0004ec84af'
+  }, {
+    _id: '5aad6d0d7632ba0004ec84b0',
+    en: 'I make mistakes because I’m always operating at my limit. If I only stay in comfortable territory all the time, that’s not so much fun.',
+    sr: '',
+    author: 'Donald Knuth',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aad6d0d7632ba0004ec84b0'
+  }, {
+    _id: '5aad6dfa7632ba0004ec84b1',
+    en: 'I’ve got this need to program. I wake up in the morning with sentences of a literate program. Before breakfast — I’m sure poets must feel this — I have to go to the computer and write this paragraph and then I can eat and I’m happy.',
+    sr: '',
+    author: 'Donald Knuth',
+    source: 'Coders at Work',
+    numberOfVotes: 1,
+    rating: 3.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aad6dfa7632ba0004ec84b1'
+  }, {
+    _id: '5aad71337632ba0004ec84b2',
+    en: 'The more varieties of different kinds of notations are still useful — don’t only read the people who code like you.',
+    sr: '',
+    author: 'Donald Knuth',
+    source: 'Coders at Work',
+    numberOfVotes: 2,
+    rating: 4.3,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aad71337632ba0004ec84b2'
+  }, {
+    _id: '5ab6e0d632a9950004a2efc2',
+    en: 'The good news about computers is that they do what you tell them to do. The bad news is that they do what you tell them to do.',
+    sr: '',
+    author: 'Ted Nelson',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5ab6e0d632a9950004a2efc2'
+  }, {
+    _id: '5aa6e99001c2c400048eb9ac',
+    en: 'Mathematics is important in programming, but it’s just one of a lot of things that are important. If you overemphasize the math then you underemphasize stuff which might be even more important, such as literacy.',
+    sr: '',
+    author: 'Douglas Crockford',
+    source: 'Coders at Work',
+    numberOfVotes: 2,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa6e99001c2c400048eb9ac'
+  }, {
+    _id: '5aac3b37610d7d0004066305',
+    en: 'Documenting is very, very hard; it’s time-consuming. To do it right, you’ve got to do it like programming. You’ve got to deconstruct it, put it together in nice ways, rewrite it when it’s wrong. People don’t do that.',
+    sr: '',
+    author: 'Ken Thompson',
+    source: 'Coders at Work',
+    numberOfVotes: 2,
+    rating: 4.8,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac3b37610d7d0004066305'
+  }, {
+    _id: '5ab6e20132a9950004a2efc6',
+    en: 'Making things easy is hard.',
+    sr: '',
+    author: 'Ted Nelson',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5ab6e20132a9950004a2efc6'
+  }, {
+    _id: '5ab6e9e132a9950004a2efc7',
+    en: 'The difference between theory and practice is that in theory, there is no difference between theory and practice.',
+    sr: '',
+    author: 'Richard Moore (engineer)',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5ab6e9e132a9950004a2efc7'
+  }, {
+    _id: '5ab6ea2a32a9950004a2efc8',
+    en: 'You should name a variable using the same care with which you name a first-born child.',
+    sr: '',
+    author: 'Jim Coplien',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5ab6ea2a32a9950004a2efc8'
+  }, {
+    _id: '5acca81fe01bb40004668819',
+    en: 'The ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code.',
+    sr: '',
+    author: 'Robert C. Martin',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5acca81fe01bb40004668819'
+  }, {
+    _id: '5b579bb420e9780004ba9ac3',
+    en: "There's nothing more permanent than a temporary hack.",
+    sr: '',
+    author: 'Kyle Simpson',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5b579bb420e9780004ba9ac3'
+  }, {
+    _id: '5b6d73d6b3f09f0004d9275f',
+    en: 'As numbers are reduced to the simplest principles, like 0 and 1, a wonderful order is apparent throughout.',
+    sr: '',
+    author: 'Gottfried Wilhelm Leibniz',
+    source: 'EXPLANATION OF BINARY ARITHMETIC',
+    numberOfVotes: 1,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5b6d73d6b3f09f0004d9275f'
+  }, {
+    _id: '5ab6e1ad32a9950004a2efc4',
+    en: 'In my second year in graduate school, I took a computer course and that was like lightening striking.',
+    sr: '',
+    author: 'Ted Nelson',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5ab6e1ad32a9950004a2efc4'
+  }, {
+    _id: '5ab6e13932a9950004a2efc3',
+    en: 'They were saying computers deal with numbers. This was absolutely nonsense. Computers deal with arbitrary information of any kind.',
+    sr: '',
+    author: 'Ted Nelson',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5ab6e13932a9950004a2efc3'
+  }, {
+    _id: '5ab6e1dd32a9950004a2efc5',
+    en: 'Right now you are a prisoner of each application you use. You have only the options that were given you by the developer of that application.',
+    sr: '',
+    author: 'Ted Nelson',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5ab6e1dd32a9950004a2efc5'
+  }, {
+    _id: '5a6ce86f2af929789500e83d',
+    sr: 'Složenost ubija. Ona isisava život iz developera, čini proizvode teškim za planiranje, pravljenje i testiranje, uvodi bezbednosne izazove i izaziva frustracije korisnika i administratora.',
+    en: 'Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build and test, it introduces security challenges and it causes end-user and administrator frustration.',
+    author: 'Ray Ozzie',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce86f2af929789500e83d'
+  }, {
+    _id: '5a6ce8702af929789500e882',
+    sr: 'Softver postaje sporiji brže nego što hardver postaje brži.',
+    en: 'Software gets slower faster than hardware gets faster.',
+    author: 'Niklaus Wirth',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e882'
+  }, {
+    _id: '5a6ce8702af929789500e89e',
+    sr: 'Kompjuter je glupa mašina sa sposobnošću da radi neviđeno pametne stvari, dok je programer pametan čovek sa sposobnošću da radi neviđeno glupe stvari.',
+    en: 'A computer is a stupid machine with the ability to do incredibly smart things, while computer programmers are smart people with the ability to do incredibly stupid things. They are, in short, a perfect match.',
+    author: 'David Parnas',
+    source: '',
+    numberOfVotes: 3,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e89e'
+  }, {
+    _id: '5a6ce8702af929789500e8c4',
+    sr: 'Par meseci pisanja koda može ti uštedeti par sati projektovanja.',
+    en: 'A few months writing code can save you a few hours in design.',
+    author: 'Anonymous',
+    source: null,
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a6ce8702af929789500e8c4'
+  }, {
+    _id: '5a72f8251ac5f022282e4125',
+    sr: 'Da li ste potpuno sigurni da sva ova zvona i praporci, sve ove predivne mogućnosti vaših takozvanih moćnih programskih jezika pripadaju skupu rešenja, a ne skupu problema?',
+    en: 'Are you quite sure that all those bells and whistles, all those wonderful facilities of your so called powerful programming languages, belong to the solution set rather than the problem set?',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a72f8251ac5f022282e4125'
+  }, {
+    _id: '5a91e3a1c4240c0004265956',
+    sr: '',
+    en: 'If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.',
+    author: 'John von Neumann',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a91e3a1c4240c0004265956'
+  }, {
+    _id: '5a933a408e7b510004cba4bb',
+    sr: '',
+    en: 'C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off.',
+    author: 'Bjarne Stroustrup',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a933a408e7b510004cba4bb'
+  }, {
+    _id: '5a933a668e7b510004cba4bc',
+    sr: 'Ako misliš da je prosto, nisi razumeo problem.',
+    en: "If you think it's simple, then you have misunderstood the problem.",
+    author: 'Bjarne Stroustrup',
+    source: '',
+    numberOfVotes: 2,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a933a668e7b510004cba4bc'
+  }, {
+    _id: '5a9342458e7b510004cba4c7',
+    sr: 'Objektno-orjentisan dizajn predstavlja rimske brojeve računarstva.',
+    en: 'Object-oriented design is the roman numerals of computing.',
+    author: 'Rob Pike',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9342458e7b510004cba4c7'
+  }, {
+    _id: '5a93d61c6a584e0004a4a613',
+    sr: '',
+    en: "It is hard to think that a $2 billion company with 4,300-plus people couldn't compete with six people in blue jeans.",
+    author: 'Steve Jobs',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93d61c6a584e0004a4a613'
+  }, {
+    _id: '5a93ffbae49ad10004edb861',
+    sr: '',
+    en: 'Some people, when confronted with a problem, think ‘I know, I’ll use regular expressions.’ Now they have two problems.',
+    author: 'Jamie Zawinski',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a93ffbae49ad10004edb861'
+  }, {
+    _id: '5a943255ee7ed5000496b17c',
+    sr: '',
+    en: 'Sometimes we do get taken by surprise. For example, when the Internet came along, we had it as a fifth or sixth priority.',
+    author: 'Bill Gates',
+    source: '',
+    numberOfVotes: 1,
+    rating: 2,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943255ee7ed5000496b17c'
+  }, {
+    _id: '5a9432f0ee7ed5000496b180',
+    sr: '',
+    en: "It was a turning point in my programming career when I realized that I didn't have to win every argument.",
+    author: 'Ward Cunningham',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9432f0ee7ed5000496b180'
+  }, {
+    _id: '5a9435b6ee7ed5000496b18f',
+    sr: '',
+    en: 'And programming computers was so fascinating. You create your own little universe, and then it does what you tell it to do.',
+    author: 'Vint Cerf',
+    source: '',
+    numberOfVotes: 4,
+    rating: 3.7,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9435b6ee7ed5000496b18f'
+  }, {
+    _id: '5a943552ee7ed5000496b18d',
+    sr: '',
+    en: "The cleaner and nicer the program, the faster it's going to run. And if it doesn't, it'll be easy to make it fast.",
+    author: 'Joshua Bloch',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a943552ee7ed5000496b18d'
+  }, {
+    _id: '5a9436dcee7ed5000496b194',
+    sr: '',
+    en: "SQL, Lisp, and Haskell are the only programming languages that I've seen where one spends more time thinking than typing.",
+    author: 'Philip Greenspun',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9436dcee7ed5000496b194'
+  }, {
+    _id: '5a95a610cb1a4d0004b2987e',
+    sr: '',
+    en: 'It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures.',
+    author: 'Alan Perlis',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95a610cb1a4d0004b2987e'
+  }, {
+    _id: '5a95d1077700780004d51db9',
+    sr: '',
+    en: 'The most effective debugging tool is still careful thought, coupled with judiciously placed print statements.',
+    author: 'Brian Kernighan',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d1077700780004d51db9'
+  }, {
+    _id: '5a95d7637700780004d51dc5',
+    sr: '',
+    en: 'Computer languages of the future will be more concerned with goals and less with procedures specified by the programmer.',
+    author: 'Marvin Minsky',
+    source: '',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95d7637700780004d51dc5'
+  }, {
+    _id: '5a95fe167700780004d51dcd',
+    sr: '',
+    en: 'A computer would deserve to be called intelligent if it could deceive a human into believing that it was human.',
+    author: 'Alan Turing',
+    source: '',
+    numberOfVotes: 3,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a95fe167700780004d51dcd'
+  }, {
+    _id: '5a96be3ed6959500047aecbd',
+    sr: '',
+    en: 'The way to arrest entropy in software is to refactor it.',
+    author: 'Joseph Yoder (computer scientist)',
+    source: 'Brian Foote and Joseph Yoder, Big Ball of Mud',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96be3ed6959500047aecbd'
+  }, {
+    _id: '5a96bf21d6959500047aecc0',
+    sr: '',
+    en: "Reviews and pair programming provide programmers with something their work would not otherwise have: an audience. Sunlight, it is said is a powerful disinfectant. An immediate audience of one's peers provides immediate incentives to programmers to keep their code clear and comprehensible, as well as functional.",
+    author: 'Joseph Yoder (computer scientist)',
+    source: 'Brian Foote and Joseph Yoder, Big Ball of Mud',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a96bf21d6959500047aecc0'
+  }, {
+    _id: '5a97f2c0ccdfe50004febf38',
+    sr: '',
+    en: "You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.",
+    author: 'John Romero',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f2c0ccdfe50004febf38'
+  }, {
+    _id: '5a97f4c5ccdfe50004febf3c',
+    sr: '',
+    en: "JavaScript is the only language that I'm aware of that people feel they don't need to learn before they start using it.",
+    author: 'Douglas Crockford',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a97f4c5ccdfe50004febf3c'
+  }, {
+    _id: '5a9808951878b40004879f61',
+    sr: '',
+    en: 'Be humble, communicate clearly, and respect others. It costs nothing to be kind, but the impact is priceless.',
+    author: 'Addy Osmani',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9808951878b40004879f61'
+  }, {
+    _id: '5a9808dc1878b40004879f63',
+    sr: '',
+    en: "Telling a programmer there's already a library to do X is like telling a songwriter there's already a song about love.",
+    author: 'Pete Cordell',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9808dc1878b40004879f63'
+  }, {
+    _id: '5a980f551878b40004879f68',
+    sr: '',
+    en: 'Should array indices start at 0 or 1? My compromise of 0.5 was rejected without, I thought, proper consideration.',
+    author: 'Stan Kelly-Bootle',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a980f551878b40004879f68'
+  }, {
+    _id: '5a985fd2e93441000489b94d',
+    sr: '',
+    en: 'The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.',
+    author: 'Edsger W. Dijkstra',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a985fd2e93441000489b94d'
+  }, {
+    _id: '5a9a9e792bad9600044b6fb5',
+    sr: '',
+    en: "There certainly will be job disruption. Because what's going to happen is robots will be able to do everything better than us.",
+    author: 'Elon Musk',
+    source: '',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9a9e792bad9600044b6fb5'
+  }, {
+    _id: '5a9860dbe93441000489b950',
+    sr: '',
+    en: 'Sometimes, the elegant implementation is a function. Not a method. Not a class. Not a framework. Just a function.',
+    author: 'John Carmack',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9860dbe93441000489b950'
+  }, {
+    _id: '5a9aa0f72bad9600044b6fb8',
+    sr: '',
+    en: 'Artificial intelligence is the science of making machines do things that would require intelligence if done by men.',
+    author: 'Marvin Minsky',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9aa0f72bad9600044b6fb8'
+  }, {
+    _id: '5a9aaf682bad9600044b6fbb',
+    sr: '',
+    en: 'I just had to take the hypertext idea and connect it to the TCP and DNS ideas and — ta-da!— the World Wide Web.',
+    author: 'Tim Berners-Lee',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9aaf682bad9600044b6fbb'
+  }, {
+    _id: '5a9b0d552bad9600044b6fd4',
+    sr: '',
+    en: "A computational process is indeed much like a sorcerer's idea of a spirit. It cannot be seen or touched. It is not composed of matter at all. However, it is very real. It can perform intellectual work. It can answer questions. It can affect the world by disbursing money at a bank or by controlling a robot arm in a factory.",
+    author: 'Hal Abelson',
+    source: 'Structure and Interpretation of Computer Programs',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b0d552bad9600044b6fd4'
+  }, {
+    _id: '5a9b17792bad9600044b6fe5',
+    sr: '',
+    en: 'One must assume that there will be lots of bugs, and plan an orderly procedure for snaking them out.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b17792bad9600044b6fe5'
+  }, {
+    _id: '5a9b19662bad9600044b6ff1',
+    sr: '',
+    en: 'To achieve conceptual integrity, a design must proceed from one mind or a small group of agreeing minds.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b19662bad9600044b6ff1'
+  }, {
+    _id: '5a9b1d152bad9600044b6ff9',
+    sr: '',
+    en: 'The very best technology never has as much impact as girlfriend or boyfriend trouble.',
+    author: 'Tom DeMarco',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1d152bad9600044b6ff9'
+  }, {
+    _id: '5a9b19952bad9600044b6ff3',
+    sr: '',
+    en: 'Maintenance cost is strongly affected by the number of users. More users find more bugs.',
+    author: 'Fred Brooks',
+    source: 'The Mythical Man-Month',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b19952bad9600044b6ff3'
+  }, {
+    _id: '5a9b1f8c2bad9600044b7003',
+    sr: '',
+    en: 'Most errors are introduced during requirements specification!',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 2,
+    rating: 4.3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b1f8c2bad9600044b7003'
+  }, {
+    _id: '5a9b21892bad9600044b7006',
+    sr: '',
+    en: 'Programming is similar to a game of golf. The point is not getting the ball in the hole but how many strokes it takes.',
+    author: 'Harlan Mills',
+    source: '',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b21892bad9600044b7006'
+  }, {
+    _id: '5a9b22b42bad9600044b700a',
+    sr: '',
+    en: 'A number of studies have shown testing not very effective at finding bugs.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 2,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b22b42bad9600044b700a'
+  }, {
+    _id: '5a9b23cd2bad9600044b7010',
+    sr: '',
+    en: 'The key to keeping software costs down is to write code that is easily modified.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 1,
+    rating: 3.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b23cd2bad9600044b7010'
+  }, {
+    _id: '5a9b24492bad9600044b7014',
+    sr: '',
+    en: 'The notions of correctness in mathematics and programs are different. A mathematical model must be consistent; it need not match reality (be correct), and it need not be complete (in the formal sense). A program model must be consistent; it must match reality; and it must be complete (in the sense that it reacts gracefully to all inputs).',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 2,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b24492bad9600044b7014'
+  }, {
+    _id: '5a9b23ed2bad9600044b7012',
+    sr: '',
+    en: 'Programming is at least as difficult as developing a mathematical theory.',
+    author: 'Daniel T. Barry',
+    source: 'Myths and Realities in Software Development',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9b23ed2bad9600044b7012'
+  }, {
+    _id: '5a9d2fc8607c5100044dff78',
+    sr: '',
+    en: 'In 1971 when I joined the staff of the MIT Artificial Intelligence lab, all of us who helped develop the operating system software, we called ourselves hackers. We were not breaking any laws, at least not in doing the hacking we were paid to do. We were developing software and we were having fun. Hacking refers to the spirit of fun in which we were developing software.',
+    author: 'Richard Stallman',
+    source: '',
+    numberOfVotes: 2,
+    rating: 4.8,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9d2fc8607c5100044dff78'
+  }, {
+    _id: '5a9dc6316744730004f6a1e7',
+    sr: '',
+    en: 'By June 1949 people had begun to realize that it was not so easy to get programs right as at one time appeared.',
+    author: 'Maurice Wilkes',
+    source: '',
+    numberOfVotes: 0,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5a9dc6316744730004f6a1e7'
+  }, {
+    _id: '5aa28dd71dcf530004c4bf66',
+    sr: '',
+    en: 'Everything should be made as simple as possible. But to do that you have to master complexity.',
+    author: 'Butler Lampson',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa28dd71dcf530004c4bf66'
+  }, {
+    _id: '5aa29df5e7e86700048f027d',
+    sr: '',
+    en: 'If I had followed my heart instead of advice, dBASE would be much closer to perfection today.',
+    author: 'Wayne Ratliff',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa29df5e7e86700048f027d'
+  }, {
+    _id: '5aa29e43e7e86700048f027e',
+    sr: '',
+    en: "Programming is a little bit like the army. Now that I'm out, it's neat to have had the experience.",
+    author: 'Wayne Ratliff',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 3,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa29e43e7e86700048f027e'
+  }, {
+    _id: '5aa2a20ce7e86700048f0282',
+    sr: '',
+    en: "I don't like using any tools or programs I didn't write myself or that I don't have some control over.",
+    author: 'Jonathan Sachs',
+    source: 'Programmers at Work',
+    numberOfVotes: 0,
+    rating: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a20ce7e86700048f0282'
+  }, {
+    _id: '5aa2a15fe7e86700048f0281',
+    sr: '',
+    en: 'If you cannot explain a program to yourself, the chance of the\ncomputer getting it right is pretty small.',
+    author: 'Bob Frankston',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa2a15fe7e86700048f0281'
+  }, {
+    _id: '5aa45ab57832df00040ac9bd',
+    sr: '',
+    en: "I don't comment on the code itself because I feel that properly written code is very much self-documented.",
+    author: 'Gary Kildall',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa45ab57832df00040ac9bd'
+  }, {
+    _id: '5aa45bcf7832df00040ac9be',
+    sr: '',
+    en: 'When a program is clean and neat, nicely structured, and consistent, it can be beautiful.',
+    author: 'Gary Kildall',
+    source: 'Programmers at Work',
+    numberOfVotes: 1,
+    rating: 4.5,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa45bcf7832df00040ac9be'
+  }, {
+    _id: '5aa6db5d01c2c400048eb9a6',
+    en: 'JavaScript, purely by accident, has become the most popular programming language in the world.',
+    sr: '',
+    author: 'Douglas Crockford',
+    source: 'Coders at Work',
+    numberOfVotes: 0,
+    rating: 5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aa6db5d01c2c400048eb9a6'
+  }, {
+    _id: '5aac2669c2138a00046e9182',
+    en: 'Software is a discipline of detail, and that is a deep, horrendous fundamental problem with software.',
+    sr: '',
+    author: 'L. Peter Deutsch',
+    source: 'Coders at Work',
+    numberOfVotes: 0,
+    rating: 3.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac2669c2138a00046e9182'
+  }, {
+    _id: '5aac309cc2138a00046e9189',
+    en: 'Even in the games of children there are things to interest the greatest mathematician.',
+    sr: '',
+    author: 'Gottfried Wilhelm Leibniz',
+    source: '',
+    numberOfVotes: 1,
+    rating: 4.5,
+    __v: 0,
+    addedBy: '5ab04d928c8b4e3cbf733557',
+    id: '5aac309cc2138a00046e9189'
+  }];
+}
+
+/***/ }),
+
 /***/ "./src/pages/404.js":
 /*!**************************!*\
   !*** ./src/pages/404.js ***!
@@ -3661,9 +8691,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var node_emoji__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! node-emoji */ "./node_modules/node-emoji/index.js");
 /* harmony import */ var node_emoji__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(node_emoji__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! node-fetch */ "./node_modules/node-fetch/lib/index.mjs");
-/* harmony import */ var _components_layouts_main__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/layouts/main */ "./src/components/layouts/main.js");
-/* harmony import */ var _reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../reducers/quoteReducer */ "./src/reducers/quoteReducer.js");
+/* harmony import */ var _components_layouts_main__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layouts/main */ "./src/components/layouts/main.js");
+/* harmony import */ var _reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../reducers/quoteReducer */ "./src/reducers/quoteReducer.js");
+/* harmony import */ var _helpers_quotes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../helpers/quotes */ "./src/helpers/quotes.js");
 
 
 
@@ -3676,30 +8706,24 @@ const IndexPage = () => {
   const {
     0: state,
     1: dispatch
-  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useReducer)(_reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_6__.reducer, _reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_6__.initialState);
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useReducer)(_reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_5__.reducer, _reducers_quoteReducer__WEBPACK_IMPORTED_MODULE_5__.initialState);
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
-    getQuote();
-  }, []);
-
-  const getQuote = () => {
-    (0,node_fetch__WEBPACK_IMPORTED_MODULE_4__.default)('https://rawcdn.githack.com/iamjpg/programming-quotes-api/47c27e62513322a5c26b92212c0fc5ed0d4180ab/backup/quotes.json').then(res => res.json()).then(json => {
-      dispatch({
-        type: 'SET_QUOTES',
-        payload: {
-          quotes: json
-        }
-      });
-      dispatch({
-        type: 'SET_QUOTE'
-      });
+    dispatch({
+      type: 'SET_QUOTES',
+      payload: {
+        quotes: (0,_helpers_quotes__WEBPACK_IMPORTED_MODULE_6__.default)()
+      }
     });
-  };
+    dispatch({
+      type: 'SET_QUOTE'
+    });
+  }, []);
 
   const getNewQuote = e => {
     e.target.classList.add('refreshQuoteAnimate');
     setTimeout(() => {
       e.target.classList.remove('refreshQuoteAnimate');
-    }, 500);
+    }, 1000);
     dispatch({
       type: 'SET_QUOTE'
     });
@@ -3733,7 +8757,7 @@ const IndexPage = () => {
       nodes: allPosts
     }
   } = _public_page_data_sq_d_717708846_json__WEBPACK_IMPORTED_MODULE_0__.data;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_layouts_main__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "I'm a software engineer working in Las Vegas, Nevada. I love", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_layouts_main__WEBPACK_IMPORTED_MODULE_4__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "I'm a software engineer working in Las Vegas, Nevada. I love", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     target: "_blank",
     rel: "noreferrer"
@@ -3833,69 +8857,6 @@ const reducer = (state, action) => {
       throw new Error();
   }
 };
-
-/***/ }),
-
-/***/ "./src/templates/blog-post.js":
-/*!************************************!*\
-  !*** ./src/templates/blog-post.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ BlogPost)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _components_layouts_article__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layouts/article */ "./src/components/layouts/article.js");
-
-
-
-function BlogPost({
-  pageContext: {
-    id,
-    author,
-    title,
-    twitterPost,
-    youtubeVideoID,
-    publishedAt,
-    date,
-    content: {
-      html
-    }
-  }
-}) {
-  const canonicalUrl = typeof window === 'undefined' ? '' : window.location.href;
-
-  const formatDate = function (timestamp) {
-    // Create a date object from the timestamp
-    var date = new Date(timestamp); // Create a list of names for the months
-
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; // return a formatted date
-
-    return months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
-  };
-
-  const addDays = function (date, days) {
-    date.setDate(date.getDate() + days);
-    return date;
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layouts_article__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "backToHome"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/"
-  }, "\u2190 Back")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "articleHeader"
-  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    dangerouslySetInnerHTML: {
-      __html: html
-    }
-  }));
-}
 
 /***/ }),
 
@@ -11967,1668 +16928,6 @@ module.exports = JSON.parse('{"100":"💯","1234":"🔢","umbrella_with_rain_dro
 
 /***/ }),
 
-/***/ "./node_modules/node-fetch/lib/index.mjs":
-/*!***********************************************!*\
-  !*** ./node_modules/node-fetch/lib/index.mjs ***!
-  \***********************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "Headers": () => (/* binding */ Headers),
-/* harmony export */   "Request": () => (/* binding */ Request),
-/* harmony export */   "Response": () => (/* binding */ Response),
-/* harmony export */   "FetchError": () => (/* binding */ FetchError)
-/* harmony export */ });
-/* harmony import */ var stream__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! stream */ "stream");
-/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! http */ "http");
-/* harmony import */ var url__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! url */ "url");
-/* harmony import */ var https__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! https */ "https");
-/* harmony import */ var zlib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! zlib */ "zlib");
-
-
-
-
-
-
-// Based on https://github.com/tmpvar/jsdom/blob/aa85b2abf07766ff7bf5c1f6daafb3726f2f2db5/lib/jsdom/living/blob.js
-
-// fix for "Readable" isn't a named export issue
-const Readable = stream__WEBPACK_IMPORTED_MODULE_0__.Readable;
-
-const BUFFER = Symbol('buffer');
-const TYPE = Symbol('type');
-
-class Blob {
-	constructor() {
-		this[TYPE] = '';
-
-		const blobParts = arguments[0];
-		const options = arguments[1];
-
-		const buffers = [];
-		let size = 0;
-
-		if (blobParts) {
-			const a = blobParts;
-			const length = Number(a.length);
-			for (let i = 0; i < length; i++) {
-				const element = a[i];
-				let buffer;
-				if (element instanceof Buffer) {
-					buffer = element;
-				} else if (ArrayBuffer.isView(element)) {
-					buffer = Buffer.from(element.buffer, element.byteOffset, element.byteLength);
-				} else if (element instanceof ArrayBuffer) {
-					buffer = Buffer.from(element);
-				} else if (element instanceof Blob) {
-					buffer = element[BUFFER];
-				} else {
-					buffer = Buffer.from(typeof element === 'string' ? element : String(element));
-				}
-				size += buffer.length;
-				buffers.push(buffer);
-			}
-		}
-
-		this[BUFFER] = Buffer.concat(buffers);
-
-		let type = options && options.type !== undefined && String(options.type).toLowerCase();
-		if (type && !/[^\u0020-\u007E]/.test(type)) {
-			this[TYPE] = type;
-		}
-	}
-	get size() {
-		return this[BUFFER].length;
-	}
-	get type() {
-		return this[TYPE];
-	}
-	text() {
-		return Promise.resolve(this[BUFFER].toString());
-	}
-	arrayBuffer() {
-		const buf = this[BUFFER];
-		const ab = buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
-		return Promise.resolve(ab);
-	}
-	stream() {
-		const readable = new Readable();
-		readable._read = function () {};
-		readable.push(this[BUFFER]);
-		readable.push(null);
-		return readable;
-	}
-	toString() {
-		return '[object Blob]';
-	}
-	slice() {
-		const size = this.size;
-
-		const start = arguments[0];
-		const end = arguments[1];
-		let relativeStart, relativeEnd;
-		if (start === undefined) {
-			relativeStart = 0;
-		} else if (start < 0) {
-			relativeStart = Math.max(size + start, 0);
-		} else {
-			relativeStart = Math.min(start, size);
-		}
-		if (end === undefined) {
-			relativeEnd = size;
-		} else if (end < 0) {
-			relativeEnd = Math.max(size + end, 0);
-		} else {
-			relativeEnd = Math.min(end, size);
-		}
-		const span = Math.max(relativeEnd - relativeStart, 0);
-
-		const buffer = this[BUFFER];
-		const slicedBuffer = buffer.slice(relativeStart, relativeStart + span);
-		const blob = new Blob([], { type: arguments[2] });
-		blob[BUFFER] = slicedBuffer;
-		return blob;
-	}
-}
-
-Object.defineProperties(Blob.prototype, {
-	size: { enumerable: true },
-	type: { enumerable: true },
-	slice: { enumerable: true }
-});
-
-Object.defineProperty(Blob.prototype, Symbol.toStringTag, {
-	value: 'Blob',
-	writable: false,
-	enumerable: false,
-	configurable: true
-});
-
-/**
- * fetch-error.js
- *
- * FetchError interface for operational errors
- */
-
-/**
- * Create FetchError instance
- *
- * @param   String      message      Error message for human
- * @param   String      type         Error type for machine
- * @param   String      systemError  For Node.js system error
- * @return  FetchError
- */
-function FetchError(message, type, systemError) {
-  Error.call(this, message);
-
-  this.message = message;
-  this.type = type;
-
-  // when err.type is `system`, err.code contains system error code
-  if (systemError) {
-    this.code = this.errno = systemError.code;
-  }
-
-  // hide custom error implementation details from end-users
-  Error.captureStackTrace(this, this.constructor);
-}
-
-FetchError.prototype = Object.create(Error.prototype);
-FetchError.prototype.constructor = FetchError;
-FetchError.prototype.name = 'FetchError';
-
-let convert;
-try {
-	convert = require('encoding').convert;
-} catch (e) {}
-
-const INTERNALS = Symbol('Body internals');
-
-// fix an issue where "PassThrough" isn't a named export for node <10
-const PassThrough = stream__WEBPACK_IMPORTED_MODULE_0__.PassThrough;
-
-/**
- * Body mixin
- *
- * Ref: https://fetch.spec.whatwg.org/#body
- *
- * @param   Stream  body  Readable stream
- * @param   Object  opts  Response options
- * @return  Void
- */
-function Body(body) {
-	var _this = this;
-
-	var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-	    _ref$size = _ref.size;
-
-	let size = _ref$size === undefined ? 0 : _ref$size;
-	var _ref$timeout = _ref.timeout;
-	let timeout = _ref$timeout === undefined ? 0 : _ref$timeout;
-
-	if (body == null) {
-		// body is undefined or null
-		body = null;
-	} else if (isURLSearchParams(body)) {
-		// body is a URLSearchParams
-		body = Buffer.from(body.toString());
-	} else if (isBlob(body)) ; else if (Buffer.isBuffer(body)) ; else if (Object.prototype.toString.call(body) === '[object ArrayBuffer]') {
-		// body is ArrayBuffer
-		body = Buffer.from(body);
-	} else if (ArrayBuffer.isView(body)) {
-		// body is ArrayBufferView
-		body = Buffer.from(body.buffer, body.byteOffset, body.byteLength);
-	} else if (body instanceof stream__WEBPACK_IMPORTED_MODULE_0__) ; else {
-		// none of the above
-		// coerce to string then buffer
-		body = Buffer.from(String(body));
-	}
-	this[INTERNALS] = {
-		body,
-		disturbed: false,
-		error: null
-	};
-	this.size = size;
-	this.timeout = timeout;
-
-	if (body instanceof stream__WEBPACK_IMPORTED_MODULE_0__) {
-		body.on('error', function (err) {
-			const error = err.name === 'AbortError' ? err : new FetchError(`Invalid response body while trying to fetch ${_this.url}: ${err.message}`, 'system', err);
-			_this[INTERNALS].error = error;
-		});
-	}
-}
-
-Body.prototype = {
-	get body() {
-		return this[INTERNALS].body;
-	},
-
-	get bodyUsed() {
-		return this[INTERNALS].disturbed;
-	},
-
-	/**
-  * Decode response as ArrayBuffer
-  *
-  * @return  Promise
-  */
-	arrayBuffer() {
-		return consumeBody.call(this).then(function (buf) {
-			return buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
-		});
-	},
-
-	/**
-  * Return raw response as Blob
-  *
-  * @return Promise
-  */
-	blob() {
-		let ct = this.headers && this.headers.get('content-type') || '';
-		return consumeBody.call(this).then(function (buf) {
-			return Object.assign(
-			// Prevent copying
-			new Blob([], {
-				type: ct.toLowerCase()
-			}), {
-				[BUFFER]: buf
-			});
-		});
-	},
-
-	/**
-  * Decode response as json
-  *
-  * @return  Promise
-  */
-	json() {
-		var _this2 = this;
-
-		return consumeBody.call(this).then(function (buffer) {
-			try {
-				return JSON.parse(buffer.toString());
-			} catch (err) {
-				return Body.Promise.reject(new FetchError(`invalid json response body at ${_this2.url} reason: ${err.message}`, 'invalid-json'));
-			}
-		});
-	},
-
-	/**
-  * Decode response as text
-  *
-  * @return  Promise
-  */
-	text() {
-		return consumeBody.call(this).then(function (buffer) {
-			return buffer.toString();
-		});
-	},
-
-	/**
-  * Decode response as buffer (non-spec api)
-  *
-  * @return  Promise
-  */
-	buffer() {
-		return consumeBody.call(this);
-	},
-
-	/**
-  * Decode response as text, while automatically detecting the encoding and
-  * trying to decode to UTF-8 (non-spec api)
-  *
-  * @return  Promise
-  */
-	textConverted() {
-		var _this3 = this;
-
-		return consumeBody.call(this).then(function (buffer) {
-			return convertBody(buffer, _this3.headers);
-		});
-	}
-};
-
-// In browsers, all properties are enumerable.
-Object.defineProperties(Body.prototype, {
-	body: { enumerable: true },
-	bodyUsed: { enumerable: true },
-	arrayBuffer: { enumerable: true },
-	blob: { enumerable: true },
-	json: { enumerable: true },
-	text: { enumerable: true }
-});
-
-Body.mixIn = function (proto) {
-	for (const name of Object.getOwnPropertyNames(Body.prototype)) {
-		// istanbul ignore else: future proof
-		if (!(name in proto)) {
-			const desc = Object.getOwnPropertyDescriptor(Body.prototype, name);
-			Object.defineProperty(proto, name, desc);
-		}
-	}
-};
-
-/**
- * Consume and convert an entire Body to a Buffer.
- *
- * Ref: https://fetch.spec.whatwg.org/#concept-body-consume-body
- *
- * @return  Promise
- */
-function consumeBody() {
-	var _this4 = this;
-
-	if (this[INTERNALS].disturbed) {
-		return Body.Promise.reject(new TypeError(`body used already for: ${this.url}`));
-	}
-
-	this[INTERNALS].disturbed = true;
-
-	if (this[INTERNALS].error) {
-		return Body.Promise.reject(this[INTERNALS].error);
-	}
-
-	let body = this.body;
-
-	// body is null
-	if (body === null) {
-		return Body.Promise.resolve(Buffer.alloc(0));
-	}
-
-	// body is blob
-	if (isBlob(body)) {
-		body = body.stream();
-	}
-
-	// body is buffer
-	if (Buffer.isBuffer(body)) {
-		return Body.Promise.resolve(body);
-	}
-
-	// istanbul ignore if: should never happen
-	if (!(body instanceof stream__WEBPACK_IMPORTED_MODULE_0__)) {
-		return Body.Promise.resolve(Buffer.alloc(0));
-	}
-
-	// body is stream
-	// get ready to actually consume the body
-	let accum = [];
-	let accumBytes = 0;
-	let abort = false;
-
-	return new Body.Promise(function (resolve, reject) {
-		let resTimeout;
-
-		// allow timeout on slow response body
-		if (_this4.timeout) {
-			resTimeout = setTimeout(function () {
-				abort = true;
-				reject(new FetchError(`Response timeout while trying to fetch ${_this4.url} (over ${_this4.timeout}ms)`, 'body-timeout'));
-			}, _this4.timeout);
-		}
-
-		// handle stream errors
-		body.on('error', function (err) {
-			if (err.name === 'AbortError') {
-				// if the request was aborted, reject with this Error
-				abort = true;
-				reject(err);
-			} else {
-				// other errors, such as incorrect content-encoding
-				reject(new FetchError(`Invalid response body while trying to fetch ${_this4.url}: ${err.message}`, 'system', err));
-			}
-		});
-
-		body.on('data', function (chunk) {
-			if (abort || chunk === null) {
-				return;
-			}
-
-			if (_this4.size && accumBytes + chunk.length > _this4.size) {
-				abort = true;
-				reject(new FetchError(`content size at ${_this4.url} over limit: ${_this4.size}`, 'max-size'));
-				return;
-			}
-
-			accumBytes += chunk.length;
-			accum.push(chunk);
-		});
-
-		body.on('end', function () {
-			if (abort) {
-				return;
-			}
-
-			clearTimeout(resTimeout);
-
-			try {
-				resolve(Buffer.concat(accum, accumBytes));
-			} catch (err) {
-				// handle streams that have accumulated too much data (issue #414)
-				reject(new FetchError(`Could not create Buffer from response body for ${_this4.url}: ${err.message}`, 'system', err));
-			}
-		});
-	});
-}
-
-/**
- * Detect buffer encoding and convert to target encoding
- * ref: http://www.w3.org/TR/2011/WD-html5-20110113/parsing.html#determining-the-character-encoding
- *
- * @param   Buffer  buffer    Incoming buffer
- * @param   String  encoding  Target encoding
- * @return  String
- */
-function convertBody(buffer, headers) {
-	if (typeof convert !== 'function') {
-		throw new Error('The package `encoding` must be installed to use the textConverted() function');
-	}
-
-	const ct = headers.get('content-type');
-	let charset = 'utf-8';
-	let res, str;
-
-	// header
-	if (ct) {
-		res = /charset=([^;]*)/i.exec(ct);
-	}
-
-	// no charset in content type, peek at response body for at most 1024 bytes
-	str = buffer.slice(0, 1024).toString();
-
-	// html5
-	if (!res && str) {
-		res = /<meta.+?charset=(['"])(.+?)\1/i.exec(str);
-	}
-
-	// html4
-	if (!res && str) {
-		res = /<meta[\s]+?http-equiv=(['"])content-type\1[\s]+?content=(['"])(.+?)\2/i.exec(str);
-		if (!res) {
-			res = /<meta[\s]+?content=(['"])(.+?)\1[\s]+?http-equiv=(['"])content-type\3/i.exec(str);
-			if (res) {
-				res.pop(); // drop last quote
-			}
-		}
-
-		if (res) {
-			res = /charset=(.*)/i.exec(res.pop());
-		}
-	}
-
-	// xml
-	if (!res && str) {
-		res = /<\?xml.+?encoding=(['"])(.+?)\1/i.exec(str);
-	}
-
-	// found charset
-	if (res) {
-		charset = res.pop();
-
-		// prevent decode issues when sites use incorrect encoding
-		// ref: https://hsivonen.fi/encoding-menu/
-		if (charset === 'gb2312' || charset === 'gbk') {
-			charset = 'gb18030';
-		}
-	}
-
-	// turn raw buffers into a single utf-8 buffer
-	return convert(buffer, 'UTF-8', charset).toString();
-}
-
-/**
- * Detect a URLSearchParams object
- * ref: https://github.com/bitinn/node-fetch/issues/296#issuecomment-307598143
- *
- * @param   Object  obj     Object to detect by type or brand
- * @return  String
- */
-function isURLSearchParams(obj) {
-	// Duck-typing as a necessary condition.
-	if (typeof obj !== 'object' || typeof obj.append !== 'function' || typeof obj.delete !== 'function' || typeof obj.get !== 'function' || typeof obj.getAll !== 'function' || typeof obj.has !== 'function' || typeof obj.set !== 'function') {
-		return false;
-	}
-
-	// Brand-checking and more duck-typing as optional condition.
-	return obj.constructor.name === 'URLSearchParams' || Object.prototype.toString.call(obj) === '[object URLSearchParams]' || typeof obj.sort === 'function';
-}
-
-/**
- * Check if `obj` is a W3C `Blob` object (which `File` inherits from)
- * @param  {*} obj
- * @return {boolean}
- */
-function isBlob(obj) {
-	return typeof obj === 'object' && typeof obj.arrayBuffer === 'function' && typeof obj.type === 'string' && typeof obj.stream === 'function' && typeof obj.constructor === 'function' && typeof obj.constructor.name === 'string' && /^(Blob|File)$/.test(obj.constructor.name) && /^(Blob|File)$/.test(obj[Symbol.toStringTag]);
-}
-
-/**
- * Clone body given Res/Req instance
- *
- * @param   Mixed  instance  Response or Request instance
- * @return  Mixed
- */
-function clone(instance) {
-	let p1, p2;
-	let body = instance.body;
-
-	// don't allow cloning a used body
-	if (instance.bodyUsed) {
-		throw new Error('cannot clone body after it is used');
-	}
-
-	// check that body is a stream and not form-data object
-	// note: we can't clone the form-data object without having it as a dependency
-	if (body instanceof stream__WEBPACK_IMPORTED_MODULE_0__ && typeof body.getBoundary !== 'function') {
-		// tee instance body
-		p1 = new PassThrough();
-		p2 = new PassThrough();
-		body.pipe(p1);
-		body.pipe(p2);
-		// set instance body to teed body and return the other teed body
-		instance[INTERNALS].body = p1;
-		body = p2;
-	}
-
-	return body;
-}
-
-/**
- * Performs the operation "extract a `Content-Type` value from |object|" as
- * specified in the specification:
- * https://fetch.spec.whatwg.org/#concept-bodyinit-extract
- *
- * This function assumes that instance.body is present.
- *
- * @param   Mixed  instance  Any options.body input
- */
-function extractContentType(body) {
-	if (body === null) {
-		// body is null
-		return null;
-	} else if (typeof body === 'string') {
-		// body is string
-		return 'text/plain;charset=UTF-8';
-	} else if (isURLSearchParams(body)) {
-		// body is a URLSearchParams
-		return 'application/x-www-form-urlencoded;charset=UTF-8';
-	} else if (isBlob(body)) {
-		// body is blob
-		return body.type || null;
-	} else if (Buffer.isBuffer(body)) {
-		// body is buffer
-		return null;
-	} else if (Object.prototype.toString.call(body) === '[object ArrayBuffer]') {
-		// body is ArrayBuffer
-		return null;
-	} else if (ArrayBuffer.isView(body)) {
-		// body is ArrayBufferView
-		return null;
-	} else if (typeof body.getBoundary === 'function') {
-		// detect form data input from form-data module
-		return `multipart/form-data;boundary=${body.getBoundary()}`;
-	} else if (body instanceof stream__WEBPACK_IMPORTED_MODULE_0__) {
-		// body is stream
-		// can't really do much about this
-		return null;
-	} else {
-		// Body constructor defaults other things to string
-		return 'text/plain;charset=UTF-8';
-	}
-}
-
-/**
- * The Fetch Standard treats this as if "total bytes" is a property on the body.
- * For us, we have to explicitly get it with a function.
- *
- * ref: https://fetch.spec.whatwg.org/#concept-body-total-bytes
- *
- * @param   Body    instance   Instance of Body
- * @return  Number?            Number of bytes, or null if not possible
- */
-function getTotalBytes(instance) {
-	const body = instance.body;
-
-
-	if (body === null) {
-		// body is null
-		return 0;
-	} else if (isBlob(body)) {
-		return body.size;
-	} else if (Buffer.isBuffer(body)) {
-		// body is buffer
-		return body.length;
-	} else if (body && typeof body.getLengthSync === 'function') {
-		// detect form data input from form-data module
-		if (body._lengthRetrievers && body._lengthRetrievers.length == 0 || // 1.x
-		body.hasKnownLength && body.hasKnownLength()) {
-			// 2.x
-			return body.getLengthSync();
-		}
-		return null;
-	} else {
-		// body is stream
-		return null;
-	}
-}
-
-/**
- * Write a Body to a Node.js WritableStream (e.g. http.Request) object.
- *
- * @param   Body    instance   Instance of Body
- * @return  Void
- */
-function writeToStream(dest, instance) {
-	const body = instance.body;
-
-
-	if (body === null) {
-		// body is null
-		dest.end();
-	} else if (isBlob(body)) {
-		body.stream().pipe(dest);
-	} else if (Buffer.isBuffer(body)) {
-		// body is buffer
-		dest.write(body);
-		dest.end();
-	} else {
-		// body is stream
-		body.pipe(dest);
-	}
-}
-
-// expose Promise
-Body.Promise = global.Promise;
-
-/**
- * headers.js
- *
- * Headers class offers convenient helpers
- */
-
-const invalidTokenRegex = /[^\^_`a-zA-Z\-0-9!#$%&'*+.|~]/;
-const invalidHeaderCharRegex = /[^\t\x20-\x7e\x80-\xff]/;
-
-function validateName(name) {
-	name = `${name}`;
-	if (invalidTokenRegex.test(name) || name === '') {
-		throw new TypeError(`${name} is not a legal HTTP header name`);
-	}
-}
-
-function validateValue(value) {
-	value = `${value}`;
-	if (invalidHeaderCharRegex.test(value)) {
-		throw new TypeError(`${value} is not a legal HTTP header value`);
-	}
-}
-
-/**
- * Find the key in the map object given a header name.
- *
- * Returns undefined if not found.
- *
- * @param   String  name  Header name
- * @return  String|Undefined
- */
-function find(map, name) {
-	name = name.toLowerCase();
-	for (const key in map) {
-		if (key.toLowerCase() === name) {
-			return key;
-		}
-	}
-	return undefined;
-}
-
-const MAP = Symbol('map');
-class Headers {
-	/**
-  * Headers class
-  *
-  * @param   Object  headers  Response headers
-  * @return  Void
-  */
-	constructor() {
-		let init = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : undefined;
-
-		this[MAP] = Object.create(null);
-
-		if (init instanceof Headers) {
-			const rawHeaders = init.raw();
-			const headerNames = Object.keys(rawHeaders);
-
-			for (const headerName of headerNames) {
-				for (const value of rawHeaders[headerName]) {
-					this.append(headerName, value);
-				}
-			}
-
-			return;
-		}
-
-		// We don't worry about converting prop to ByteString here as append()
-		// will handle it.
-		if (init == null) ; else if (typeof init === 'object') {
-			const method = init[Symbol.iterator];
-			if (method != null) {
-				if (typeof method !== 'function') {
-					throw new TypeError('Header pairs must be iterable');
-				}
-
-				// sequence<sequence<ByteString>>
-				// Note: per spec we have to first exhaust the lists then process them
-				const pairs = [];
-				for (const pair of init) {
-					if (typeof pair !== 'object' || typeof pair[Symbol.iterator] !== 'function') {
-						throw new TypeError('Each header pair must be iterable');
-					}
-					pairs.push(Array.from(pair));
-				}
-
-				for (const pair of pairs) {
-					if (pair.length !== 2) {
-						throw new TypeError('Each header pair must be a name/value tuple');
-					}
-					this.append(pair[0], pair[1]);
-				}
-			} else {
-				// record<ByteString, ByteString>
-				for (const key of Object.keys(init)) {
-					const value = init[key];
-					this.append(key, value);
-				}
-			}
-		} else {
-			throw new TypeError('Provided initializer must be an object');
-		}
-	}
-
-	/**
-  * Return combined header value given name
-  *
-  * @param   String  name  Header name
-  * @return  Mixed
-  */
-	get(name) {
-		name = `${name}`;
-		validateName(name);
-		const key = find(this[MAP], name);
-		if (key === undefined) {
-			return null;
-		}
-
-		return this[MAP][key].join(', ');
-	}
-
-	/**
-  * Iterate over all headers
-  *
-  * @param   Function  callback  Executed for each item with parameters (value, name, thisArg)
-  * @param   Boolean   thisArg   `this` context for callback function
-  * @return  Void
-  */
-	forEach(callback) {
-		let thisArg = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
-
-		let pairs = getHeaders(this);
-		let i = 0;
-		while (i < pairs.length) {
-			var _pairs$i = pairs[i];
-			const name = _pairs$i[0],
-			      value = _pairs$i[1];
-
-			callback.call(thisArg, value, name, this);
-			pairs = getHeaders(this);
-			i++;
-		}
-	}
-
-	/**
-  * Overwrite header values given name
-  *
-  * @param   String  name   Header name
-  * @param   String  value  Header value
-  * @return  Void
-  */
-	set(name, value) {
-		name = `${name}`;
-		value = `${value}`;
-		validateName(name);
-		validateValue(value);
-		const key = find(this[MAP], name);
-		this[MAP][key !== undefined ? key : name] = [value];
-	}
-
-	/**
-  * Append a value onto existing header
-  *
-  * @param   String  name   Header name
-  * @param   String  value  Header value
-  * @return  Void
-  */
-	append(name, value) {
-		name = `${name}`;
-		value = `${value}`;
-		validateName(name);
-		validateValue(value);
-		const key = find(this[MAP], name);
-		if (key !== undefined) {
-			this[MAP][key].push(value);
-		} else {
-			this[MAP][name] = [value];
-		}
-	}
-
-	/**
-  * Check for header name existence
-  *
-  * @param   String   name  Header name
-  * @return  Boolean
-  */
-	has(name) {
-		name = `${name}`;
-		validateName(name);
-		return find(this[MAP], name) !== undefined;
-	}
-
-	/**
-  * Delete all header values given name
-  *
-  * @param   String  name  Header name
-  * @return  Void
-  */
-	delete(name) {
-		name = `${name}`;
-		validateName(name);
-		const key = find(this[MAP], name);
-		if (key !== undefined) {
-			delete this[MAP][key];
-		}
-	}
-
-	/**
-  * Return raw headers (non-spec api)
-  *
-  * @return  Object
-  */
-	raw() {
-		return this[MAP];
-	}
-
-	/**
-  * Get an iterator on keys.
-  *
-  * @return  Iterator
-  */
-	keys() {
-		return createHeadersIterator(this, 'key');
-	}
-
-	/**
-  * Get an iterator on values.
-  *
-  * @return  Iterator
-  */
-	values() {
-		return createHeadersIterator(this, 'value');
-	}
-
-	/**
-  * Get an iterator on entries.
-  *
-  * This is the default iterator of the Headers object.
-  *
-  * @return  Iterator
-  */
-	[Symbol.iterator]() {
-		return createHeadersIterator(this, 'key+value');
-	}
-}
-Headers.prototype.entries = Headers.prototype[Symbol.iterator];
-
-Object.defineProperty(Headers.prototype, Symbol.toStringTag, {
-	value: 'Headers',
-	writable: false,
-	enumerable: false,
-	configurable: true
-});
-
-Object.defineProperties(Headers.prototype, {
-	get: { enumerable: true },
-	forEach: { enumerable: true },
-	set: { enumerable: true },
-	append: { enumerable: true },
-	has: { enumerable: true },
-	delete: { enumerable: true },
-	keys: { enumerable: true },
-	values: { enumerable: true },
-	entries: { enumerable: true }
-});
-
-function getHeaders(headers) {
-	let kind = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'key+value';
-
-	const keys = Object.keys(headers[MAP]).sort();
-	return keys.map(kind === 'key' ? function (k) {
-		return k.toLowerCase();
-	} : kind === 'value' ? function (k) {
-		return headers[MAP][k].join(', ');
-	} : function (k) {
-		return [k.toLowerCase(), headers[MAP][k].join(', ')];
-	});
-}
-
-const INTERNAL = Symbol('internal');
-
-function createHeadersIterator(target, kind) {
-	const iterator = Object.create(HeadersIteratorPrototype);
-	iterator[INTERNAL] = {
-		target,
-		kind,
-		index: 0
-	};
-	return iterator;
-}
-
-const HeadersIteratorPrototype = Object.setPrototypeOf({
-	next() {
-		// istanbul ignore if
-		if (!this || Object.getPrototypeOf(this) !== HeadersIteratorPrototype) {
-			throw new TypeError('Value of `this` is not a HeadersIterator');
-		}
-
-		var _INTERNAL = this[INTERNAL];
-		const target = _INTERNAL.target,
-		      kind = _INTERNAL.kind,
-		      index = _INTERNAL.index;
-
-		const values = getHeaders(target, kind);
-		const len = values.length;
-		if (index >= len) {
-			return {
-				value: undefined,
-				done: true
-			};
-		}
-
-		this[INTERNAL].index = index + 1;
-
-		return {
-			value: values[index],
-			done: false
-		};
-	}
-}, Object.getPrototypeOf(Object.getPrototypeOf([][Symbol.iterator]())));
-
-Object.defineProperty(HeadersIteratorPrototype, Symbol.toStringTag, {
-	value: 'HeadersIterator',
-	writable: false,
-	enumerable: false,
-	configurable: true
-});
-
-/**
- * Export the Headers object in a form that Node.js can consume.
- *
- * @param   Headers  headers
- * @return  Object
- */
-function exportNodeCompatibleHeaders(headers) {
-	const obj = Object.assign({ __proto__: null }, headers[MAP]);
-
-	// http.request() only supports string as Host header. This hack makes
-	// specifying custom Host header possible.
-	const hostHeaderKey = find(headers[MAP], 'Host');
-	if (hostHeaderKey !== undefined) {
-		obj[hostHeaderKey] = obj[hostHeaderKey][0];
-	}
-
-	return obj;
-}
-
-/**
- * Create a Headers object from an object of headers, ignoring those that do
- * not conform to HTTP grammar productions.
- *
- * @param   Object  obj  Object of headers
- * @return  Headers
- */
-function createHeadersLenient(obj) {
-	const headers = new Headers();
-	for (const name of Object.keys(obj)) {
-		if (invalidTokenRegex.test(name)) {
-			continue;
-		}
-		if (Array.isArray(obj[name])) {
-			for (const val of obj[name]) {
-				if (invalidHeaderCharRegex.test(val)) {
-					continue;
-				}
-				if (headers[MAP][name] === undefined) {
-					headers[MAP][name] = [val];
-				} else {
-					headers[MAP][name].push(val);
-				}
-			}
-		} else if (!invalidHeaderCharRegex.test(obj[name])) {
-			headers[MAP][name] = [obj[name]];
-		}
-	}
-	return headers;
-}
-
-const INTERNALS$1 = Symbol('Response internals');
-
-// fix an issue where "STATUS_CODES" aren't a named export for node <10
-const STATUS_CODES = http__WEBPACK_IMPORTED_MODULE_1__.STATUS_CODES;
-
-/**
- * Response class
- *
- * @param   Stream  body  Readable stream
- * @param   Object  opts  Response options
- * @return  Void
- */
-class Response {
-	constructor() {
-		let body = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-		let opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-		Body.call(this, body, opts);
-
-		const status = opts.status || 200;
-		const headers = new Headers(opts.headers);
-
-		if (body != null && !headers.has('Content-Type')) {
-			const contentType = extractContentType(body);
-			if (contentType) {
-				headers.append('Content-Type', contentType);
-			}
-		}
-
-		this[INTERNALS$1] = {
-			url: opts.url,
-			status,
-			statusText: opts.statusText || STATUS_CODES[status],
-			headers,
-			counter: opts.counter
-		};
-	}
-
-	get url() {
-		return this[INTERNALS$1].url || '';
-	}
-
-	get status() {
-		return this[INTERNALS$1].status;
-	}
-
-	/**
-  * Convenience property representing if the request ended normally
-  */
-	get ok() {
-		return this[INTERNALS$1].status >= 200 && this[INTERNALS$1].status < 300;
-	}
-
-	get redirected() {
-		return this[INTERNALS$1].counter > 0;
-	}
-
-	get statusText() {
-		return this[INTERNALS$1].statusText;
-	}
-
-	get headers() {
-		return this[INTERNALS$1].headers;
-	}
-
-	/**
-  * Clone this response
-  *
-  * @return  Response
-  */
-	clone() {
-		return new Response(clone(this), {
-			url: this.url,
-			status: this.status,
-			statusText: this.statusText,
-			headers: this.headers,
-			ok: this.ok,
-			redirected: this.redirected
-		});
-	}
-}
-
-Body.mixIn(Response.prototype);
-
-Object.defineProperties(Response.prototype, {
-	url: { enumerable: true },
-	status: { enumerable: true },
-	ok: { enumerable: true },
-	redirected: { enumerable: true },
-	statusText: { enumerable: true },
-	headers: { enumerable: true },
-	clone: { enumerable: true }
-});
-
-Object.defineProperty(Response.prototype, Symbol.toStringTag, {
-	value: 'Response',
-	writable: false,
-	enumerable: false,
-	configurable: true
-});
-
-const INTERNALS$2 = Symbol('Request internals');
-
-// fix an issue where "format", "parse" aren't a named export for node <10
-const parse_url = url__WEBPACK_IMPORTED_MODULE_2__.parse;
-const format_url = url__WEBPACK_IMPORTED_MODULE_2__.format;
-
-const streamDestructionSupported = 'destroy' in stream__WEBPACK_IMPORTED_MODULE_0__.Readable.prototype;
-
-/**
- * Check if a value is an instance of Request.
- *
- * @param   Mixed   input
- * @return  Boolean
- */
-function isRequest(input) {
-	return typeof input === 'object' && typeof input[INTERNALS$2] === 'object';
-}
-
-function isAbortSignal(signal) {
-	const proto = signal && typeof signal === 'object' && Object.getPrototypeOf(signal);
-	return !!(proto && proto.constructor.name === 'AbortSignal');
-}
-
-/**
- * Request class
- *
- * @param   Mixed   input  Url or Request instance
- * @param   Object  init   Custom options
- * @return  Void
- */
-class Request {
-	constructor(input) {
-		let init = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-		let parsedURL;
-
-		// normalize input
-		if (!isRequest(input)) {
-			if (input && input.href) {
-				// in order to support Node.js' Url objects; though WHATWG's URL objects
-				// will fall into this branch also (since their `toString()` will return
-				// `href` property anyway)
-				parsedURL = parse_url(input.href);
-			} else {
-				// coerce input to a string before attempting to parse
-				parsedURL = parse_url(`${input}`);
-			}
-			input = {};
-		} else {
-			parsedURL = parse_url(input.url);
-		}
-
-		let method = init.method || input.method || 'GET';
-		method = method.toUpperCase();
-
-		if ((init.body != null || isRequest(input) && input.body !== null) && (method === 'GET' || method === 'HEAD')) {
-			throw new TypeError('Request with GET/HEAD method cannot have body');
-		}
-
-		let inputBody = init.body != null ? init.body : isRequest(input) && input.body !== null ? clone(input) : null;
-
-		Body.call(this, inputBody, {
-			timeout: init.timeout || input.timeout || 0,
-			size: init.size || input.size || 0
-		});
-
-		const headers = new Headers(init.headers || input.headers || {});
-
-		if (inputBody != null && !headers.has('Content-Type')) {
-			const contentType = extractContentType(inputBody);
-			if (contentType) {
-				headers.append('Content-Type', contentType);
-			}
-		}
-
-		let signal = isRequest(input) ? input.signal : null;
-		if ('signal' in init) signal = init.signal;
-
-		if (signal != null && !isAbortSignal(signal)) {
-			throw new TypeError('Expected signal to be an instanceof AbortSignal');
-		}
-
-		this[INTERNALS$2] = {
-			method,
-			redirect: init.redirect || input.redirect || 'follow',
-			headers,
-			parsedURL,
-			signal
-		};
-
-		// node-fetch-only options
-		this.follow = init.follow !== undefined ? init.follow : input.follow !== undefined ? input.follow : 20;
-		this.compress = init.compress !== undefined ? init.compress : input.compress !== undefined ? input.compress : true;
-		this.counter = init.counter || input.counter || 0;
-		this.agent = init.agent || input.agent;
-	}
-
-	get method() {
-		return this[INTERNALS$2].method;
-	}
-
-	get url() {
-		return format_url(this[INTERNALS$2].parsedURL);
-	}
-
-	get headers() {
-		return this[INTERNALS$2].headers;
-	}
-
-	get redirect() {
-		return this[INTERNALS$2].redirect;
-	}
-
-	get signal() {
-		return this[INTERNALS$2].signal;
-	}
-
-	/**
-  * Clone this request
-  *
-  * @return  Request
-  */
-	clone() {
-		return new Request(this);
-	}
-}
-
-Body.mixIn(Request.prototype);
-
-Object.defineProperty(Request.prototype, Symbol.toStringTag, {
-	value: 'Request',
-	writable: false,
-	enumerable: false,
-	configurable: true
-});
-
-Object.defineProperties(Request.prototype, {
-	method: { enumerable: true },
-	url: { enumerable: true },
-	headers: { enumerable: true },
-	redirect: { enumerable: true },
-	clone: { enumerable: true },
-	signal: { enumerable: true }
-});
-
-/**
- * Convert a Request to Node.js http request options.
- *
- * @param   Request  A Request instance
- * @return  Object   The options object to be passed to http.request
- */
-function getNodeRequestOptions(request) {
-	const parsedURL = request[INTERNALS$2].parsedURL;
-	const headers = new Headers(request[INTERNALS$2].headers);
-
-	// fetch step 1.3
-	if (!headers.has('Accept')) {
-		headers.set('Accept', '*/*');
-	}
-
-	// Basic fetch
-	if (!parsedURL.protocol || !parsedURL.hostname) {
-		throw new TypeError('Only absolute URLs are supported');
-	}
-
-	if (!/^https?:$/.test(parsedURL.protocol)) {
-		throw new TypeError('Only HTTP(S) protocols are supported');
-	}
-
-	if (request.signal && request.body instanceof stream__WEBPACK_IMPORTED_MODULE_0__.Readable && !streamDestructionSupported) {
-		throw new Error('Cancellation of streamed requests with AbortSignal is not supported in node < 8');
-	}
-
-	// HTTP-network-or-cache fetch steps 2.4-2.7
-	let contentLengthValue = null;
-	if (request.body == null && /^(POST|PUT)$/i.test(request.method)) {
-		contentLengthValue = '0';
-	}
-	if (request.body != null) {
-		const totalBytes = getTotalBytes(request);
-		if (typeof totalBytes === 'number') {
-			contentLengthValue = String(totalBytes);
-		}
-	}
-	if (contentLengthValue) {
-		headers.set('Content-Length', contentLengthValue);
-	}
-
-	// HTTP-network-or-cache fetch step 2.11
-	if (!headers.has('User-Agent')) {
-		headers.set('User-Agent', 'node-fetch/1.0 (+https://github.com/bitinn/node-fetch)');
-	}
-
-	// HTTP-network-or-cache fetch step 2.15
-	if (request.compress && !headers.has('Accept-Encoding')) {
-		headers.set('Accept-Encoding', 'gzip,deflate');
-	}
-
-	let agent = request.agent;
-	if (typeof agent === 'function') {
-		agent = agent(parsedURL);
-	}
-
-	if (!headers.has('Connection') && !agent) {
-		headers.set('Connection', 'close');
-	}
-
-	// HTTP-network fetch step 4.2
-	// chunked encoding is handled by Node.js
-
-	return Object.assign({}, parsedURL, {
-		method: request.method,
-		headers: exportNodeCompatibleHeaders(headers),
-		agent
-	});
-}
-
-/**
- * abort-error.js
- *
- * AbortError interface for cancelled requests
- */
-
-/**
- * Create AbortError instance
- *
- * @param   String      message      Error message for human
- * @return  AbortError
- */
-function AbortError(message) {
-  Error.call(this, message);
-
-  this.type = 'aborted';
-  this.message = message;
-
-  // hide custom error implementation details from end-users
-  Error.captureStackTrace(this, this.constructor);
-}
-
-AbortError.prototype = Object.create(Error.prototype);
-AbortError.prototype.constructor = AbortError;
-AbortError.prototype.name = 'AbortError';
-
-// fix an issue where "PassThrough", "resolve" aren't a named export for node <10
-const PassThrough$1 = stream__WEBPACK_IMPORTED_MODULE_0__.PassThrough;
-const resolve_url = url__WEBPACK_IMPORTED_MODULE_2__.resolve;
-
-/**
- * Fetch function
- *
- * @param   Mixed    url   Absolute url or Request instance
- * @param   Object   opts  Fetch options
- * @return  Promise
- */
-function fetch(url, opts) {
-
-	// allow custom promise
-	if (!fetch.Promise) {
-		throw new Error('native promise missing, set fetch.Promise to your favorite alternative');
-	}
-
-	Body.Promise = fetch.Promise;
-
-	// wrap http.request into fetch
-	return new fetch.Promise(function (resolve, reject) {
-		// build request object
-		const request = new Request(url, opts);
-		const options = getNodeRequestOptions(request);
-
-		const send = (options.protocol === 'https:' ? https__WEBPACK_IMPORTED_MODULE_3__ : http__WEBPACK_IMPORTED_MODULE_1__).request;
-		const signal = request.signal;
-
-		let response = null;
-
-		const abort = function abort() {
-			let error = new AbortError('The user aborted a request.');
-			reject(error);
-			if (request.body && request.body instanceof stream__WEBPACK_IMPORTED_MODULE_0__.Readable) {
-				request.body.destroy(error);
-			}
-			if (!response || !response.body) return;
-			response.body.emit('error', error);
-		};
-
-		if (signal && signal.aborted) {
-			abort();
-			return;
-		}
-
-		const abortAndFinalize = function abortAndFinalize() {
-			abort();
-			finalize();
-		};
-
-		// send request
-		const req = send(options);
-		let reqTimeout;
-
-		if (signal) {
-			signal.addEventListener('abort', abortAndFinalize);
-		}
-
-		function finalize() {
-			req.abort();
-			if (signal) signal.removeEventListener('abort', abortAndFinalize);
-			clearTimeout(reqTimeout);
-		}
-
-		if (request.timeout) {
-			req.once('socket', function (socket) {
-				reqTimeout = setTimeout(function () {
-					reject(new FetchError(`network timeout at: ${request.url}`, 'request-timeout'));
-					finalize();
-				}, request.timeout);
-			});
-		}
-
-		req.on('error', function (err) {
-			reject(new FetchError(`request to ${request.url} failed, reason: ${err.message}`, 'system', err));
-			finalize();
-		});
-
-		req.on('response', function (res) {
-			clearTimeout(reqTimeout);
-
-			const headers = createHeadersLenient(res.headers);
-
-			// HTTP fetch step 5
-			if (fetch.isRedirect(res.statusCode)) {
-				// HTTP fetch step 5.2
-				const location = headers.get('Location');
-
-				// HTTP fetch step 5.3
-				const locationURL = location === null ? null : resolve_url(request.url, location);
-
-				// HTTP fetch step 5.5
-				switch (request.redirect) {
-					case 'error':
-						reject(new FetchError(`uri requested responds with a redirect, redirect mode is set to error: ${request.url}`, 'no-redirect'));
-						finalize();
-						return;
-					case 'manual':
-						// node-fetch-specific step: make manual redirect a bit easier to use by setting the Location header value to the resolved URL.
-						if (locationURL !== null) {
-							// handle corrupted header
-							try {
-								headers.set('Location', locationURL);
-							} catch (err) {
-								// istanbul ignore next: nodejs server prevent invalid response headers, we can't test this through normal request
-								reject(err);
-							}
-						}
-						break;
-					case 'follow':
-						// HTTP-redirect fetch step 2
-						if (locationURL === null) {
-							break;
-						}
-
-						// HTTP-redirect fetch step 5
-						if (request.counter >= request.follow) {
-							reject(new FetchError(`maximum redirect reached at: ${request.url}`, 'max-redirect'));
-							finalize();
-							return;
-						}
-
-						// HTTP-redirect fetch step 6 (counter increment)
-						// Create a new Request object.
-						const requestOpts = {
-							headers: new Headers(request.headers),
-							follow: request.follow,
-							counter: request.counter + 1,
-							agent: request.agent,
-							compress: request.compress,
-							method: request.method,
-							body: request.body,
-							signal: request.signal,
-							timeout: request.timeout,
-							size: request.size
-						};
-
-						// HTTP-redirect fetch step 9
-						if (res.statusCode !== 303 && request.body && getTotalBytes(request) === null) {
-							reject(new FetchError('Cannot follow redirect with body being a readable stream', 'unsupported-redirect'));
-							finalize();
-							return;
-						}
-
-						// HTTP-redirect fetch step 11
-						if (res.statusCode === 303 || (res.statusCode === 301 || res.statusCode === 302) && request.method === 'POST') {
-							requestOpts.method = 'GET';
-							requestOpts.body = undefined;
-							requestOpts.headers.delete('content-length');
-						}
-
-						// HTTP-redirect fetch step 15
-						resolve(fetch(new Request(locationURL, requestOpts)));
-						finalize();
-						return;
-				}
-			}
-
-			// prepare response
-			res.once('end', function () {
-				if (signal) signal.removeEventListener('abort', abortAndFinalize);
-			});
-			let body = res.pipe(new PassThrough$1());
-
-			const response_options = {
-				url: request.url,
-				status: res.statusCode,
-				statusText: res.statusMessage,
-				headers: headers,
-				size: request.size,
-				timeout: request.timeout,
-				counter: request.counter
-			};
-
-			// HTTP-network fetch step 12.1.1.3
-			const codings = headers.get('Content-Encoding');
-
-			// HTTP-network fetch step 12.1.1.4: handle content codings
-
-			// in following scenarios we ignore compression support
-			// 1. compression support is disabled
-			// 2. HEAD request
-			// 3. no Content-Encoding header
-			// 4. no content response (204)
-			// 5. content not modified response (304)
-			if (!request.compress || request.method === 'HEAD' || codings === null || res.statusCode === 204 || res.statusCode === 304) {
-				response = new Response(body, response_options);
-				resolve(response);
-				return;
-			}
-
-			// For Node v6+
-			// Be less strict when decoding compressed responses, since sometimes
-			// servers send slightly invalid responses that are still accepted
-			// by common browsers.
-			// Always using Z_SYNC_FLUSH is what cURL does.
-			const zlibOptions = {
-				flush: zlib__WEBPACK_IMPORTED_MODULE_4__.Z_SYNC_FLUSH,
-				finishFlush: zlib__WEBPACK_IMPORTED_MODULE_4__.Z_SYNC_FLUSH
-			};
-
-			// for gzip
-			if (codings == 'gzip' || codings == 'x-gzip') {
-				body = body.pipe(zlib__WEBPACK_IMPORTED_MODULE_4__.createGunzip(zlibOptions));
-				response = new Response(body, response_options);
-				resolve(response);
-				return;
-			}
-
-			// for deflate
-			if (codings == 'deflate' || codings == 'x-deflate') {
-				// handle the infamous raw deflate response from old servers
-				// a hack for old IIS and Apache servers
-				const raw = res.pipe(new PassThrough$1());
-				raw.once('data', function (chunk) {
-					// see http://stackoverflow.com/questions/37519828
-					if ((chunk[0] & 0x0F) === 0x08) {
-						body = body.pipe(zlib__WEBPACK_IMPORTED_MODULE_4__.createInflate());
-					} else {
-						body = body.pipe(zlib__WEBPACK_IMPORTED_MODULE_4__.createInflateRaw());
-					}
-					response = new Response(body, response_options);
-					resolve(response);
-				});
-				return;
-			}
-
-			// for br
-			if (codings == 'br' && typeof zlib__WEBPACK_IMPORTED_MODULE_4__.createBrotliDecompress === 'function') {
-				body = body.pipe(zlib__WEBPACK_IMPORTED_MODULE_4__.createBrotliDecompress());
-				response = new Response(body, response_options);
-				resolve(response);
-				return;
-			}
-
-			// otherwise, use response as-is
-			response = new Response(body, response_options);
-			resolve(response);
-		});
-
-		writeToStream(req, request);
-	});
-}
-/**
- * Redirect code matching
- *
- * @param   Number   code  Status code
- * @return  Boolean
- */
-fetch.isRedirect = function (code) {
-	return code === 301 || code === 302 || code === 303 || code === 307 || code === 308;
-};
-
-// expose Promise
-fetch.Promise = global.Promise;
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetch);
-
-
-
-/***/ }),
-
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -16467,28 +19766,6 @@ module.exports = require("fs");;
 
 /***/ }),
 
-/***/ "http":
-/*!***********************!*\
-  !*** external "http" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("http");;
-
-/***/ }),
-
-/***/ "https":
-/*!************************!*\
-  !*** external "https" ***!
-  \************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("https");;
-
-/***/ }),
-
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -16497,39 +19774,6 @@ module.exports = require("https");;
 
 "use strict";
 module.exports = require("path");;
-
-/***/ }),
-
-/***/ "stream":
-/*!*************************!*\
-  !*** external "stream" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("stream");;
-
-/***/ }),
-
-/***/ "url":
-/*!**********************!*\
-  !*** external "url" ***!
-  \**********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("url");;
-
-/***/ }),
-
-/***/ "zlib":
-/*!***********************!*\
-  !*** external "zlib" ***!
-  \***********************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("zlib");;
 
 /***/ })
 

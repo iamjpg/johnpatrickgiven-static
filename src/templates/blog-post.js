@@ -14,9 +14,6 @@ export default function BlogPost({
     content: { html },
   },
 }) {
-  const canonicalUrl =
-    typeof window === 'undefined' ? '' : window.location.href;
-
   const formatDate = function (timestamp) {
     // Create a date object from the timestamp
     var date = new Date(timestamp);
@@ -54,6 +51,7 @@ export default function BlogPost({
         <Link to='/'>&larr; Back</Link>
       </p>
       <h2 className='articleHeader'>{title}</h2>
+      <p className='article-date'>{formatDate(addDays(new Date(date), 1))}</p>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>
   );

@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         <title>John Patrick Given is a Javascript Developer</title>
       </Helmet>
 
-      <section className='main'>
+      <section className='main-article'>
         <h1 className='faded'>Hello, my name is JP.</h1>
 
         {children}

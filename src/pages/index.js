@@ -1,39 +1,29 @@
 import React, { useEffect, useReducer } from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import emoji from 'node-emoji';
-import fetch from 'node-fetch';
 import Layout from '../components/layouts/main';
 import { initialState, reducer } from '../reducers/quoteReducer';
+import InitialQuotes from '../helpers/quotes';
 
 // markup
 const IndexPage = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    getQuote();
+    dispatch({
+      type: 'SET_QUOTES',
+      payload: {
+        quotes: InitialQuotes(),
+      },
+    });
+    dispatch({ type: 'SET_QUOTE' });
   }, []);
-
-  const getQuote = () => {
-    fetch(
-      'https://rawcdn.githack.com/iamjpg/programming-quotes-api/47c27e62513322a5c26b92212c0fc5ed0d4180ab/backup/quotes.json'
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        dispatch({
-          type: 'SET_QUOTES',
-          payload: {
-            quotes: json,
-          },
-        });
-        dispatch({ type: 'SET_QUOTE' });
-      });
-  };
 
   const getNewQuote = (e) => {
     e.target.classList.add('refreshQuoteAnimate');
     setTimeout(() => {
       e.target.classList.remove('refreshQuoteAnimate');
-    }, 500);
+    }, 1000);
     dispatch({ type: 'SET_QUOTE' });
   };
 

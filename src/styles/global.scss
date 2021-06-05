@@ -9,9 +9,17 @@ body {
   margin: 0;
 }
 
-.main {
+.main,
+.main-article {
   max-width: 1024px;
   margin: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.5);
+  }
 }
 
 h1,
@@ -164,11 +172,10 @@ footer {
   padding-top: 30px;
 }
 
-// @media (min-width: 1280px) {
-//   article {
-//     width: 50%;
-//   }
-// }
+.article-date {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+}
 
 @media (max-width: 414px) {
   body {
