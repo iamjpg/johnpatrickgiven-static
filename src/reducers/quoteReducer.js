@@ -3,8 +3,8 @@ import { returnRandomArrayItem } from '../helpers';
 export const initialState = {
   quotes: [],
   quote: null,
-  author: ''
-}
+  author: '',
+};
 
 export const reducer = (state, action) => {
   const { type, payload } = action;
@@ -12,16 +12,16 @@ export const reducer = (state, action) => {
     case 'SET_QUOTES':
       return {
         ...state,
-        quotes: payload.quotes
-      }
+        quotes: payload.quotes,
+      };
     case 'SET_QUOTE':
       const { en: quote, author } = returnRandomArrayItem(state.quotes);
       return {
         ...state,
         quote,
-        author
-      }
+        author,
+      };
     default:
       throw new Error();
   }
-}
+};
