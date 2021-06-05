@@ -173,7 +173,7 @@ const IndexPage = () => {
         </>
       )}
       <h2>Journal</h2>
-      <section class='articles'>
+      <section className='articles'>
         {allPosts.map((post) => (
           <Link to={makeLink(post.slug)} key={post.slug}>
             <article>

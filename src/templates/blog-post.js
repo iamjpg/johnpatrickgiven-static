@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layouts/main';
+import Layout from '../components/layouts/article';
 
 export default function BlogPost({
   pageContext: {
@@ -47,5 +47,10 @@ export default function BlogPost({
     return date;
   };
 
-  return <Layout>Yo</Layout>;
+  return (
+    <Layout>
+      <h2>{title}</h2>
+      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+    </Layout>
+  );
 }

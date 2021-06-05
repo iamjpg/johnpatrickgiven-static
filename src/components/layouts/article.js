@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         <title>John Patrick Given is a Javascript Developer</title>
       </Helmet>
 
-      <h1>Hello, my name is JP.</h1>
+      <h1 className='faded'>Hello, my name is JP.</h1>
 
       {children}
     </>
