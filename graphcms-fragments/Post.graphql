@@ -60,4 +60,5 @@ fragment Post on Post {
       stage
     }
   }
+  twitterPost
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { TwitterTweetEmbed } from 'react-twitter-embed';
 import Layout from '../components/layouts/article';
 
 export default function BlogPost({
@@ -52,6 +53,7 @@ export default function BlogPost({
       </p>
       <h2 className='articleHeader'>{title}</h2>
       <p className='article-date'>{formatDate(addDays(new Date(date), 1))}</p>
+      {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>
   );

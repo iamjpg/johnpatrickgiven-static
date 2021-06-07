@@ -29,6 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
           tags
           title
           updatedAt
+          twitterPost
         }
       }
     }
@@ -46,6 +47,7 @@ exports.createPages = async ({ graphql, actions }) => {
         date: edge.date,
         tags: edge.tags,
         author: edge.author,
+        twitterPost: edge.twitterPost,
       },
     });
   });
