@@ -19,6 +19,8 @@ export default function BlogPost({
     // Create a date object from the timestamp
     var date = new Date(timestamp);
 
+    console.log(author);
+
     // Create a list of names for the months
     var months = [
       'January',
@@ -52,7 +54,18 @@ export default function BlogPost({
         <Link to='/'>&larr; Back</Link>
       </p>
       <h2 className='articleHeader'>{title}</h2>
-      <p className='article-date'>{formatDate(addDays(new Date(date), 1))}</p>
+      {/* <p className='article-date'>{formatDate(addDays(new Date(date), 1))}</p> */}
+      <section className='authorSection'>
+        <div>
+          <div style={{ backgroundImage: `url(${author.picture.url})` }}></div>
+        </div>
+        <div>
+          <div>
+            Written by {author.name} on {formatDate(addDays(new Date(date), 1))}
+          </div>
+          <div></div>
+        </div>
+      </section>
       {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>

@@ -170,9 +170,9 @@ const IndexPage = () => {
               <div className='postDate'>
                 {formatDate(addDays(new Date(post.date), 1))}
               </div>
-              <h5 style={{ marginTop: 0, marginBottom: '10px' }}>
+              <h4 style={{ marginTop: 0, marginBottom: '10px' }}>
                 {post.title}
-              </h5>
+              </h4>
               <div className='postExerpt'>{post.excerpt}</div>
             </article>
           </Link>

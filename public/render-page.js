@@ -8798,7 +8798,7 @@ const IndexPage = () => {
     key: post.slug
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "postDate"
-  }, formatDate(addDays(new Date(post.date), 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h5", {
+  }, formatDate(addDays(new Date(post.date), 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h4", {
     style: {
       marginTop: 0,
       marginBottom: '10px'
@@ -19729,7 +19729,7 @@ Twitter.default = Twitter;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"posts":{"nodes":[{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/q8mELPQGSESG7uLlHwQ9","size":68362}},"id":"Post:ckpq4nebc6pk30c7401dyj1ac:PUBLISHED","date":"2021-06-09","slug":"cities-youre-most-likely-to-get-into-a-car-accident","tags":["driving","motorcycles","infographic"],"title":"Cities You\'re Most Likely To Get Into A Car Accident","coverImage":null,"excerpt":"Fun infographic ranking the top 50 cities for car accidents. After living in Seattle for 20+ years their ranking surprised me a bit.,"},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/q8mELPQGSESG7uLlHwQ9","size":68362}},"id":"Post:ckpoc86swqluz0c28urp5vqmp:PUBLISHED","date":"2021-06-08","slug":"playdate","tags":["playdate","gaming"],"title":"Playdate","coverImage":null,"excerpt":"The Playdate handheld game console is pre-ordering in July and I\'m here for it."},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/q8mELPQGSESG7uLlHwQ9","size":68362}},"id":"Post:ckpixpehs2ahc0c71xg1iof5x:PUBLISHED","date":"2021-06-04","slug":"hello-world","tags":["hello world"],"title":"Hello World","coverImage":null,"excerpt":"Everyone has to start somewhere. For me, this is it."}]}}}');
+module.exports = JSON.parse('{"data":{"posts":{"nodes":[{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/q8mELPQGSESG7uLlHwQ9","size":68362}},"id":"Post:ckpq4nebc6pk30c7401dyj1ac:PUBLISHED","date":"2021-06-09","slug":"cities-youre-most-likely-to-get-into-a-car-accident","tags":["driving","motorcycles","infographic"],"title":"Cities You\'re Most Likely To Get Into A Car Accident","coverImage":null,"excerpt":"Fun infographic ranking the top 50 cities for car accidents. After living in Seattle for 20+ years their ranking surprised me a bit."},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/q8mELPQGSESG7uLlHwQ9","size":68362}},"id":"Post:ckpoc86swqluz0c28urp5vqmp:PUBLISHED","date":"2021-06-08","slug":"playdate","tags":["playdate","gaming"],"title":"Playdate","coverImage":null,"excerpt":"The Playdate handheld game console is pre-ordering in July and I\'m here for it."},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/q8mELPQGSESG7uLlHwQ9","size":68362}},"id":"Post:ckpixpehs2ahc0c71xg1iof5x:PUBLISHED","date":"2021-06-04","slug":"hello-world","tags":["hello world"],"title":"Hello World","coverImage":null,"excerpt":"Everyone has to start somewhere. For me, this is it."}]}}}');
 
 /***/ }),
 
