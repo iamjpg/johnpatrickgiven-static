@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import Layout from '../components/layouts/article';
+import rte from 'read-time-estimate';
 
 export default function BlogPost({
   pageContext: {
@@ -18,8 +19,6 @@ export default function BlogPost({
   const formatDate = function (timestamp) {
     // Create a date object from the timestamp
     var date = new Date(timestamp);
-
-    console.log(author);
 
     // Create a list of names for the months
     var months = [
@@ -48,6 +47,11 @@ export default function BlogPost({
     return date;
   };
 
+  const readingTime = (html) => {
+    const { humanizedDuration } = rte(html, 275, 12, 500, ['img']);
+    return humanizedDuration;
+  };
+
   return (
     <Layout>
       <p className='backToHome'>
@@ -63,7 +67,7 @@ export default function BlogPost({
           <div>
             Written by {author.name} on {formatDate(addDays(new Date(date), 1))}
           </div>
-          <div></div>
+          <div>~ {readingTime(html)} to read</div>
         </div>
       </section>
       {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
