@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import Layout from '../components/layouts/article';
 import rte from 'read-time-estimate';
@@ -54,9 +53,9 @@ export default function BlogPost({
 
   return (
     <Layout>
-      <p className='backToHome'>
+      {/* <p className='backToHome'>
         <Link to='/'>&larr; Back</Link>
-      </p>
+      </p> */}
       <h2 className='articleHeader'>{title}</h2>
       {/* <p className='article-date'>{formatDate(addDays(new Date(date), 1))}</p> */}
       <section className='authorSection'>
@@ -70,6 +69,7 @@ export default function BlogPost({
           <div>~ {readingTime(html)} to read</div>
         </div>
       </section>
+      <div class='authorBreak'></div>
       {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>

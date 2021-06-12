@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Footer from '../layouts/footer';
 
@@ -11,7 +12,9 @@ export default function Layout({ children }) {
       </Helmet>
 
       <section className='main-article'>
-        <h1 className='faded'>Hello, my name is JP.</h1>
+        <Link to='/' className='no-underline'>
+          <h1 className='faded'>Hello, my name is JP.</h1>
+        </Link>
 
         {children}
 

@@ -58,6 +58,11 @@ a[target='_blank']:not(.nomarker)::after {
   margin: 0px 3px 0px 5px;
 }
 
+p,
+blockquote {
+  line-height: 150%;
+}
+
 .quoteTitle {
   position: relative;
   display: flex;
@@ -166,7 +171,7 @@ article {
   align-items: center;
   align-content: center;
   font-style: italic;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   // font-weight: 600;
 
   div:first-of-type {
@@ -174,19 +179,28 @@ article {
   }
 
   div:nth-child(1) div {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     background-size: cover;
     background-position: center center;
-    // border-radius: 100%;
     border-radius: 50%;
     border: 3px solid #e0e0e0;
   }
 
   div:nth-child(2) {
-    // font-family: 'Helvetica', sans-serif;
     font-size: 16px;
   }
+}
+
+.authorBreak {
+  height: 0;
+  width: 50px;
+  border-bottom: 5px solid #e84393;
+  margin-bottom: 50px;
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 footer {
