@@ -13,9 +13,7 @@ exports.createPages = async ({ graphql, actions }) => {
               url
             }
           }
-          content {
-            html
-          }
+          content
           coverImage {
             url
           }

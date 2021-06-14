@@ -37,14 +37,8 @@ fragment Post on Post {
       stage
     }
   }
-  content {
-    ... on RichText {
-      raw
-      html
-      markdown
-      text
-    }
-  }
+  content
+  twitterPost
   tags
   author {
     ... on Author {
@@ -60,5 +54,4 @@ fragment Post on Post {
       stage
     }
   }
-  twitterPost
 }

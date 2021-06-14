@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import Layout from '../components/layouts/article';
 import rte from 'read-time-estimate';
@@ -12,7 +13,7 @@ export default function BlogPost({
     youtubeVideoID,
     publishedAt,
     date,
-    content: { html },
+    content,
   },
 }) {
   const formatDate = function (timestamp) {
@@ -66,12 +67,12 @@ export default function BlogPost({
           <div>
             Written by {author.name} on {formatDate(addDays(new Date(date), 1))}
           </div>
-          <div>~ {readingTime(html)} to read</div>
+          <div>~ {readingTime(content)} to read</div>
         </div>
       </section>
-      <div class='authorBreak'></div>
+      <div className='authorBreak'></div>
       {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      <ReactMarkdown>{content}</ReactMarkdown>
     </Layout>
   );
 }
