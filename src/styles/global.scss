@@ -25,6 +25,11 @@ iframe {
     -webkit-box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.5);
     box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.5);
   }
+
+  img[src*='#noshadow'] {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
 }
 
 h1,
