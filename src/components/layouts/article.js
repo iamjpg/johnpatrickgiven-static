@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <Helmet>
         <meta charSet='utf-8' />
         <title>John Patrick Given is a Javascript Developer</title>
-        <link href="/static/prism.min.css"></link>
+        <link href="/static/prism-okaidia.min.css"></link>
         <script src="/static/prism.min.js"></script>
       </Helmet>
 
