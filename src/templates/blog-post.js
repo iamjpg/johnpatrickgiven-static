@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw'
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import Layout from '../components/layouts/article';
 import rte from 'read-time-estimate';
@@ -72,7 +73,7 @@ export default function BlogPost({
       </section>
       <div className='authorBreak'></div>
       {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
     </Layout>
   );
 }
