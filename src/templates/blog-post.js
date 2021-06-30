@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import rehypeRaw from 'rehype-raw'
+import rehypeRaw from 'rehype-raw';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import Layout from '../components/layouts/article';
 import rte from 'read-time-estimate';
@@ -15,6 +15,7 @@ export default function BlogPost({
     publishedAt,
     date,
     content,
+    tags,
   },
 }) {
   const formatDate = function (timestamp) {
@@ -53,6 +54,11 @@ export default function BlogPost({
     return humanizedDuration;
   };
 
+  const returnTags = (tags) => {
+    const listItems = tags.map((tag) => <li>{tag}</li>);
+    return listItems;
+  };
+
   return (
     <Layout>
       {/* <p className='backToHome'>
@@ -72,6 +78,7 @@ export default function BlogPost({
         </div>
       </section>
       <div className='authorBreak'></div>
+      {tags.length > 0 && <ul className='tags'>{returnTags(tags)}</ul>}
       {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
       <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
     </Layout>

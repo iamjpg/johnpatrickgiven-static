@@ -91,6 +91,11 @@ const IndexPage = () => {
     }
   `);
 
+  const returnTags = (tags) => {
+    const listItems = tags.map((tag) => <li>{tag}</li>);
+    return listItems;
+  };
+
   return (
     <Layout>
       <p>
@@ -174,6 +179,9 @@ const IndexPage = () => {
                 {post.title}
               </h4>
               <div className='postExerpt'>{post.excerpt}</div>
+              {post.tags.length > 0 && (
+                <ul className='tags'>{returnTags(post.tags)}</ul>
+              )}
             </article>
           </Link>
         ))}
