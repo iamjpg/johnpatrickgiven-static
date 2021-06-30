@@ -8755,10 +8755,9 @@ const IndexPage = () => {
     }
   } = _public_page_data_sq_d_717708846_json__WEBPACK_IMPORTED_MODULE_0__.data;
 
-  const returnTags = tags => {
-    const listItems = tags.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", null, tag));
-    return listItems;
-  };
+  const returnTags = tags => tags.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
+    key: "{tag}"
+  }, tag));
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_layouts_main__WEBPACK_IMPORTED_MODULE_4__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "I'm a software engineer working in Las Vegas, Nevada. I love", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",

@@ -54,10 +54,7 @@ export default function BlogPost({
     return humanizedDuration;
   };
 
-  const returnTags = (tags) => {
-    const listItems = tags.map((tag) => <li>{tag}</li>);
-    return listItems;
-  };
+  const returnTags = (tags) => tags.map((tag) => <li key='{tag}'>{tag}</li>);
 
   return (
     <Layout>
