@@ -9435,7 +9435,8 @@ function BlogPost({
     youtubeVideoID,
     publishedAt,
     date,
-    content
+    content,
+    tags
   }
 }) {
   const formatDate = function (timestamp) {
@@ -9459,6 +9460,11 @@ function BlogPost({
     return humanizedDuration;
   };
 
+  const returnTags = tags => {
+    const listItems = tags.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, tag));
+    return listItems;
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layouts_article__WEBPACK_IMPORTED_MODULE_4__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "articleHeader"
   }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
@@ -9467,7 +9473,9 @@ function BlogPost({
     style: {
       backgroundImage: `url(${author.picture.url})`
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Written by ", author.name, " on ", formatDate(addDays(new Date(date), 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "~ ", readingTime(content), " to read"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Written by ", author.name, " on ", formatDate(addDays(new Date(date), 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "~ ", readingTime(content), " to read"), tags.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "tags"
+  }, returnTags(tags)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "authorBreak"
   }), twitterPost && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_twitter_embed__WEBPACK_IMPORTED_MODULE_3__.TwitterTweetEmbed, {
     tweetId: twitterPost
