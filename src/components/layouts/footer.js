@@ -14,7 +14,7 @@ export default function Footer(props) {
           rel='noreferrer'
           className='nomarker'
         >
-          <Twitter width={16} fill='#e5e5e5' />
+          <Twitter width={24} fill='#ccc' />
         </a>
       </div>
       <div>
@@ -24,7 +24,7 @@ export default function Footer(props) {
           rel='noreferrer'
           className='nomarker'
         >
-          <Linkedin width={16} fill='#e5e5e5' />
+          <Linkedin width={24} fill='#ccc' />
         </a>
       </div>
     </footer>
