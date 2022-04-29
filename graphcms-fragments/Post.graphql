@@ -39,6 +39,7 @@ fragment Post on Post {
   }
   content
   twitterPost
+  youTubeVideoId
   tags
   author {
     ... on Author {
