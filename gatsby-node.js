@@ -7,6 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
     query {
       allGraphCmsPost(filter: { stage: { eq: PUBLISHED } }) {
         nodes {
+          id
           author {
             name
             picture {
@@ -28,6 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
           title
           updatedAt
           twitterPost
+          youTubeVideoId
           tags
         }
       }
@@ -39,6 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/post/${edge.slug}`,
       component: blogPostTemplate,
       context: {
+        id: edge.id,
         title: edge.title,
         content: edge.content,
         createdAt: edge.createdAt,
@@ -47,6 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
         tags: edge.tags,
         author: edge.author,
         twitterPost: edge.twitterPost,
+        youTubeVideoId: edge.youTubeVideoId,
         tags: edge.tags,
       },
     });

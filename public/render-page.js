@@ -9290,7 +9290,9 @@ const IndexPage = () => {
   } = _public_page_data_sq_d_717708846_json__WEBPACK_IMPORTED_MODULE_0__.data;
 
   const returnTags = tags => {
-    const listItems = tags.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", null, tag));
+    const listItems = tags.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("li", {
+      key: tag
+    }, tag));
     return listItems;
   };
 
@@ -9432,7 +9434,7 @@ function BlogPost({
     author,
     title,
     twitterPost,
-    youtubeVideoID,
+    youTubeVideoId,
     publishedAt,
     date,
     content,
@@ -9461,8 +9463,35 @@ function BlogPost({
   };
 
   const returnTags = tags => {
-    const listItems = tags.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, tag));
+    const listItems = tags.map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      key: tag
+    }, tag));
     return listItems;
+  };
+
+  const makeYoutubeVideo = () => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "video",
+      style: {
+        position: 'relative',
+        paddingBottom: '56.25%'
+        /* 16:9 */
+        ,
+        paddingTop: 25,
+        height: 0
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
+      title: "YouTube Video",
+      style: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%'
+      },
+      src: `https://www.youtube.com/embed/${youTubeVideoId}`,
+      frameBorder: "0"
+    }));
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layouts_article__WEBPACK_IMPORTED_MODULE_4__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -9474,10 +9503,13 @@ function BlogPost({
       backgroundImage: `url(${author.picture.url})`
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Written by ", author.name, " on ", formatDate(addDays(new Date(date), 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "~ ", readingTime(content), " to read"), tags.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "tags"
+    className: "tags",
+    style: {
+      marginTop: '10px'
+    }
   }, returnTags(tags)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "authorBreak"
-  }), twitterPost && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_twitter_embed__WEBPACK_IMPORTED_MODULE_3__.TwitterTweetEmbed, {
+  }), youTubeVideoId && makeYoutubeVideo(), twitterPost && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_twitter_embed__WEBPACK_IMPORTED_MODULE_3__.TwitterTweetEmbed, {
     tweetId: twitterPost
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react_markdown__WEBPACK_IMPORTED_MODULE_1___default()), {
     rehypePlugins: [(rehype_raw__WEBPACK_IMPORTED_MODULE_2___default())]
@@ -44046,29 +44078,29 @@ function factory(key, options) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"posts":{"nodes":[{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckqi4qmvsdkfn0a678gprx2ia:PUBLISHED","date":"2021-06-29","slug":"css-sibling-fade","tags":["css","ux","ui"],"title":"CSS Sibling Fade","coverImage":null,"excerpt":"CSS is fun. This is a simple way to fade all elements in a container not actively hovered."},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckq14tog08uog0c7238x7n6ol:PUBLISHED","date":"2021-06-17","slug":"programming-dogma-is-exhausting","tags":[],"title":"Programming Dogma Is Exhausting","coverImage":null,"excerpt":"People share their opinions on Twitter a lot. It doesn\'t mean they\'re well intentioned, well informed, or even well thought out."},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpzxsj5k304k0b17aokra195:PUBLISHED","date":"2021-06-16","slug":"javascript-sleep-method","tags":["javascript"],"title":"Javascript Sleep Method","coverImage":null,"excerpt":"Other languages offer a sleep function or something similar natively. "},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpyk1hj4luur0b19xgq7sz8l:PUBLISHED","date":"2021-06-15","slug":"numeric-separators","tags":["javascript"],"title":"Numeric Separators For Large Integers in Javascript","coverImage":null,"excerpt":"I\'ve been writing Javascript for a long time professionally. I never knew this trick..."},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpq4nebc6pk30c7401dyj1ac:PUBLISHED","date":"2021-06-09","slug":"cities-youre-most-likely-to-get-into-a-car-accident","tags":["driving","motorcycles","infographic"],"title":"Cities You\'re Most Likely To Get Into A Car Accident","coverImage":null,"excerpt":"Fun infographic ranking the top 50 cities for car accidents. After living in Seattle for 20+ years their ranking surprised me a bit."},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpoc86swqluz0c28urp5vqmp:PUBLISHED","date":"2021-06-08","slug":"playdate","tags":["playdate","gaming"],"title":"Playdate","coverImage":null,"excerpt":"The Playdate handheld game console is pre-ordering in July and I\'m here for it."},{"author":{"name":"JP","picture":{"url":"https://media.graphcms.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpixpehs2ahc0c71xg1iof5x:PUBLISHED","date":"2021-06-04","slug":"hello-world","tags":["hello world"],"title":"Hello World","coverImage":null,"excerpt":"Everyone has to start somewhere. For me, this is it."}]}}}');
+module.exports = JSON.parse('{"data":{"posts":{"nodes":[{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:cl2km0dzcc89e0bmzty2ufwvg:PUBLISHED","date":"2022-04-29","slug":"my-favorite-guitarist-on-planet-earth","tags":["guitar"],"title":"My Favorite Guitarist on Planet Earth","coverImage":null,"excerpt":"Kent Nishimura is the G.O.A.T finger style guitarist (IMO)...an he\'s only 19..."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:cl20trofo1zwc0clvotaic06p:PUBLISHED","date":"2022-04-15","slug":"49ers-fans-are-toxic","tags":[],"title":"49ers Fans are Toxic","coverImage":null,"excerpt":"I don\'t know if all fan bases are this bad, but the current Deebo Samuel contract situation is showing the insecurity and toxic nature of \\"fans\\"."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckyorsqkgu1hn0d72rtkseugj:PUBLISHED","date":"2022-01-21","slug":"this-peter-schrager-piece-got-me-fired-up","tags":["niners","football","playoffs"],"title":"This Peter Schrager Piece Got me Fired Up for Saturdays Game","coverImage":null,"excerpt":"Peter Schrager breaks down the his pick for the 49ers Packers Divisional Playoff game tomorrow."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckwmfh1lc7gk90b28n89fzgex:PUBLISHED","date":"2021-11-30","slug":"i-love-web-development-twitter-but","tags":["twitter","webdev"],"title":"I Love Web Development Twitter, But...","coverImage":null,"excerpt":"Web Development Twitter is equal parts beautiful and straight trash."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:cktokv2o0dczc0d831ropy2y3:PUBLISHED","date":"2021-09-17","slug":"element-contains-one-liner-in-javascript","tags":["javascript","utilities"],"title":"elementContains One Liner in Javascript","coverImage":null,"excerpt":"A one line utility function that\'s very useful."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckqi4qmvsdkfn0a678gprx2ia:PUBLISHED","date":"2021-06-29","slug":"css-sibling-fade","tags":["css","ux","ui"],"title":"CSS Sibling Fade","coverImage":null,"excerpt":"CSS is fun. This is a simple way to fade all elements in a container not actively hovered."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckq14tog08uog0c7238x7n6ol:PUBLISHED","date":"2021-06-17","slug":"programming-dogma-is-exhausting","tags":["programming"],"title":"Programming Dogma Is Exhausting","coverImage":null,"excerpt":"People share their opinions on Twitter a lot. It doesn\'t mean they\'re well intentioned, well informed, or even well thought out."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpzxsj5k304k0b17aokra195:PUBLISHED","date":"2021-06-16","slug":"javascript-sleep-method","tags":["javascript"],"title":"Javascript Sleep Method","coverImage":null,"excerpt":"Other languages offer a sleep function or something similar natively. "},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpyk1hj4luur0b19xgq7sz8l:PUBLISHED","date":"2021-06-15","slug":"numeric-separators","tags":["javascript"],"title":"Numeric Separators For Large Integers in Javascript","coverImage":null,"excerpt":"I\'ve been writing Javascript for a long time professionally. I never knew this trick..."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpq4nebc6pk30c7401dyj1ac:PUBLISHED","date":"2021-06-09","slug":"cities-youre-most-likely-to-get-into-a-car-accident","tags":["driving","motorcycles","infographic"],"title":"Cities You\'re Most Likely To Get Into A Car Accident","coverImage":null,"excerpt":"Fun infographic ranking the top 50 cities for car accidents. After living in Seattle for 20+ years their ranking surprised me a bit."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpoc86swqluz0c28urp5vqmp:PUBLISHED","date":"2021-06-08","slug":"playdate","tags":["playdate","gaming"],"title":"Playdate","coverImage":null,"excerpt":"The Playdate handheld game console is pre-ordering in July and I\'m here for it."},{"author":{"name":"JP","picture":{"url":"https://media.graphassets.com/iP3Rb3SSXCyyvmxfFsex","size":44305}},"id":"Post:ckpixpehs2ahc0c71xg1iof5x:PUBLISHED","date":"2021-06-04","slug":"hello-world","tags":["hello world"],"title":"Hello World","coverImage":null,"excerpt":"Everyone has to start somewhere. For me, this is it."}]}}}');
 
 /***/ }),
 
 /***/ "react-dom/server":
-/*!**********************************************************************************************************!*\
-  !*** external "/Users/jp.given/dvl/playground/johnpatrickgiven-nextjs/node_modules/react-dom/server.js" ***!
-  \**********************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** external "/Users/jgiven/dvl/playground/johnpatrickgiven-nextjs/node_modules/react-dom/server.js" ***!
+  \********************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/jp.given/dvl/playground/johnpatrickgiven-nextjs/node_modules/react-dom/server.js");;
+module.exports = require("/Users/jgiven/dvl/playground/johnpatrickgiven-nextjs/node_modules/react-dom/server.js");;
 
 /***/ }),
 
 /***/ "react":
-/*!*****************************************************************************************************!*\
-  !*** external "/Users/jp.given/dvl/playground/johnpatrickgiven-nextjs/node_modules/react/index.js" ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** external "/Users/jgiven/dvl/playground/johnpatrickgiven-nextjs/node_modules/react/index.js" ***!
+  \***************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/jp.given/dvl/playground/johnpatrickgiven-nextjs/node_modules/react/index.js");;
+module.exports = require("/Users/jgiven/dvl/playground/johnpatrickgiven-nextjs/node_modules/react/index.js");;
 
 /***/ }),
 

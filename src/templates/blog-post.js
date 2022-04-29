@@ -11,13 +11,14 @@ export default function BlogPost({
     author,
     title,
     twitterPost,
-    youtubeVideoID,
+    youTubeVideoId,
     publishedAt,
     date,
     content,
     tags,
   },
 }) {
+
   const formatDate = function (timestamp) {
     // Create a date object from the timestamp
     var date = new Date(timestamp);
@@ -55,8 +56,35 @@ export default function BlogPost({
   };
 
   const returnTags = (tags) => {
-    const listItems = tags.map((tag) => <li>{tag}</li>);
+    const listItems = tags.map((tag) => <li key={tag}>{tag}</li>);
     return listItems;
+  };
+
+  const makeYoutubeVideo = () => {
+    return (
+      <div
+        className="video"
+        style={{
+          position: 'relative',
+          paddingBottom: '56.25%' /* 16:9 */,
+          paddingTop: 25,
+          height: 0,
+        }}
+      >
+        <iframe
+          title="YouTube Video"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+          }}
+          src={`https://www.youtube.com/embed/${youTubeVideoId}`}
+          frameBorder="0"
+        />
+      </div>
+    );
   };
 
   return (
@@ -75,10 +103,12 @@ export default function BlogPost({
             Written by {author.name} on {formatDate(addDays(new Date(date), 1))}
           </div>
           <div>~ {readingTime(content)} to read</div>
+          {tags.length > 0 && <ul className='tags' style={{marginTop: '10px'}}>{returnTags(tags)}</ul>}
         </div>
       </section>
       <div className='authorBreak'></div>
-      {tags.length > 0 && <ul className='tags'>{returnTags(tags)}</ul>}
+      
+      {youTubeVideoId && makeYoutubeVideo()}
       {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
       <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
     </Layout>
