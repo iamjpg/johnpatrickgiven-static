@@ -11,13 +11,16 @@ export default function BlogPost({
     author,
     title,
     twitterPost,
-    youtubeVideoID,
+    youTubeVideoId,
     publishedAt,
     date,
     content,
     tags,
   },
 }) {
+
+  console.log(youTubeVideoId, author, id)
+
   const formatDate = function (timestamp) {
     // Create a date object from the timestamp
     var date = new Date(timestamp);
@@ -55,7 +58,7 @@ export default function BlogPost({
   };
 
   const returnTags = (tags) => {
-    const listItems = tags.map((tag) => <li>{tag}</li>);
+    const listItems = tags.map((tag) => <li key={tag}>{tag}</li>);
     return listItems;
   };
 

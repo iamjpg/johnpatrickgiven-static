@@ -92,7 +92,7 @@ const IndexPage = () => {
   `);
 
   const returnTags = (tags) => {
-    const listItems = tags.map((tag) => <li>{tag}</li>);
+    const listItems = tags.map((tag) => <li key={tag}>{tag}</li>);
     return listItems;
   };
 
