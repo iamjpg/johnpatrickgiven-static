@@ -8,6 +8,7 @@ export default function Layout({ children }) {
       <Helmet>
         <meta charSet='utf-8' />
         <title>John Patrick Given is a Javascript Developer</title>
+        <script async src='//static.getclicky.com/101375575.js'></script>
       </Helmet>
 
       <section className='main'>

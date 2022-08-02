@@ -4,6 +4,14 @@ import { Helmet } from 'react-helmet';
 import Footer from '../layouts/footer';
 
 export default function Layout({ children }) {
+  const referrerOrRoot = () => {
+    if (window.document) {
+      console.log(document && document.referrer);
+    }
+
+    return '/';
+  };
+
   return (
     <>
       <Helmet>
@@ -12,7 +20,7 @@ export default function Layout({ children }) {
       </Helmet>
 
       <section className='main-article'>
-        <Link to='/' className='no-underline'>
+        <Link to={referrerOrRoot()} className='no-underline'>
           <h1 className='faded'>Hello, my name is JP.</h1>
         </Link>
 
