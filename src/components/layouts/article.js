@@ -5,10 +5,6 @@ import Footer from '../layouts/footer';
 
 export default function Layout({ children }) {
   const referrerOrRoot = () => {
-    if (window.document) {
-      console.log(document && document.referrer);
-    }
-
     return '/';
   };
 
