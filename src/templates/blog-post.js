@@ -120,7 +120,7 @@ export default function BlogPost({
           </div>
         </div>
       ) : (
-        <div>Yo</div>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
       )}
     </Layout>
   );
