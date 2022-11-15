@@ -91,7 +91,7 @@ const IndexPage = () => {
     }
   `);
 
-  const returnTags = (tags) => tags.map((tag) => <li key='{tag}'>{tag}</li>);
+  const returnTags = (tags) => tags.map((tag) => <li key={tag}>{tag}</li>);
 
   return (
     <Layout>

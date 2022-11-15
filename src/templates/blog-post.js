@@ -54,7 +54,7 @@ export default function BlogPost({
     return humanizedDuration;
   };
 
-  const returnTags = (tags) => tags.map((tag) => <li key='{tag}'>{tag}</li>);
+  const returnTags = (tags) => tags.map((tag) => <li key={tag}>{tag}</li>);
 
   const makeYoutubeVideo = () => {
     return (
