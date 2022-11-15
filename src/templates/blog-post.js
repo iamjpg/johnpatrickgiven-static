@@ -18,7 +18,6 @@ export default function BlogPost({
     tags,
   },
 }) {
-
   const formatDate = function (timestamp) {
     // Create a date object from the timestamp
     var date = new Date(timestamp);
@@ -60,7 +59,7 @@ export default function BlogPost({
   const makeYoutubeVideo = () => {
     return (
       <div
-        className="video"
+        className='video'
         style={{
           position: 'relative',
           paddingBottom: '56.25%' /* 16:9 */,
@@ -69,7 +68,7 @@ export default function BlogPost({
         }}
       >
         <iframe
-          title="YouTube Video"
+          title='YouTube Video'
           style={{
             position: 'absolute',
             top: 0,
@@ -78,7 +77,7 @@ export default function BlogPost({
             height: '100%',
           }}
           src={`https://www.youtube.com/embed/${youTubeVideoId}`}
-          frameBorder="0"
+          frameBorder='0'
         />
       </div>
     );
@@ -100,14 +99,29 @@ export default function BlogPost({
             Written by {author.name} on {formatDate(addDays(new Date(date), 1))}
           </div>
           <div>~ {readingTime(content)} to read</div>
-          {tags.length > 0 && <ul className='tags' style={{marginTop: '10px'}}>{returnTags(tags)}</ul>}
+          {tags.length > 0 && (
+            <ul className='tags' style={{ marginTop: '10px' }}>
+              {returnTags(tags)}
+            </ul>
+          )}
         </div>
       </section>
       <div className='authorBreak'></div>
-      
+
       {youTubeVideoId && makeYoutubeVideo()}
-      {twitterPost && <TwitterTweetEmbed tweetId={twitterPost} />}
-      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
+
+      {twitterPost ? (
+        <div className='tweetFlex'>
+          <div>
+            <TwitterTweetEmbed tweetId={twitterPost} />
+          </div>
+          <div>
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
+          </div>
+        </div>
+      ) : (
+        <div>Yo</div>
+      )}
     </Layout>
   );
 }

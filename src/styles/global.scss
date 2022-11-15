@@ -252,6 +252,15 @@ ul.tags {
   }
 }
 
+.tweetFlex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between; /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+  align-items: flex-start;
+  gap: 25px;
+}
+
 @media (max-width: 414px) {
   body {
     padding: 50px 25px;
@@ -267,5 +276,9 @@ ul.tags {
 
   .postDate {
     font-size: 10px;
+  }
+
+  .tweetFlex {
+    display: block;
   }
 }
