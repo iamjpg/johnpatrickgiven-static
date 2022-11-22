@@ -2,17 +2,16 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
+import { Triangle } from 'react-loader-spinner';
 import Layout from '../components/layouts/article';
 import rte from 'read-time-estimate';
 
 export default function BlogPost({
   pageContext: {
-    id,
     author,
     title,
     twitterPost,
     youTubeVideoId,
-    publishedAt,
     date,
     content,
     tags,
@@ -112,7 +111,18 @@ export default function BlogPost({
 
       {twitterPost ? (
         <div className='tweetFlex'>
-          <div>
+          <div className='tweetContainer'>
+            <div className='tweetLoading'>
+              <Triangle
+                height='80'
+                width='80'
+                radius='9'
+                color='#e84393'
+                ariaLabel='loading'
+                wrapperStyle
+                wrapperClass
+              />
+            </div>
             <TwitterTweetEmbed tweetId={twitterPost} />
           </div>
           <div>

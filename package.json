@@ -29,6 +29,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-loader-spinner": "^5.3.4",
     "react-markdown": "^6.0.2",
     "react-twitter-embed": "^3.0.3",
     "read-time-estimate": "^0.0.3",

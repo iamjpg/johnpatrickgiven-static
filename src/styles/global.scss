@@ -259,6 +259,24 @@ ul.tags {
   justify-content: space-between; /* flex-start, flex-end, center, space-between, space-around, space-evenly */
   align-items: flex-start;
   gap: 25px;
+
+  .tweetContainer {
+    min-width: 340px;
+    min-height: 200px;
+    position: relative;
+
+    .tweetLoading {
+      position: absolute;
+      margin: 0 auto;
+      top: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      z-index: -1;
+    }
+  }
 }
 
 @media (max-width: 414px) {
@@ -280,5 +298,11 @@ ul.tags {
 
   .tweetFlex {
     display: block;
+    width: 100%;
+
+    .tweetContainer {
+      min-width: 100%;
+      max-width: 100%;
+    }
   }
 }
