@@ -5,10 +5,12 @@ import Footer from '../layouts/footer';
 
 export default function Layout({ children }) {
   const referrerOrRoot = () => {
-    const st = localStorage.getItem('scrollTop')
-      ? localStorage.getItem('scrollTop')
-      : 0;
-    return `/?st=${st}`;
+    if (window && window.localStorage) {
+      const st = localStorage.getItem('scrollTop')
+        ? localStorage.getItem('scrollTop')
+        : 0;
+      return `/?st=${st}`;
+    }
   };
 
   return (
