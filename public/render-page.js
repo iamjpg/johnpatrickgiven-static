@@ -3513,18 +3513,56 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
+/* harmony import */ var react_use__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-use */ "./node_modules/react-use/esm/useEffectOnce.js");
 /* harmony import */ var _layouts_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layouts/footer */ "./src/components/layouts/footer.js");
+
 
 
 
 function Layout({
   children
 }) {
+  const {
+    0: listenerSet,
+    1: setListerSet
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+
+  const setScrollListener = () => {
+    console.log(listenerSet);
+
+    if (!listenerSet) {
+      console.log('getting here', window);
+      document.addEventListener('scroll', event => {
+        var _window, _window2, _window3, _window4;
+
+        if (((_window = window) === null || _window === void 0 ? void 0 : _window.location.href) === 'http://localhost:8000/' || ((_window2 = window) === null || _window2 === void 0 ? void 0 : _window2.location.href.indexOf('http://localhost:8000/?st=')) > -1 || ((_window3 = window) === null || _window3 === void 0 ? void 0 : _window3.location.href) === 'https://johnpatrickgiven.com/' || ((_window4 = window) === null || _window4 === void 0 ? void 0 : _window4.location.href.indexOf('https://johnpatrickgiven.com/?st=')) > -1) {
+          localStorage.setItem('scrollTop', window.scrollY);
+        }
+      });
+      setListerSet(true);
+    }
+  };
+
+  (0,react_use__WEBPACK_IMPORTED_MODULE_3__.default)(() => {
+    var _window5;
+
+    setScrollListener();
+
+    if ((_window5 = window) !== null && _window5 !== void 0 && _window5.location.search) {
+      const {
+        st
+      } = Object.fromEntries(new URLSearchParams(window.location.search));
+      window.scrollTo(0, st);
+    }
+  });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     charSet: "utf-8"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "John Patrick Given is a Javascript Developer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", {
     async: true,
     src: "//static.getclicky.com/101375575.js"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    name: "referrer",
+    content: "no-referrer"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Hello, my name is JP."), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_layouts_footer__WEBPACK_IMPORTED_MODULE_2__.default, null)));
@@ -19105,6 +19143,28 @@ function withSideEffect(reducePropsToState, handleStateChangeOnClient, mapStateO
 }
 
 module.exports = withSideEffect;
+
+
+/***/ }),
+
+/***/ "./node_modules/react-use/esm/useEffectOnce.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-use/esm/useEffectOnce.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var useEffectOnce = function (effect) {
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(effect, []);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useEffectOnce);
 
 
 /***/ }),
