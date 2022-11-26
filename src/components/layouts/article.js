@@ -5,7 +5,7 @@ import Footer from '../layouts/footer';
 
 export default function Layout({ children }) {
   const referrerOrRoot = () => {
-    if (window && window.localStorage) {
+    if (typeof window !== 'undefined') {
       const st = localStorage.getItem('scrollTop')
         ? localStorage.getItem('scrollTop')
         : 0;
