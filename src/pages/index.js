@@ -68,7 +68,7 @@ const IndexPage = () => {
     posts: { nodes: allPosts },
   } = useStaticQuery(graphql`
     {
-      posts: allGraphCmsPost(sort: { fields: [id], order: DESC }) {
+      posts: allGraphCmsPost(sort: { fields: [publishedAt], order: DESC }) {
         nodes {
           author {
             name
