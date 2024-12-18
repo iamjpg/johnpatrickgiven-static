@@ -28,7 +28,7 @@
     "gatsby-remark-prismjs": "^5.4.1",
     "gatsby-source-filesystem": "^5.2.0",
     "gatsby-source-graphcms": "^2.8.0",
-    "gatsby-transformer-remark": "^4.4.1",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^5.2.0",
     "lodash.debounce": "^4.0.8",
     "node-emoji": "^1.11.0",
